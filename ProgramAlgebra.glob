@@ -1,0 +1,2450 @@
+DIGEST 982c32611b820857a19dfa96cb43befc
+FPA.ProgramAlgebra
+R15:18 Coq.Lists.List <> <> lib
+R28:40 Coq.Lists.List ListNotations <> mod
+R58:87 Coq.Logic.FunctionalExtensionality <> <> lib
+mod 98:111 <> ProgramAlgebra
+rec 188:197 ProgramAlgebra UserParams
+proj 213:215 ProgramAlgebra Var
+proj 226:233 ProgramAlgebra GLOBVARS
+proj 249:251 ProgramAlgebra eqb
+R237:240 Coq.Init.Datatypes <> list ind
+R242:244 PA.ProgramAlgebra <> Var:2 meth
+R257:260 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R254:256 PA.ProgramAlgebra <> Var:2 meth
+R264:267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R261:263 PA.ProgramAlgebra <> Var:2 meth
+R268:271 Coq.Init.Datatypes <> bool ind
+sec 285:290 ProgramAlgebra Assign
+R312:321 PA.ProgramAlgebra ProgramAlgebra UserParams class
+binder 302:308 <> UserVar:5
+def 336:338 ProgramAlgebra Exp
+R343:343 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R352:357 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R366:366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R344:347 Coq.Init.Datatypes <> list ind
+R349:351 PA.ProgramAlgebra ProgramAlgebra Var meth
+R358:361 Coq.Init.Datatypes <> list ind
+R363:365 PA.ProgramAlgebra ProgramAlgebra Var meth
+rec 377:382 ProgramAlgebra Assign
+proj 402:404 ProgramAlgebra ids
+proj 422:427 ProgramAlgebra values
+R409:412 Coq.Init.Datatypes <> list ind
+R414:416 PA.ProgramAlgebra ProgramAlgebra Var meth
+R431:433 PA.ProgramAlgebra ProgramAlgebra Exp def
+def 450:453 ProgramAlgebra refl
+R457:459 PA.ProgramAlgebra ProgramAlgebra Exp def
+binder 469:469 <> x:9
+R474:474 PA.ProgramAlgebra <> x:9 var
+def 490:499 ProgramAlgebra empty_assn
+R503:508 PA.ProgramAlgebra ProgramAlgebra Assign rec
+R515:524 PA.ProgramAlgebra ProgramAlgebra makeAssign constr
+R526:533 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R535:538 PA.ProgramAlgebra ProgramAlgebra refl def
+R545:550 PA.ProgramAlgebra ProgramAlgebra.Assign <> sec
+sec 611:614 ProgramAlgebra Bool
+R638:647 PA.ProgramAlgebra ProgramAlgebra UserParams class
+binder 628:634 <> UserVar:10
+def 664:670 ProgramAlgebra Boolexp
+R682:682 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R691:695 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R683:686 Coq.Init.Datatypes <> list ind
+R688:690 PA.ProgramAlgebra ProgramAlgebra Var meth
+R696:699 Coq.Init.Datatypes <> bool ind
+def 715:723 ProgramAlgebra true_stat
+R727:733 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 743:743 <> x:11
+R748:751 Coq.Init.Datatypes <> true constr
+def 768:777 ProgramAlgebra false_stat
+R781:787 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 797:797 <> x:12
+R802:806 Coq.Init.Datatypes <> false constr
+R814:817 PA.ProgramAlgebra ProgramAlgebra.Bool <> sec
+sec 850:853 ProgramAlgebra ualg
+R877:886 PA.ProgramAlgebra ProgramAlgebra UserParams class
+binder 867:873 <> UserVar:13
+var 901:903 ProgramAlgebra.ualg syn
+ind 925:927 ProgramAlgebra Alg
+constr 943:947 ProgramAlgebra Chaos
+constr 959:962 ProgramAlgebra Assn
+constr 984:987 ProgramAlgebra Cond
+constr 1024:1026 ProgramAlgebra Seq
+constr 1052:1057 ProgramAlgebra Choice
+constr 1083:1087 ProgramAlgebra Recur
+R951:953 PA.ProgramAlgebra <> Alg:15 ind
+R972:975 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R966:971 PA.ProgramAlgebra ProgramAlgebra Assign rec
+R976:978 PA.ProgramAlgebra <> Alg:15 ind
+R994:997 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R991:993 PA.ProgramAlgebra <> Alg:15 ind
+R1005:1008 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R998:1004 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+R1012:1015 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1009:1011 PA.ProgramAlgebra <> Alg:15 ind
+R1016:1018 PA.ProgramAlgebra <> Alg:15 ind
+R1033:1036 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1030:1032 PA.ProgramAlgebra <> Alg:15 ind
+R1040:1043 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1037:1039 PA.ProgramAlgebra <> Alg:15 ind
+R1044:1046 PA.ProgramAlgebra <> Alg:15 ind
+R1064:1067 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1061:1063 PA.ProgramAlgebra <> Alg:15 ind
+R1071:1074 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1068:1070 PA.ProgramAlgebra <> Alg:15 ind
+R1075:1077 PA.ProgramAlgebra <> Alg:15 ind
+R1091:1091 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1102:1106 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1095:1098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1092:1094 PA.ProgramAlgebra <> ProgramAlgebra.ualg.syn var
+R1099:1101 PA.ProgramAlgebra <> Alg:15 ind
+R1107:1109 PA.ProgramAlgebra <> Alg:15 ind
+R1116:1119 PA.ProgramAlgebra ProgramAlgebra.ualg <> sec
+sec 1131:1134 ProgramAlgebra Fact
+R1156:1165 PA.ProgramAlgebra ProgramAlgebra UserParams class
+binder 1146:1152 <> UserVar:17
+def 1181:1184 ProgramAlgebra Ualg
+binder 1196:1198 <> syn:18
+R1201:1203 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R1205:1207 PA.ProgramAlgebra <> syn:18 var
+R1261:1270 PA.ProgramAlgebra ProgramAlgebra makeAssign constr
+not 1243:1243 ProgramAlgebra.Fact :::x_':=='_x
+binder 1322:1322 <> x:19
+R1327:1330 PA.ProgramAlgebra ProgramAlgebra Assn constr
+R1332:1332 PA.ProgramAlgebra <> x:19 var
+not 1305:1305 ProgramAlgebra.Fact :::'@{'_x_'}'
+binder 1375:1375 <> x:20
+R1380:1384 PA.ProgramAlgebra ProgramAlgebra Chaos constr
+R1386:1386 PA.ProgramAlgebra <> x:20 var
+not 1361:1361 ProgramAlgebra.Fact :::'_|_'
+def 1415:1427 ProgramAlgebra empty_program
+R1431:1434 PA.ProgramAlgebra ProgramAlgebra Ualg def
+R1439:1441 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R1452:1453 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R1442:1451 PA.ProgramAlgebra ProgramAlgebra empty_assn def
+def 1466:1483 ProgramAlgebra Choice_of_Alg_List
+binder 1486:1488 <> syn:21
+R1496:1499 Coq.Init.Datatypes <> list ind
+R1502:1504 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R1506:1508 PA.ProgramAlgebra <> syn:21 var
+binder 1492:1492 <> l:22
+R1515:1517 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R1519:1521 PA.ProgramAlgebra <> syn:21 var
+R1534:1534 PA.ProgramAlgebra <> l:22 var
+R1545:1546 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1552:1564 PA.ProgramAlgebra ProgramAlgebra empty_program def
+R1566:1568 PA.ProgramAlgebra <> syn:21 var
+R1576:1579 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1587:1592 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R1601:1618 PA.ProgramAlgebra <> Choice_of_Alg_List:23 def
+R1594:1596 PA.ProgramAlgebra <> syn:21 var
+R1654:1671 PA.ProgramAlgebra ProgramAlgebra Choice_of_Alg_List def
+not 1642:1642 ProgramAlgebra.Fact :::'|-|'_x
+ax 1739:1757 ProgramAlgebra Chaos_zero_Choice_l
+binder 1768:1770 <> syn:25
+R1777:1779 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R1781:1783 PA.ProgramAlgebra <> syn:25 var
+binder 1773:1773 <> p:26
+R1787:1787 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1810:1813 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1788:1793 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R1800:1806 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R1804:1806 PA.ProgramAlgebra <> syn:25 var
+R1809:1809 PA.ProgramAlgebra <> p:26 var
+R1795:1797 PA.ProgramAlgebra <> syn:25 var
+R1814:1820 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R1818:1820 PA.ProgramAlgebra <> syn:25 var
+ax 1829:1844 ProgramAlgebra Chaos_zero_Seq_l
+binder 1855:1857 <> syn:28
+R1864:1866 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R1868:1870 PA.ProgramAlgebra <> syn:28 var
+binder 1860:1860 <> p:29
+R1874:1874 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1894:1897 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1875:1877 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R1884:1890 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R1888:1890 PA.ProgramAlgebra <> syn:28 var
+R1893:1893 PA.ProgramAlgebra <> p:29 var
+R1879:1881 PA.ProgramAlgebra <> syn:28 var
+R1898:1904 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R1902:1904 PA.ProgramAlgebra <> syn:28 var
+ax 1913:1928 ProgramAlgebra Chaos_zero_Seq_r
+binder 1939:1941 <> syn:31
+R1948:1950 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R1952:1954 PA.ProgramAlgebra <> syn:31 var
+binder 1944:1944 <> p:32
+R1958:1958 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1978:1981 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1959:1961 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R1967:1967 PA.ProgramAlgebra <> p:32 var
+R1970:1976 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R1974:1976 PA.ProgramAlgebra <> syn:31 var
+R1963:1965 PA.ProgramAlgebra <> syn:31 var
+R1982:1988 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R1986:1988 PA.ProgramAlgebra <> syn:31 var
+ax 2015:2025 ProgramAlgebra Choice_comm
+binder 2036:2036 <> x:34
+R2045:2047 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2049:2049 PA.ProgramAlgebra <> x:34 var
+binder 2039:2039 <> p:35
+binder 2041:2041 <> q:36
+R2053:2053 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2066:2070 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2083:2083 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2054:2059 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2063:2063 PA.ProgramAlgebra <> p:35 var
+R2065:2065 PA.ProgramAlgebra <> q:36 var
+R2061:2061 PA.ProgramAlgebra <> x:34 var
+R2071:2076 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2080:2080 PA.ProgramAlgebra <> q:36 var
+R2082:2082 PA.ProgramAlgebra <> p:35 var
+R2078:2078 PA.ProgramAlgebra <> x:34 var
+prf 2094:2112 ProgramAlgebra Chaos_zero_Choice_r
+binder 2123:2125 <> syn:38
+R2132:2134 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2136:2138 PA.ProgramAlgebra <> syn:38 var
+binder 2128:2128 <> p:39
+R2142:2142 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2165:2168 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2143:2148 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2154:2154 PA.ProgramAlgebra <> p:39 var
+R2157:2163 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R2161:2163 PA.ProgramAlgebra <> syn:38 var
+R2150:2152 PA.ProgramAlgebra <> syn:38 var
+R2169:2175 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R2173:2175 PA.ProgramAlgebra <> syn:38 var
+R2208:2218 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R2208:2218 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R2208:2218 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R2227:2245 PA.ProgramAlgebra ProgramAlgebra Chaos_zero_Choice_l prfax
+R2227:2245 PA.ProgramAlgebra ProgramAlgebra Chaos_zero_Choice_l prfax
+ax 2259:2270 ProgramAlgebra Choice_assoc
+binder 2281:2283 <> syn:40
+R2294:2296 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2298:2300 PA.ProgramAlgebra <> syn:40 var
+binder 2286:2286 <> p:41
+binder 2288:2288 <> q:42
+binder 2290:2290 <> r:43
+R2304:2304 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2334:2338 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2368:2368 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2305:2310 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2317:2322 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2328:2328 PA.ProgramAlgebra <> p:41 var
+R2330:2330 PA.ProgramAlgebra <> q:42 var
+R2324:2326 PA.ProgramAlgebra <> syn:40 var
+R2333:2333 PA.ProgramAlgebra <> r:43 var
+R2312:2314 PA.ProgramAlgebra <> syn:40 var
+R2339:2344 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2350:2350 PA.ProgramAlgebra <> p:41 var
+R2353:2358 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2364:2364 PA.ProgramAlgebra <> q:42 var
+R2366:2366 PA.ProgramAlgebra <> r:43 var
+R2360:2362 PA.ProgramAlgebra <> syn:40 var
+R2346:2348 PA.ProgramAlgebra <> syn:40 var
+ax 2377:2385 ProgramAlgebra Choice_id
+binder 2396:2398 <> syn:45
+R2405:2407 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2409:2411 PA.ProgramAlgebra <> syn:45 var
+binder 2401:2401 <> p:46
+R2415:2415 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2430:2433 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2416:2421 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2427:2427 PA.ProgramAlgebra <> p:46 var
+R2429:2429 PA.ProgramAlgebra <> p:46 var
+R2423:2425 PA.ProgramAlgebra <> syn:45 var
+R2434:2434 PA.ProgramAlgebra <> p:46 var
+ax 2443:2455 ProgramAlgebra Choice_zero_l
+binder 2466:2468 <> syn:48
+R2475:2477 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2479:2481 PA.ProgramAlgebra <> syn:48 var
+binder 2471:2471 <> p:49
+R2519:2521 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2487:2492 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2499:2511 PA.ProgramAlgebra ProgramAlgebra empty_program def
+R2513:2515 PA.ProgramAlgebra <> syn:48 var
+R2518:2518 PA.ProgramAlgebra <> p:49 var
+R2494:2496 PA.ProgramAlgebra <> syn:48 var
+R2522:2522 PA.ProgramAlgebra <> p:49 var
+prf 2533:2545 ProgramAlgebra Choice_zero_r
+binder 2556:2558 <> syn:51
+R2565:2567 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2569:2571 PA.ProgramAlgebra <> syn:51 var
+binder 2561:2561 <> p:52
+R2609:2611 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2577:2582 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R2588:2588 PA.ProgramAlgebra <> p:52 var
+R2591:2603 PA.ProgramAlgebra ProgramAlgebra empty_program def
+R2605:2607 PA.ProgramAlgebra <> syn:51 var
+R2584:2586 PA.ProgramAlgebra <> syn:51 var
+R2612:2612 PA.ProgramAlgebra <> p:52 var
+R2645:2655 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R2645:2655 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R2645:2655 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R2664:2676 PA.ProgramAlgebra ProgramAlgebra Choice_zero_l prfax
+R2664:2676 PA.ProgramAlgebra ProgramAlgebra Choice_zero_l prfax
+ax 2708:2715 ProgramAlgebra Cond_rev
+binder 2726:2726 <> x:53
+R2735:2737 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2739:2739 PA.ProgramAlgebra <> x:53 var
+binder 2729:2729 <> p:54
+binder 2731:2731 <> q:55
+R2747:2753 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 2743:2743 <> b:56
+R2759:2759 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2773:2778 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2811:2811 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2760:2763 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R2767:2767 PA.ProgramAlgebra <> p:54 var
+R2770:2770 PA.ProgramAlgebra <> b:56 var
+R2772:2772 PA.ProgramAlgebra <> q:55 var
+R2765:2765 PA.ProgramAlgebra <> x:53 var
+R2779:2782 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R2786:2786 PA.ProgramAlgebra <> q:55 var
+binder 2793:2793 <> g:57
+R2798:2801 Coq.Init.Datatypes <> negb def
+R2804:2804 PA.ProgramAlgebra <> b:56 var
+R2806:2806 PA.ProgramAlgebra <> g:57 var
+R2810:2810 PA.ProgramAlgebra <> p:54 var
+R2784:2784 PA.ProgramAlgebra <> x:53 var
+ax 2838:2846 ProgramAlgebra Seq_assoc
+binder 2857:2859 <> syn:59
+R2870:2872 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R2874:2876 PA.ProgramAlgebra <> syn:59 var
+binder 2862:2862 <> p:60
+binder 2864:2864 <> q:61
+binder 2866:2866 <> r:62
+R2883:2883 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2907:2911 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2935:2935 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2884:2886 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R2893:2895 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R2901:2901 PA.ProgramAlgebra <> p:60 var
+R2903:2903 PA.ProgramAlgebra <> q:61 var
+R2897:2899 PA.ProgramAlgebra <> syn:59 var
+R2906:2906 PA.ProgramAlgebra <> r:62 var
+R2888:2890 PA.ProgramAlgebra <> syn:59 var
+R2912:2914 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R2920:2920 PA.ProgramAlgebra <> p:60 var
+R2923:2925 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R2931:2931 PA.ProgramAlgebra <> q:61 var
+R2933:2933 PA.ProgramAlgebra <> r:62 var
+R2927:2929 PA.ProgramAlgebra <> syn:59 var
+R2916:2918 PA.ProgramAlgebra <> syn:59 var
+def 2980:2990 ProgramAlgebra lookup_help
+R2996:2998 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 2993:2993 <> a:64
+R3010:3013 Coq.Init.Datatypes <> list ind
+R3015:3017 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 3002:3003 <> vs:65
+binder 3005:3006 <> rs:66
+R3023:3025 PA.ProgramAlgebra ProgramAlgebra Var meth
+R3042:3043 PA.ProgramAlgebra <> rs:66 var
+R3038:3039 PA.ProgramAlgebra <> vs:65 var
+R3057:3058 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3063:3063 PA.ProgramAlgebra <> a:64 var
+R3069:3070 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3078:3078 PA.ProgramAlgebra <> a:64 var
+R3085:3086 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3092:3093 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3104:3106 PA.ProgramAlgebra ProgramAlgebra eqb meth
+R3108:3108 PA.ProgramAlgebra <> a:64 var
+R3125:3135 PA.ProgramAlgebra <> lookup_help:67 def
+R3137:3137 PA.ProgramAlgebra <> a:64 var
+def 3161:3180 ProgramAlgebra extends_mapping_help
+R3194:3197 Coq.Init.Datatypes <> list ind
+R3199:3201 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 3183:3184 <> us:70
+binder 3186:3187 <> rs:71
+binder 3189:3189 <> k:72
+R3208:3211 Coq.Init.Datatypes <> list ind
+R3213:3215 PA.ProgramAlgebra ProgramAlgebra Var meth
+R3229:3229 PA.ProgramAlgebra <> k:72 var
+R3240:3241 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3246:3247 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3254:3255 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3281:3284 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3262:3272 PA.ProgramAlgebra ProgramAlgebra lookup_help def
+R3276:3277 PA.ProgramAlgebra <> us:70 var
+R3279:3280 PA.ProgramAlgebra <> rs:71 var
+R3285:3304 PA.ProgramAlgebra <> extends_mapping_help:73 def
+R3309:3310 PA.ProgramAlgebra <> rs:71 var
+R3306:3307 PA.ProgramAlgebra <> us:70 var
+def 3333:3347 ProgramAlgebra extends_mapping
+R3356:3359 Coq.Init.Datatypes <> list ind
+R3361:3363 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 3350:3351 <> us:75
+R3372:3372 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3381:3386 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3395:3395 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3373:3376 Coq.Init.Datatypes <> list ind
+R3378:3380 PA.ProgramAlgebra ProgramAlgebra Var meth
+R3387:3390 Coq.Init.Datatypes <> list ind
+R3392:3394 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 3368:3368 <> m:76
+binder 3406:3406 <> k:77
+R3412:3431 PA.ProgramAlgebra ProgramAlgebra extends_mapping_help def
+R3433:3434 PA.ProgramAlgebra <> us:75 var
+R3437:3437 PA.ProgramAlgebra <> m:76 var
+R3439:3440 PA.ProgramAlgebra <> us:75 var
+R3443:3443 PA.ProgramAlgebra <> k:77 var
+def 3458:3471 ProgramAlgebra extends_assign
+R3478:3483 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 3474:3474 <> v:78
+R3492:3501 PA.ProgramAlgebra ProgramAlgebra makeAssign constr
+R3508:3515 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R3523:3537 PA.ProgramAlgebra ProgramAlgebra extends_mapping def
+R3542:3544 PA.ProgramAlgebra ProgramAlgebra ids proj
+R3539:3539 PA.ProgramAlgebra <> v:78 var
+R3550:3555 PA.ProgramAlgebra ProgramAlgebra values proj
+R3547:3547 PA.ProgramAlgebra <> v:78 var
+ax 3566:3579 ProgramAlgebra Assign_extends
+R3595:3600 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 3591:3591 <> v:79
+R3606:3608 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3605:3605 PA.ProgramAlgebra <> v:79 var
+R3609:3622 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R3624:3624 PA.ProgramAlgebra <> v:79 var
+ax 3651:3664 ProgramAlgebra Assign_compose
+binder 3675:3677 <> syn:81
+R3685:3688 Coq.Init.Datatypes <> list ind
+R3690:3692 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 3680:3680 <> v:82
+R3703:3705 PA.ProgramAlgebra ProgramAlgebra Exp def
+binder 3697:3697 <> g:83
+binder 3699:3699 <> h:84
+R3752:3755 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3787:3787 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3711:3713 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R3720:3721 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R3729:3733 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R3723:3727 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R3722:3722 PA.ProgramAlgebra <> v:82 var
+R3728:3728 PA.ProgramAlgebra <> g:83 var
+R3731:3733 PA.ProgramAlgebra <> syn:81 var
+R3737:3738 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R3746:3750 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R3740:3744 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R3739:3739 PA.ProgramAlgebra <> v:82 var
+R3745:3745 PA.ProgramAlgebra <> h:84 var
+R3748:3750 PA.ProgramAlgebra <> syn:81 var
+R3715:3717 PA.ProgramAlgebra <> syn:81 var
+R3756:3757 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R3782:3786 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R3759:3764 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R3781:3781 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R3758:3758 PA.ProgramAlgebra <> v:82 var
+binder 3769:3769 <> x:85
+R3774:3774 PA.ProgramAlgebra <> h:84 var
+R3777:3777 PA.ProgramAlgebra <> g:83 var
+R3779:3779 PA.ProgramAlgebra <> x:85 var
+R3784:3786 PA.ProgramAlgebra <> syn:81 var
+def 3819:3826 ProgramAlgebra exp_Cond
+R3835:3837 PA.ProgramAlgebra ProgramAlgebra Exp def
+binder 3829:3829 <> g:87
+binder 3831:3831 <> h:88
+R3845:3848 Coq.Init.Datatypes <> bool ind
+binder 3841:3841 <> c:89
+R3853:3855 PA.ProgramAlgebra ProgramAlgebra Exp def
+R3868:3868 PA.ProgramAlgebra <> c:89 var
+R3880:3883 Coq.Init.Datatypes <> true constr
+R3888:3888 PA.ProgramAlgebra <> g:87 var
+R3895:3899 Coq.Init.Datatypes <> false constr
+R3904:3904 PA.ProgramAlgebra <> h:88 var
+ax 3920:3930 ProgramAlgebra Assign_Cond
+binder 3941:3943 <> syn:91
+R3951:3954 Coq.Init.Datatypes <> list ind
+R3956:3958 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 3946:3946 <> v:92
+R3969:3971 PA.ProgramAlgebra ProgramAlgebra Exp def
+binder 3963:3963 <> g:93
+binder 3965:3965 <> h:94
+R3979:3985 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 3975:3975 <> b:95
+R4036:4039 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4074:4074 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3992:3995 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R4002:4003 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4011:4015 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4005:4009 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R4004:4004 PA.ProgramAlgebra <> v:92 var
+R4010:4010 PA.ProgramAlgebra <> g:93 var
+R4013:4015 PA.ProgramAlgebra <> syn:91 var
+R4018:4018 PA.ProgramAlgebra <> b:95 var
+R4021:4022 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4030:4034 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4024:4028 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R4023:4023 PA.ProgramAlgebra <> v:92 var
+R4029:4029 PA.ProgramAlgebra <> h:94 var
+R4032:4034 PA.ProgramAlgebra <> syn:91 var
+R3997:3999 PA.ProgramAlgebra <> syn:91 var
+R4040:4042 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4069:4073 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4044:4049 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R4068:4068 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R4043:4043 PA.ProgramAlgebra <> v:92 var
+R4050:4057 PA.ProgramAlgebra ProgramAlgebra exp_Cond def
+R4059:4059 PA.ProgramAlgebra <> g:93 var
+R4061:4061 PA.ProgramAlgebra <> h:94 var
+R4064:4064 PA.ProgramAlgebra <> b:95 var
+R4066:4066 PA.ProgramAlgebra <> v:92 var
+R4071:4073 PA.ProgramAlgebra <> syn:91 var
+ax 4101:4112 ProgramAlgebra Assign_to_NF
+R4129:4132 Coq.Init.Datatypes <> list ind
+R4134:4136 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 4124:4124 <> v:97
+R4145:4147 PA.ProgramAlgebra ProgramAlgebra Exp def
+binder 4141:4141 <> e:98
+binder 4150:4150 <> b:99
+binder 4152:4154 <> syn:100
+R4177:4182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4169:4171 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4159:4159 PA.ProgramAlgebra <> b:99 var
+R4161:4168 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R4172:4176 Coq.Init.Datatypes <> false constr
+R4197:4200 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4261:4261 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4183:4184 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4192:4196 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4186:4190 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R4185:4185 PA.ProgramAlgebra <> v:97 var
+R4191:4191 PA.ProgramAlgebra <> e:98 var
+R4194:4196 PA.ProgramAlgebra <> syn:100 var
+R4201:4204 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R4211:4217 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R4215:4217 PA.ProgramAlgebra <> syn:100 var
+R4220:4220 PA.ProgramAlgebra <> b:99 var
+R4223:4226 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R4227:4227 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4259:4259 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4228:4229 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4254:4258 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4230:4243 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R4247:4251 PA.ProgramAlgebra ProgramAlgebra.Fact :::x_':=='_x not
+R4246:4246 PA.ProgramAlgebra <> v:97 var
+R4252:4252 PA.ProgramAlgebra <> e:98 var
+R4256:4258 PA.ProgramAlgebra <> syn:100 var
+R4206:4208 PA.ProgramAlgebra <> syn:100 var
+ax 4288:4298 ProgramAlgebra Chaos_to_NF
+binder 4309:4311 <> syn:102
+binder 4313:4313 <> b:103
+binder 4315:4315 <> p:104
+R4335:4338 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4328:4330 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4318:4318 PA.ProgramAlgebra <> b:103 var
+R4320:4327 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R4331:4334 Coq.Init.Datatypes <> true constr
+R4348:4351 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4380:4380 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4339:4347 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R4345:4347 PA.ProgramAlgebra <> syn:102 var
+R4352:4355 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R4362:4368 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R4366:4368 PA.ProgramAlgebra <> syn:102 var
+R4371:4371 PA.ProgramAlgebra <> b:103 var
+R4374:4377 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R4378:4378 PA.ProgramAlgebra <> p:104 var
+R4357:4359 PA.ProgramAlgebra <> syn:102 var
+def 4407:4418 ProgramAlgebra Total_Assign
+R4425:4430 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 4421:4421 <> a:106
+R4445:4447 PA.ProgramAlgebra ProgramAlgebra Var meth
+binder 4443:4443 <> v:107
+R4463:4466 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4450:4451 Coq.Lists.List <> In def
+R4455:4462 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R4453:4453 PA.ProgramAlgebra <> v:107 var
+R4467:4468 Coq.Lists.List <> In def
+R4475:4477 PA.ProgramAlgebra ProgramAlgebra ids proj
+R4472:4472 PA.ProgramAlgebra <> a:106 var
+R4470:4470 PA.ProgramAlgebra <> v:107 var
+prf 4489:4503 ProgramAlgebra Assign_is_Total
+R4518:4523 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 4514:4514 <> a:108
+R4526:4532 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4543:4544 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4537:4542 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 4533:4533 <> b:109
+R4548:4551 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4546:4546 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4545:4545 PA.ProgramAlgebra <> a:108 var
+R4547:4547 PA.ProgramAlgebra <> b:109 var
+R4552:4563 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+R4565:4565 PA.ProgramAlgebra <> b:109 var
+R4593:4606 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R4593:4606 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R4629:4642 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4629:4642 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4656:4669 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R4679:4690 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+prf 4713:4727 ProgramAlgebra Assign_elim_Seq
+binder 4738:4740 <> syn:110
+R4748:4753 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 4743:4743 <> a:111
+binder 4745:4745 <> b:112
+R4762:4769 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4779:4781 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4773:4778 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 4770:4770 <> c:113
+R4824:4827 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4811:4814 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4823:4823 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4782:4784 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R4791:4792 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4794:4798 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4793:4793 PA.ProgramAlgebra <> a:111 var
+R4796:4798 PA.ProgramAlgebra <> syn:110 var
+R4802:4803 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4805:4809 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4804:4804 PA.ProgramAlgebra <> b:112 var
+R4807:4809 PA.ProgramAlgebra <> syn:110 var
+R4786:4788 PA.ProgramAlgebra <> syn:110 var
+R4815:4816 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4818:4822 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R4817:4817 PA.ProgramAlgebra <> c:113 var
+R4820:4822 PA.ProgramAlgebra <> syn:110 var
+R4828:4839 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+R4841:4841 PA.ProgramAlgebra <> c:113 var
+R4868:4881 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4868:4881 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4868:4881 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4896:4909 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4896:4909 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4896:4909 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R4926:4939 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R4950:4963 PA.ProgramAlgebra ProgramAlgebra Assign_compose prfax
+R4950:4963 PA.ProgramAlgebra ProgramAlgebra Assign_compose prfax
+R4950:4963 PA.ProgramAlgebra ProgramAlgebra Assign_compose prfax
+R4998:5009 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+prf 5032:5047 ProgramAlgebra Assign_elim_Cond
+binder 5058:5060 <> syn:114
+R5068:5073 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 5063:5063 <> a:115
+binder 5065:5065 <> b:116
+R5081:5087 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 5077:5077 <> d:117
+R5096:5103 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5113:5115 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5107:5112 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 5104:5104 <> c:118
+R5161:5164 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5148:5151 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5160:5160 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5116:5119 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R5126:5127 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5129:5133 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5128:5128 PA.ProgramAlgebra <> a:115 var
+R5131:5133 PA.ProgramAlgebra <> syn:114 var
+R5136:5136 PA.ProgramAlgebra <> d:117 var
+R5139:5140 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5142:5146 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5141:5141 PA.ProgramAlgebra <> b:116 var
+R5144:5146 PA.ProgramAlgebra <> syn:114 var
+R5121:5123 PA.ProgramAlgebra <> syn:114 var
+R5152:5153 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5155:5159 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5154:5154 PA.ProgramAlgebra <> c:118 var
+R5157:5159 PA.ProgramAlgebra <> syn:114 var
+R5165:5176 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+R5178:5178 PA.ProgramAlgebra <> c:118 var
+R5205:5218 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R5205:5218 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R5205:5218 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R5233:5246 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R5233:5246 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R5233:5246 PA.ProgramAlgebra ProgramAlgebra Assign_extends prfax
+R5263:5276 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R5287:5297 PA.ProgramAlgebra ProgramAlgebra Assign_Cond prfax
+R5287:5297 PA.ProgramAlgebra ProgramAlgebra Assign_Cond prfax
+R5287:5297 PA.ProgramAlgebra ProgramAlgebra Assign_Cond prfax
+R5332:5343 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+def 5385:5386 ProgramAlgebra CH
+binder 5389:5391 <> syn:119
+R5399:5402 Coq.Init.Datatypes <> list ind
+R5405:5407 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R5409:5411 PA.ProgramAlgebra <> syn:119 var
+binder 5395:5395 <> p:120
+R5438:5440 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R5442:5444 PA.ProgramAlgebra <> syn:119 var
+binder 5434:5434 <> x:121
+R5454:5457 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5448:5449 Coq.Lists.List <> In def
+R5453:5453 PA.ProgramAlgebra <> p:120 var
+R5451:5451 PA.ProgramAlgebra <> x:121 var
+R5458:5464 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5466:5467 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5465:5465 <> y:122
+R5482:5485 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5469:5472 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5481:5481 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5468:5468 PA.ProgramAlgebra <> x:121 var
+R5473:5474 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5476:5480 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R5475:5475 PA.ProgramAlgebra <> y:122 var
+R5478:5480 PA.ProgramAlgebra <> syn:119 var
+R5486:5497 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+R5499:5499 PA.ProgramAlgebra <> y:122 var
+ax 5526:5537 ProgramAlgebra Choice_distr
+binder 5548:5550 <> syn:123
+R5559:5562 Coq.Init.Datatypes <> list ind
+R5565:5567 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R5569:5571 PA.ProgramAlgebra <> syn:123 var
+binder 5553:5553 <> a:124
+binder 5555:5555 <> b:125
+R5582:5585 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5578:5579 PA.ProgramAlgebra ProgramAlgebra CH def
+R5581:5581 PA.ProgramAlgebra <> a:124 var
+R5590:5593 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5586:5587 PA.ProgramAlgebra ProgramAlgebra CH def
+R5589:5589 PA.ProgramAlgebra <> b:125 var
+R5594:5594 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5621:5625 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5638:5638 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5595:5600 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R5607:5610 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5611:5611 PA.ProgramAlgebra <> a:124 var
+R5615:5618 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5619:5619 PA.ProgramAlgebra <> b:125 var
+R5602:5604 PA.ProgramAlgebra <> syn:123 var
+R5626:5630 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5637:5637 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5632:5635 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5631:5631 PA.ProgramAlgebra <> a:124 var
+R5636:5636 PA.ProgramAlgebra <> b:125 var
+ax 5665:5680 ProgramAlgebra Cond_over_Choice
+binder 5691:5693 <> syn:127
+R5702:5705 Coq.Init.Datatypes <> list ind
+R5708:5710 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R5712:5714 PA.ProgramAlgebra <> syn:127 var
+binder 5696:5696 <> a:128
+binder 5698:5698 <> b:129
+R5726:5732 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 5719:5722 <> bexp:130
+R5742:5745 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5738:5739 PA.ProgramAlgebra ProgramAlgebra CH def
+R5741:5741 PA.ProgramAlgebra <> a:128 var
+R5750:5755 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5746:5747 PA.ProgramAlgebra ProgramAlgebra CH def
+R5749:5749 PA.ProgramAlgebra <> b:129 var
+R5785:5787 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5756:5759 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R5766:5769 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5770:5770 PA.ProgramAlgebra <> a:128 var
+R5773:5776 PA.ProgramAlgebra <> bexp:130 var
+R5779:5782 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5783:5783 PA.ProgramAlgebra <> b:129 var
+R5761:5763 PA.ProgramAlgebra <> syn:127 var
+R5788:5792 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5853:5853 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5793:5795 Coq.Lists.List <> map def
+R5839:5847 Coq.Lists.List <> list_prod def
+R5851:5851 PA.ProgramAlgebra <> b:129 var
+R5849:5849 PA.ProgramAlgebra <> a:128 var
+binder 5802:5802 <> g:131
+R5807:5810 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R5817:5819 Coq.Init.Datatypes <> fst def
+R5821:5821 PA.ProgramAlgebra <> g:131 var
+R5824:5827 PA.ProgramAlgebra <> bexp:130 var
+R5830:5832 Coq.Init.Datatypes <> snd def
+R5834:5834 PA.ProgramAlgebra <> g:131 var
+R5812:5814 PA.ProgramAlgebra <> syn:127 var
+ax 5880:5894 ProgramAlgebra Seq_over_Choice
+binder 5905:5907 <> syn:133
+R5916:5919 Coq.Init.Datatypes <> list ind
+R5922:5924 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R5926:5928 PA.ProgramAlgebra <> syn:133 var
+binder 5910:5910 <> a:134
+binder 5912:5912 <> b:135
+R5939:5942 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5935:5936 PA.ProgramAlgebra ProgramAlgebra CH def
+R5938:5938 PA.ProgramAlgebra <> a:134 var
+R5947:5952 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5943:5944 PA.ProgramAlgebra ProgramAlgebra CH def
+R5946:5946 PA.ProgramAlgebra <> b:135 var
+R5976:5978 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5953:5955 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R5962:5965 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5966:5966 PA.ProgramAlgebra <> a:134 var
+R5970:5973 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5974:5974 PA.ProgramAlgebra <> b:135 var
+R5957:5959 PA.ProgramAlgebra <> syn:133 var
+R5979:5983 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6038:6038 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R5984:5986 Coq.Lists.List <> map def
+R6024:6032 Coq.Lists.List <> list_prod def
+R6036:6036 PA.ProgramAlgebra <> b:135 var
+R6034:6034 PA.ProgramAlgebra <> a:134 var
+binder 5993:5993 <> g:136
+R5998:6000 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R6007:6009 Coq.Init.Datatypes <> fst def
+R6011:6011 PA.ProgramAlgebra <> g:136 var
+R6015:6017 Coq.Init.Datatypes <> snd def
+R6019:6019 PA.ProgramAlgebra <> g:136 var
+R6002:6004 PA.ProgramAlgebra <> syn:133 var
+ax 6065:6076 ProgramAlgebra Choice_to_NF
+binder 6087:6089 <> syn:138
+R6096:6099 Coq.Init.Datatypes <> list ind
+R6102:6104 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6106:6108 PA.ProgramAlgebra <> syn:138 var
+binder 6092:6092 <> a:139
+binder 6112:6112 <> b:140
+R6121:6124 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6117:6118 PA.ProgramAlgebra ProgramAlgebra CH def
+R6120:6120 PA.ProgramAlgebra <> a:139 var
+R6143:6148 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6135:6137 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6125:6125 PA.ProgramAlgebra <> b:140 var
+R6127:6134 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R6138:6142 Coq.Init.Datatypes <> false constr
+R6149:6149 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6155:6158 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6150:6153 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6154:6154 PA.ProgramAlgebra <> a:139 var
+R6159:6162 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R6169:6175 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R6173:6175 PA.ProgramAlgebra <> syn:138 var
+R6178:6178 PA.ProgramAlgebra <> b:140 var
+R6181:6184 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6185:6185 PA.ProgramAlgebra <> a:139 var
+R6164:6166 PA.ProgramAlgebra <> syn:138 var
+prf 6207:6211 ProgramAlgebra CH_hd
+binder 6221:6223 <> syn:142
+R6229:6232 Coq.Init.Datatypes <> list ind
+R6235:6237 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6239:6241 PA.ProgramAlgebra <> syn:142 var
+binder 6226:6226 <> l:143
+R6250:6252 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6254:6256 PA.ProgramAlgebra <> syn:142 var
+binder 6246:6246 <> a:144
+R6273:6276 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6262:6263 PA.ProgramAlgebra ProgramAlgebra CH def
+R6267:6270 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6266:6266 PA.ProgramAlgebra <> a:144 var
+R6271:6271 PA.ProgramAlgebra <> l:143 var
+R6277:6283 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6285:6286 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6284:6284 <> y:145
+R6301:6304 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6288:6291 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6300:6300 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6287:6287 PA.ProgramAlgebra <> a:144 var
+R6292:6293 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R6295:6299 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R6294:6294 PA.ProgramAlgebra <> y:145 var
+R6297:6299 PA.ProgramAlgebra <> syn:142 var
+R6305:6316 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+R6318:6318 PA.ProgramAlgebra <> y:145 var
+R6343:6344 PA.ProgramAlgebra ProgramAlgebra CH def
+R6360:6361 Coq.Lists.List <> In def
+R6367:6368 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6383:6387 Coq.Lists.List <> in_eq thm
+R6360:6361 Coq.Lists.List <> In def
+R6367:6368 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6383:6387 Coq.Lists.List <> in_eq thm
+prf 6430:6436 ProgramAlgebra CH_cons
+binder 6447:6449 <> syn:146
+R6455:6458 Coq.Init.Datatypes <> list ind
+R6461:6463 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6465:6467 PA.ProgramAlgebra <> syn:146 var
+binder 6452:6452 <> l:147
+R6476:6478 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6480:6482 PA.ProgramAlgebra <> syn:146 var
+binder 6472:6472 <> a:148
+R6499:6502 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6488:6489 PA.ProgramAlgebra ProgramAlgebra CH def
+R6493:6496 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6492:6492 PA.ProgramAlgebra <> a:148 var
+R6497:6497 PA.ProgramAlgebra <> l:147 var
+R6503:6504 PA.ProgramAlgebra ProgramAlgebra CH def
+R6506:6506 PA.ProgramAlgebra <> l:147 var
+R6531:6532 PA.ProgramAlgebra ProgramAlgebra CH def
+R6555:6561 Coq.Lists.List <> in_cons thm
+R6555:6561 Coq.Lists.List <> in_cons thm
+prf 6614:6629 ProgramAlgebra Choice_list_cons
+binder 6640:6642 <> syn:149
+R6648:6651 Coq.Init.Datatypes <> list ind
+R6654:6656 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6658:6660 PA.ProgramAlgebra <> syn:149 var
+binder 6645:6645 <> l:150
+R6668:6670 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6672:6674 PA.ProgramAlgebra <> syn:149 var
+binder 6665:6665 <> a:151
+R6680:6680 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6693:6697 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6718:6718 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6681:6685 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6692:6692 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6687:6690 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6686:6686 PA.ProgramAlgebra <> a:151 var
+R6691:6691 PA.ProgramAlgebra <> l:150 var
+R6698:6703 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R6709:6709 PA.ProgramAlgebra <> a:151 var
+R6712:6715 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6716:6716 PA.ProgramAlgebra <> l:150 var
+R6705:6707 PA.ProgramAlgebra <> syn:149 var
+R6743:6760 PA.ProgramAlgebra ProgramAlgebra Choice_of_Alg_List def
+prf 6781:6798 ProgramAlgebra Choice_list_eq_app
+binder 6809:6811 <> syn:152
+R6825:6828 Coq.Init.Datatypes <> list ind
+R6831:6833 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R6835:6837 PA.ProgramAlgebra <> syn:152 var
+binder 6814:6815 <> l1:153
+binder 6817:6818 <> l2:154
+binder 6820:6821 <> l3:155
+R6863:6866 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6844:6844 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6851:6855 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6862:6862 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6845:6848 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6849:6850 PA.ProgramAlgebra <> l1:153 var
+R6856:6859 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6860:6861 PA.ProgramAlgebra <> l2:154 var
+R6867:6867 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6882:6886 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6901:6901 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6868:6872 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6881:6881 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6875:6878 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6873:6874 PA.ProgramAlgebra <> l3:155 var
+R6879:6880 PA.ProgramAlgebra <> l1:153 var
+R6887:6891 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6900:6900 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R6894:6897 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6892:6893 PA.ProgramAlgebra <> l3:155 var
+R6898:6899 PA.ProgramAlgebra <> l2:154 var
+R6956:6968 Coq.Lists.List <> app_comm_cons thm
+R6956:6968 Coq.Lists.List <> app_comm_cons thm
+R6956:6968 Coq.Lists.List <> app_comm_cons thm
+R6956:6968 Coq.Lists.List <> app_comm_cons thm
+R6956:6968 Coq.Lists.List <> app_comm_cons thm
+R6956:6968 Coq.Lists.List <> app_comm_cons thm
+R6988:7003 PA.ProgramAlgebra ProgramAlgebra Choice_list_cons thm
+R6988:7003 PA.ProgramAlgebra ProgramAlgebra Choice_list_cons thm
+R6988:7003 PA.ProgramAlgebra ProgramAlgebra Choice_list_cons thm
+R6988:7003 PA.ProgramAlgebra ProgramAlgebra Choice_list_cons thm
+R6988:7003 PA.ProgramAlgebra ProgramAlgebra Choice_list_cons thm
+R6988:7003 PA.ProgramAlgebra ProgramAlgebra Choice_list_cons thm
+prf 7038:7047 ProgramAlgebra CH_app_rev
+binder 7058:7060 <> syn:156
+R7071:7074 Coq.Init.Datatypes <> list ind
+R7077:7079 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R7081:7083 PA.ProgramAlgebra <> syn:156 var
+binder 7063:7064 <> l1:157
+binder 7066:7067 <> l2:158
+R7095:7098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7090:7091 PA.ProgramAlgebra ProgramAlgebra CH def
+R7093:7094 PA.ProgramAlgebra <> l1:157 var
+R7104:7107 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7099:7100 PA.ProgramAlgebra ProgramAlgebra CH def
+R7102:7103 PA.ProgramAlgebra <> l2:158 var
+R7108:7109 PA.ProgramAlgebra ProgramAlgebra CH def
+R7114:7117 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7112:7113 PA.ProgramAlgebra <> l1:157 var
+R7118:7119 PA.ProgramAlgebra <> l2:158 var
+R7145:7146 PA.ProgramAlgebra ProgramAlgebra CH def
+R7168:7176 Coq.Lists.List <> in_app_or thm
+R7168:7176 Coq.Lists.List <> in_app_or thm
+prf 7261:7272 ProgramAlgebra CH_elim_Cond
+binder 7283:7285 <> syn:159
+R7296:7299 Coq.Init.Datatypes <> list ind
+R7302:7304 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R7306:7308 PA.ProgramAlgebra <> syn:159 var
+binder 7288:7288 <> p:160
+binder 7290:7290 <> q:161
+binder 7292:7292 <> c:162
+R7317:7323 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 7313:7313 <> b:163
+R7333:7336 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7329:7330 PA.ProgramAlgebra ProgramAlgebra CH def
+R7332:7332 PA.ProgramAlgebra <> p:160 var
+R7341:7344 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7337:7338 PA.ProgramAlgebra ProgramAlgebra CH def
+R7340:7340 PA.ProgramAlgebra <> q:161 var
+R7345:7351 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7353:7354 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7352:7352 <> c:164
+R7393:7396 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7355:7355 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7382:7386 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7392:7392 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7356:7359 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R7366:7369 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R7370:7370 PA.ProgramAlgebra <> p:160 var
+R7373:7373 PA.ProgramAlgebra <> b:163 var
+R7376:7379 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R7380:7380 PA.ProgramAlgebra <> q:161 var
+R7361:7363 PA.ProgramAlgebra <> syn:159 var
+R7387:7390 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R7391:7391 PA.ProgramAlgebra <> c:164 var
+R7397:7398 PA.ProgramAlgebra ProgramAlgebra CH def
+R7400:7400 PA.ProgramAlgebra <> c:164 var
+R7426:7441 PA.ProgramAlgebra ProgramAlgebra Cond_over_Choice prfax
+R7426:7441 PA.ProgramAlgebra ProgramAlgebra Cond_over_Choice prfax
+R7426:7441 PA.ProgramAlgebra ProgramAlgebra Cond_over_Choice prfax
+R7426:7441 PA.ProgramAlgebra ProgramAlgebra Cond_over_Choice prfax
+R7426:7441 PA.ProgramAlgebra ProgramAlgebra Cond_over_Choice prfax
+R7498:7499 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7498:7499 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7517:7523 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R7517:7523 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R7571:7577 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R7571:7577 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R7616:7622 Coq.Lists.List <> map_app thm
+R7616:7622 Coq.Lists.List <> map_app thm
+R7616:7622 Coq.Lists.List <> map_app thm
+R7652:7654 Coq.Lists.List <> map def
+binder 7661:7661 <> y:165
+R7666:7666 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7668:7669 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7671:7671 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7670:7670 PA.ProgramAlgebra <> y:165 var
+R7652:7654 Coq.Lists.List <> map def
+binder 7661:7661 <> y:166
+R7666:7666 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7668:7669 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7671:7671 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7670:7670 PA.ProgramAlgebra <> y:166 var
+R7692:7694 Coq.Lists.List <> map def
+binder 7701:7701 <> g:167
+R7706:7709 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R7716:7718 Coq.Init.Datatypes <> fst def
+R7720:7720 PA.ProgramAlgebra <> g:167 var
+R7726:7728 Coq.Init.Datatypes <> snd def
+R7730:7730 PA.ProgramAlgebra <> g:167 var
+R7692:7694 Coq.Lists.List <> map def
+binder 7701:7701 <> g:168
+R7706:7709 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R7716:7718 Coq.Init.Datatypes <> fst def
+R7720:7720 PA.ProgramAlgebra <> g:168 var
+R7726:7728 Coq.Init.Datatypes <> snd def
+R7730:7730 PA.ProgramAlgebra <> g:168 var
+R7748:7751 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7748:7751 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7807:7824 PA.ProgramAlgebra ProgramAlgebra Choice_list_eq_app thm
+R7807:7824 PA.ProgramAlgebra ProgramAlgebra Choice_list_eq_app thm
+R7845:7854 PA.ProgramAlgebra ProgramAlgebra CH_app_rev thm
+R7845:7854 PA.ProgramAlgebra ProgramAlgebra CH_app_rev thm
+R7868:7872 PA.ProgramAlgebra ProgramAlgebra CH_hd thm
+R7868:7872 PA.ProgramAlgebra ProgramAlgebra CH_hd thm
+R7928:7929 PA.ProgramAlgebra ProgramAlgebra CH def
+R7951:7960 Coq.Lists.List <> in_map_iff thm
+R7951:7960 Coq.Lists.List <> in_map_iff thm
+R8014:8023 Coq.Lists.List <> in_map_iff thm
+R8014:8023 Coq.Lists.List <> in_map_iff thm
+R8177:8192 PA.ProgramAlgebra ProgramAlgebra Assign_elim_Cond thm
+R8177:8192 PA.ProgramAlgebra ProgramAlgebra Assign_elim_Cond thm
+prf 8207:8217 ProgramAlgebra CH_elim_Seq
+binder 8228:8230 <> syn:169
+R8241:8244 Coq.Init.Datatypes <> list ind
+R8247:8249 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R8251:8253 PA.ProgramAlgebra <> syn:169 var
+binder 8233:8233 <> p:170
+binder 8235:8235 <> q:171
+binder 8237:8237 <> c:172
+R8264:8267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8260:8261 PA.ProgramAlgebra ProgramAlgebra CH def
+R8263:8263 PA.ProgramAlgebra <> p:170 var
+R8272:8275 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8268:8269 PA.ProgramAlgebra ProgramAlgebra CH def
+R8271:8271 PA.ProgramAlgebra <> q:171 var
+R8276:8282 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8284:8285 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8283:8283 <> c:173
+R8321:8324 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8286:8286 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8310:8314 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8320:8320 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8287:8289 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R8296:8299 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R8300:8300 PA.ProgramAlgebra <> p:170 var
+R8304:8307 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R8308:8308 PA.ProgramAlgebra <> q:171 var
+R8291:8293 PA.ProgramAlgebra <> syn:169 var
+R8315:8318 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R8319:8319 PA.ProgramAlgebra <> c:173 var
+R8325:8326 PA.ProgramAlgebra ProgramAlgebra CH def
+R8328:8328 PA.ProgramAlgebra <> c:173 var
+R8354:8368 PA.ProgramAlgebra ProgramAlgebra Seq_over_Choice prfax
+R8354:8368 PA.ProgramAlgebra ProgramAlgebra Seq_over_Choice prfax
+R8354:8368 PA.ProgramAlgebra ProgramAlgebra Seq_over_Choice prfax
+R8354:8368 PA.ProgramAlgebra ProgramAlgebra Seq_over_Choice prfax
+R8354:8368 PA.ProgramAlgebra ProgramAlgebra Seq_over_Choice prfax
+R8425:8426 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8425:8426 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8444:8450 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R8444:8450 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R8498:8504 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R8498:8504 PA.ProgramAlgebra ProgramAlgebra CH_cons thm
+R8543:8549 Coq.Lists.List <> map_app thm
+R8543:8549 Coq.Lists.List <> map_app thm
+R8543:8549 Coq.Lists.List <> map_app thm
+R8579:8581 Coq.Lists.List <> map def
+binder 8588:8588 <> y:174
+R8593:8593 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8595:8596 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8598:8598 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8597:8597 PA.ProgramAlgebra <> y:174 var
+R8579:8581 Coq.Lists.List <> map def
+binder 8588:8588 <> y:175
+R8593:8593 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8595:8596 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8598:8598 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8597:8597 PA.ProgramAlgebra <> y:175 var
+R8619:8621 Coq.Lists.List <> map def
+binder 8628:8628 <> g:176
+R8633:8635 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R8642:8644 Coq.Init.Datatypes <> fst def
+R8646:8646 PA.ProgramAlgebra <> g:176 var
+R8650:8652 Coq.Init.Datatypes <> snd def
+R8654:8654 PA.ProgramAlgebra <> g:176 var
+R8619:8621 Coq.Lists.List <> map def
+binder 8628:8628 <> g:177
+R8633:8635 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R8642:8644 Coq.Init.Datatypes <> fst def
+R8646:8646 PA.ProgramAlgebra <> g:177 var
+R8650:8652 Coq.Init.Datatypes <> snd def
+R8654:8654 PA.ProgramAlgebra <> g:177 var
+R8672:8675 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8672:8675 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8731:8748 PA.ProgramAlgebra ProgramAlgebra Choice_list_eq_app thm
+R8731:8748 PA.ProgramAlgebra ProgramAlgebra Choice_list_eq_app thm
+R8769:8778 PA.ProgramAlgebra ProgramAlgebra CH_app_rev thm
+R8769:8778 PA.ProgramAlgebra ProgramAlgebra CH_app_rev thm
+R8792:8796 PA.ProgramAlgebra ProgramAlgebra CH_hd thm
+R8792:8796 PA.ProgramAlgebra ProgramAlgebra CH_hd thm
+R8852:8853 PA.ProgramAlgebra ProgramAlgebra CH def
+R8875:8884 Coq.Lists.List <> in_map_iff thm
+R8875:8884 Coq.Lists.List <> in_map_iff thm
+R8938:8947 Coq.Lists.List <> in_map_iff thm
+R8938:8947 Coq.Lists.List <> in_map_iff thm
+R9101:9115 PA.ProgramAlgebra ProgramAlgebra Assign_elim_Seq thm
+R9101:9115 PA.ProgramAlgebra ProgramAlgebra Assign_elim_Seq thm
+prf 9130:9143 ProgramAlgebra CH_elim_Choice
+binder 9154:9156 <> syn:178
+R9167:9170 Coq.Init.Datatypes <> list ind
+R9173:9175 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R9177:9179 PA.ProgramAlgebra <> syn:178 var
+binder 9159:9159 <> p:179
+binder 9161:9161 <> q:180
+binder 9163:9163 <> c:181
+R9190:9193 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9186:9187 PA.ProgramAlgebra ProgramAlgebra CH def
+R9189:9189 PA.ProgramAlgebra <> p:179 var
+R9198:9201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9194:9195 PA.ProgramAlgebra ProgramAlgebra CH def
+R9197:9197 PA.ProgramAlgebra <> q:180 var
+R9202:9208 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9210:9211 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9209:9209 <> c:182
+R9250:9253 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9212:9212 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9239:9243 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9249:9249 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9213:9218 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R9225:9228 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9229:9229 PA.ProgramAlgebra <> p:179 var
+R9233:9236 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9237:9237 PA.ProgramAlgebra <> q:180 var
+R9220:9222 PA.ProgramAlgebra <> syn:178 var
+R9244:9247 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9248:9248 PA.ProgramAlgebra <> c:182 var
+R9254:9255 PA.ProgramAlgebra ProgramAlgebra CH def
+R9257:9257 PA.ProgramAlgebra <> c:182 var
+R9283:9294 PA.ProgramAlgebra ProgramAlgebra Choice_distr prfax
+R9283:9294 PA.ProgramAlgebra ProgramAlgebra Choice_distr prfax
+R9283:9294 PA.ProgramAlgebra ProgramAlgebra Choice_distr prfax
+R9283:9294 PA.ProgramAlgebra ProgramAlgebra Choice_distr prfax
+R9283:9294 PA.ProgramAlgebra ProgramAlgebra Choice_distr prfax
+R9312:9315 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R9312:9315 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R9340:9349 PA.ProgramAlgebra ProgramAlgebra CH_app_rev thm
+R9340:9349 PA.ProgramAlgebra ProgramAlgebra CH_app_rev thm
+ax 9401:9414 ProgramAlgebra NF_over_Choice
+binder 9425:9427 <> syn:183
+R9436:9439 Coq.Init.Datatypes <> list ind
+R9442:9444 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R9446:9448 PA.ProgramAlgebra <> syn:183 var
+binder 9430:9430 <> a:184
+binder 9432:9432 <> b:185
+R9459:9465 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 9453:9453 <> c:186
+binder 9455:9455 <> d:187
+R9475:9478 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9471:9472 PA.ProgramAlgebra ProgramAlgebra CH def
+R9474:9474 PA.ProgramAlgebra <> a:184 var
+R9483:9488 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9479:9480 PA.ProgramAlgebra ProgramAlgebra CH def
+R9482:9482 PA.ProgramAlgebra <> b:185 var
+R9489:9489 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9562:9568 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9642:9642 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9490:9495 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R9502:9505 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9512:9518 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R9516:9518 PA.ProgramAlgebra <> syn:183 var
+R9521:9521 PA.ProgramAlgebra <> c:186 var
+R9524:9527 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9528:9528 PA.ProgramAlgebra <> a:184 var
+R9507:9509 PA.ProgramAlgebra <> syn:183 var
+R9533:9536 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9543:9549 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R9547:9549 PA.ProgramAlgebra <> syn:183 var
+R9552:9552 PA.ProgramAlgebra <> d:187 var
+R9555:9558 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9559:9559 PA.ProgramAlgebra <> b:185 var
+R9538:9540 PA.ProgramAlgebra <> syn:183 var
+R9497:9499 PA.ProgramAlgebra <> syn:183 var
+R9569:9572 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9579:9585 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R9583:9585 PA.ProgramAlgebra <> syn:183 var
+binder 9593:9593 <> g:188
+R9598:9600 Coq.Init.Datatypes <> orb def
+R9609:9609 PA.ProgramAlgebra <> d:187 var
+R9611:9611 PA.ProgramAlgebra <> g:188 var
+R9603:9603 PA.ProgramAlgebra <> c:186 var
+R9605:9605 PA.ProgramAlgebra <> g:188 var
+R9616:9621 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R9628:9630 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9631:9631 PA.ProgramAlgebra <> a:184 var
+R9635:9638 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9639:9639 PA.ProgramAlgebra <> b:185 var
+R9623:9625 PA.ProgramAlgebra <> syn:183 var
+R9574:9576 PA.ProgramAlgebra <> syn:183 var
+ax 9669:9680 ProgramAlgebra NF_over_Cond
+binder 9691:9693 <> syn:190
+R9702:9705 Coq.Init.Datatypes <> list ind
+R9708:9710 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R9712:9714 PA.ProgramAlgebra <> syn:190 var
+binder 9696:9696 <> a:191
+binder 9698:9698 <> b:192
+R9727:9733 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 9719:9719 <> c:193
+binder 9721:9721 <> d:194
+binder 9723:9723 <> e:195
+R9743:9746 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9739:9740 PA.ProgramAlgebra ProgramAlgebra CH def
+R9742:9742 PA.ProgramAlgebra <> a:191 var
+R9751:9756 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9747:9748 PA.ProgramAlgebra ProgramAlgebra CH def
+R9750:9750 PA.ProgramAlgebra <> b:192 var
+R9757:9757 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9829:9835 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9924:9924 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9758:9761 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9768:9771 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9778:9784 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R9782:9784 PA.ProgramAlgebra <> syn:190 var
+R9787:9787 PA.ProgramAlgebra <> c:193 var
+R9790:9792 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9793:9793 PA.ProgramAlgebra <> a:191 var
+R9773:9775 PA.ProgramAlgebra <> syn:190 var
+R9797:9797 PA.ProgramAlgebra <> d:194 var
+R9800:9803 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9810:9816 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R9814:9816 PA.ProgramAlgebra <> syn:190 var
+R9819:9819 PA.ProgramAlgebra <> e:195 var
+R9822:9825 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9826:9826 PA.ProgramAlgebra <> b:192 var
+R9805:9807 PA.ProgramAlgebra <> syn:190 var
+R9763:9765 PA.ProgramAlgebra <> syn:190 var
+R9836:9839 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9846:9852 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R9850:9852 PA.ProgramAlgebra <> syn:190 var
+binder 9860:9860 <> g:196
+R9869:9869 PA.ProgramAlgebra <> d:194 var
+R9871:9871 PA.ProgramAlgebra <> g:196 var
+R9891:9891 PA.ProgramAlgebra <> e:195 var
+R9893:9893 PA.ProgramAlgebra <> g:196 var
+R9880:9880 PA.ProgramAlgebra <> c:193 var
+R9882:9882 PA.ProgramAlgebra <> g:196 var
+R9898:9901 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R9908:9910 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9911:9911 PA.ProgramAlgebra <> a:191 var
+R9914:9914 PA.ProgramAlgebra <> d:194 var
+R9917:9920 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R9921:9921 PA.ProgramAlgebra <> b:192 var
+R9903:9905 PA.ProgramAlgebra <> syn:190 var
+R9841:9843 PA.ProgramAlgebra <> syn:190 var
+def 9962:9980 ProgramAlgebra Assign_over_Boolexp
+R9987:9993 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 9983:9983 <> b:198
+binder 9996:9998 <> syn:199
+R10005:10007 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R10009:10011 PA.ProgramAlgebra <> syn:199 var
+binder 10001:10001 <> a:200
+R10024:10024 PA.ProgramAlgebra <> a:200 var
+R10035:10038 PA.ProgramAlgebra ProgramAlgebra Assn constr
+R10047:10047 PA.ProgramAlgebra <> b:198 var
+R10051:10065 PA.ProgramAlgebra ProgramAlgebra extends_mapping def
+R10070:10072 PA.ProgramAlgebra ProgramAlgebra ids proj
+R10078:10083 PA.ProgramAlgebra ProgramAlgebra values proj
+R10087:10094 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R10106:10110 Coq.Init.Datatypes <> false constr
+def 10130:10144 ProgramAlgebra CH_over_Boolexp
+binder 10147:10149 <> syn:202
+R10157:10160 Coq.Init.Datatypes <> list ind
+R10163:10165 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R10167:10169 PA.ProgramAlgebra <> syn:202 var
+binder 10153:10153 <> a:203
+R10178:10184 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 10174:10174 <> b:204
+R10192:10200 Coq.Lists.List <> fold_left def
+R10242:10245 Coq.Init.Datatypes <> true constr
+R10207:10209 Coq.Lists.List <> map def
+R10239:10239 PA.ProgramAlgebra <> a:203 var
+R10212:10230 PA.ProgramAlgebra ProgramAlgebra Assign_over_Boolexp def
+R10232:10232 PA.ProgramAlgebra <> b:204 var
+R10234:10236 PA.ProgramAlgebra <> syn:202 var
+R10202:10204 Coq.Init.Datatypes <> orb def
+ax 10272:10282 ProgramAlgebra NF_over_Seq
+binder 10293:10295 <> syn:205
+R10304:10307 Coq.Init.Datatypes <> list ind
+R10310:10312 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R10314:10316 PA.ProgramAlgebra <> syn:205 var
+binder 10298:10298 <> a:206
+binder 10300:10300 <> b:207
+R10327:10333 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 10321:10321 <> c:208
+binder 10323:10323 <> d:209
+R10343:10346 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10339:10340 PA.ProgramAlgebra ProgramAlgebra CH def
+R10342:10342 PA.ProgramAlgebra <> a:206 var
+R10351:10356 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10347:10348 PA.ProgramAlgebra ProgramAlgebra CH def
+R10350:10350 PA.ProgramAlgebra <> b:207 var
+R10357:10357 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10427:10433 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10521:10521 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10358:10360 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R10367:10370 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R10377:10383 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R10381:10383 PA.ProgramAlgebra <> syn:205 var
+R10386:10386 PA.ProgramAlgebra <> c:208 var
+R10389:10392 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R10393:10393 PA.ProgramAlgebra <> a:206 var
+R10372:10374 PA.ProgramAlgebra <> syn:205 var
+R10398:10401 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R10408:10414 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R10412:10414 PA.ProgramAlgebra <> syn:205 var
+R10417:10417 PA.ProgramAlgebra <> d:209 var
+R10420:10423 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R10424:10424 PA.ProgramAlgebra <> b:207 var
+R10403:10405 PA.ProgramAlgebra <> syn:205 var
+R10362:10364 PA.ProgramAlgebra <> syn:205 var
+R10434:10437 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R10444:10450 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R10448:10450 PA.ProgramAlgebra <> syn:205 var
+binder 10458:10458 <> g:210
+R10463:10465 Coq.Init.Datatypes <> orb def
+R10474:10488 PA.ProgramAlgebra ProgramAlgebra CH_over_Boolexp def
+R10492:10492 PA.ProgramAlgebra <> d:209 var
+R10490:10490 PA.ProgramAlgebra <> a:206 var
+R10468:10468 PA.ProgramAlgebra <> c:208 var
+R10470:10470 PA.ProgramAlgebra <> g:210 var
+R10497:10499 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R10506:10509 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R10510:10510 PA.ProgramAlgebra <> a:206 var
+R10514:10517 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R10518:10518 PA.ProgramAlgebra <> b:207 var
+R10501:10503 PA.ProgramAlgebra <> syn:205 var
+R10439:10441 PA.ProgramAlgebra <> syn:205 var
+def 10548:10550 ProgramAlgebra FNF
+binder 10553:10555 <> syn:212
+R10563:10565 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R10567:10569 PA.ProgramAlgebra <> syn:212 var
+binder 10559:10559 <> P:213
+R10584:10590 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10597:10598 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10591:10594 <> bexp:214
+binder 10596:10596 <> Q:215
+R10628:10631 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10600:10602 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10599:10599 PA.ProgramAlgebra <> P:213 var
+R10603:10606 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R10613:10619 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R10617:10619 PA.ProgramAlgebra <> syn:212 var
+R10622:10625 PA.ProgramAlgebra <> bexp:214 var
+R10627:10627 PA.ProgramAlgebra <> Q:215 var
+R10608:10610 PA.ProgramAlgebra <> syn:212 var
+R10632:10638 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10640:10641 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10639:10639 <> R:216
+R10653:10656 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10643:10646 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10652:10652 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10642:10642 PA.ProgramAlgebra <> Q:215 var
+R10647:10650 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R10651:10651 PA.ProgramAlgebra <> R:216 var
+R10657:10658 PA.ProgramAlgebra ProgramAlgebra CH def
+R10660:10660 PA.ProgramAlgebra <> R:216 var
+prf 10670:10682 ProgramAlgebra FNF_elim_Cond
+binder 10693:10695 <> syn:217
+R10704:10706 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R10708:10710 PA.ProgramAlgebra <> syn:217 var
+binder 10698:10698 <> P:218
+binder 10700:10700 <> Q:219
+R10718:10724 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 10714:10714 <> b:220
+R10735:10738 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10730:10732 PA.ProgramAlgebra ProgramAlgebra FNF def
+R10734:10734 PA.ProgramAlgebra <> P:218 var
+R10744:10747 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10739:10741 PA.ProgramAlgebra ProgramAlgebra FNF def
+R10743:10743 PA.ProgramAlgebra <> Q:219 var
+R10748:10750 PA.ProgramAlgebra ProgramAlgebra FNF def
+R10753:10756 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R10762:10762 PA.ProgramAlgebra <> P:218 var
+R10764:10764 PA.ProgramAlgebra <> b:220 var
+R10766:10766 PA.ProgramAlgebra <> Q:219 var
+R10758:10760 PA.ProgramAlgebra <> syn:217 var
+R10794:10796 PA.ProgramAlgebra ProgramAlgebra FNF def
+R10877:10879 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11014:11025 PA.ProgramAlgebra ProgramAlgebra NF_over_Cond prfax
+R11014:11025 PA.ProgramAlgebra ProgramAlgebra NF_over_Cond prfax
+R11014:11025 PA.ProgramAlgebra ProgramAlgebra NF_over_Cond prfax
+R11014:11025 PA.ProgramAlgebra ProgramAlgebra NF_over_Cond prfax
+R11014:11025 PA.ProgramAlgebra ProgramAlgebra NF_over_Cond prfax
+R11040:11042 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11086:11097 PA.ProgramAlgebra ProgramAlgebra CH_elim_Cond thm
+R11086:11097 PA.ProgramAlgebra ProgramAlgebra CH_elim_Cond thm
+prf 11117:11131 ProgramAlgebra FNF_elim_Choice
+binder 11142:11144 <> syn:221
+R11153:11155 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R11157:11159 PA.ProgramAlgebra <> syn:221 var
+binder 11147:11147 <> P:222
+binder 11149:11149 <> Q:223
+R11170:11173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11165:11167 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11169:11169 PA.ProgramAlgebra <> P:222 var
+R11179:11182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11174:11176 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11178:11178 PA.ProgramAlgebra <> Q:223 var
+R11183:11185 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11188:11193 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R11199:11199 PA.ProgramAlgebra <> P:222 var
+R11201:11201 PA.ProgramAlgebra <> Q:223 var
+R11195:11197 PA.ProgramAlgebra <> syn:221 var
+R11229:11231 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11312:11314 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11449:11462 PA.ProgramAlgebra ProgramAlgebra NF_over_Choice prfax
+R11449:11462 PA.ProgramAlgebra ProgramAlgebra NF_over_Choice prfax
+R11449:11462 PA.ProgramAlgebra ProgramAlgebra NF_over_Choice prfax
+R11449:11462 PA.ProgramAlgebra ProgramAlgebra NF_over_Choice prfax
+R11449:11462 PA.ProgramAlgebra ProgramAlgebra NF_over_Choice prfax
+R11477:11479 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11523:11536 PA.ProgramAlgebra ProgramAlgebra CH_elim_Choice thm
+R11523:11536 PA.ProgramAlgebra ProgramAlgebra CH_elim_Choice thm
+prf 11556:11567 ProgramAlgebra FNF_elim_Seq
+binder 11578:11580 <> syn:224
+R11589:11591 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R11593:11595 PA.ProgramAlgebra <> syn:224 var
+binder 11583:11583 <> P:225
+binder 11585:11585 <> Q:226
+R11606:11609 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11601:11603 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11605:11605 PA.ProgramAlgebra <> P:225 var
+R11615:11618 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11610:11612 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11614:11614 PA.ProgramAlgebra <> Q:226 var
+R11619:11621 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11624:11626 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R11632:11632 PA.ProgramAlgebra <> P:225 var
+R11634:11634 PA.ProgramAlgebra <> Q:226 var
+R11628:11630 PA.ProgramAlgebra <> syn:224 var
+R11662:11664 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11745:11747 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11882:11892 PA.ProgramAlgebra ProgramAlgebra NF_over_Seq prfax
+R11882:11892 PA.ProgramAlgebra ProgramAlgebra NF_over_Seq prfax
+R11882:11892 PA.ProgramAlgebra ProgramAlgebra NF_over_Seq prfax
+R11882:11892 PA.ProgramAlgebra ProgramAlgebra NF_over_Seq prfax
+R11882:11892 PA.ProgramAlgebra ProgramAlgebra NF_over_Seq prfax
+R11907:11909 PA.ProgramAlgebra ProgramAlgebra FNF def
+R11953:11963 PA.ProgramAlgebra ProgramAlgebra CH_elim_Seq thm
+R11953:11963 PA.ProgramAlgebra ProgramAlgebra CH_elim_Seq thm
+def 12007:12010 ProgramAlgebra clos
+binder 12013:12013 <> c:227
+R12028:12031 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12027:12027 PA.ProgramAlgebra <> c:227 var
+R12032:12034 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12036:12036 PA.ProgramAlgebra <> c:227 var
+ind 12050:12056 ProgramAlgebra Closure
+constr 12066:12069 ProgramAlgebra iter
+binder 12080:12080 <> c:230
+R12089:12092 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12083:12086 PA.ProgramAlgebra ProgramAlgebra clos def
+R12088:12088 PA.ProgramAlgebra <> c:230 var
+R12093:12099 PA.ProgramAlgebra <> Closure:228 ind
+var 12114:12116 ProgramAlgebra.Fact glb
+R12127:12130 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12120:12126 PA.ProgramAlgebra ProgramAlgebra Closure ind
+R12131:12134 PA.ProgramAlgebra ProgramAlgebra Ualg def
+var 12148:12155 ProgramAlgebra.Fact glb_pres
+binder 12165:12165 <> x:232
+binder 12167:12167 <> y:233
+R12171:12173 PA.ProgramAlgebra ProgramAlgebra FNF def
+R12177:12179 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R12181:12181 PA.ProgramAlgebra <> y:233 var
+R12184:12184 PA.ProgramAlgebra <> x:232 var
+def 12201:12206 ProgramAlgebra eqEval
+R12215:12220 PA.ProgramAlgebra ProgramAlgebra Assign rec
+binder 12209:12209 <> x:235
+binder 12211:12211 <> y:236
+binder 12235:12235 <> a:237
+R12263:12266 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12238:12239 Coq.Lists.List <> In def
+R12247:12252 PA.ProgramAlgebra ProgramAlgebra values proj
+R12244:12244 PA.ProgramAlgebra <> x:235 var
+R12258:12260 PA.ProgramAlgebra ProgramAlgebra ids proj
+R12255:12255 PA.ProgramAlgebra <> x:235 var
+R12241:12241 PA.ProgramAlgebra <> a:237 var
+R12267:12268 Coq.Lists.List <> In def
+R12276:12281 PA.ProgramAlgebra ProgramAlgebra values proj
+R12273:12273 PA.ProgramAlgebra <> y:236 var
+R12287:12289 PA.ProgramAlgebra ProgramAlgebra ids proj
+R12284:12284 PA.ProgramAlgebra <> y:236 var
+R12270:12270 PA.ProgramAlgebra <> a:237 var
+def 12306:12311 ProgramAlgebra eqAssn
+binder 12314:12316 <> syn:238
+binder 12318:12321 <> syn1:239
+R12329:12331 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12333:12335 PA.ProgramAlgebra <> syn:238 var
+binder 12325:12325 <> x:240
+R12343:12345 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12347:12350 PA.ProgramAlgebra <> syn1:239 var
+binder 12339:12339 <> y:241
+R12364:12364 PA.ProgramAlgebra <> x:240 var
+R12375:12378 PA.ProgramAlgebra ProgramAlgebra Assn constr
+R12398:12398 PA.ProgramAlgebra <> y:241 var
+R12411:12414 PA.ProgramAlgebra ProgramAlgebra Assn constr
+R12423:12428 PA.ProgramAlgebra ProgramAlgebra eqEval def
+R12431:12444 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R12450:12463 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R12479:12483 Coq.Init.Logic <> False ind
+R12502:12506 Coq.Init.Logic <> False ind
+def 12527:12534 ProgramAlgebra RefineCH
+binder 12537:12539 <> syn:244
+binder 12541:12544 <> syn1:245
+R12552:12555 Coq.Init.Datatypes <> list ind
+R12558:12560 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12562:12564 PA.ProgramAlgebra <> syn:244 var
+binder 12548:12548 <> A:246
+R12574:12577 Coq.Init.Datatypes <> list ind
+R12580:12582 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12584:12587 PA.ProgramAlgebra <> syn1:245 var
+binder 12570:12570 <> B:247
+binder 12602:12602 <> x:248
+R12613:12616 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12607:12608 Coq.Lists.List <> In def
+R12612:12612 PA.ProgramAlgebra <> B:247 var
+R12610:12610 PA.ProgramAlgebra <> x:248 var
+R12617:12623 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12625:12626 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12624:12624 <> y:249
+R12633:12636 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12627:12628 Coq.Lists.List <> In def
+R12632:12632 PA.ProgramAlgebra <> A:246 var
+R12630:12630 PA.ProgramAlgebra <> y:249 var
+R12637:12642 PA.ProgramAlgebra ProgramAlgebra eqAssn def
+R12646:12646 PA.ProgramAlgebra <> y:249 var
+R12644:12644 PA.ProgramAlgebra <> x:248 var
+def 12661:12666 ProgramAlgebra Refine
+binder 12669:12671 <> syn:250
+binder 12673:12676 <> syn1:251
+R12684:12686 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12688:12690 PA.ProgramAlgebra <> syn:250 var
+binder 12680:12680 <> P:252
+R12699:12701 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12703:12706 PA.ProgramAlgebra <> syn1:251 var
+binder 12695:12695 <> Q:253
+R12714:12720 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12738:12742 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12721:12724 <> bexp:254
+binder 12726:12729 <> cexp:255
+binder 12731:12731 <> S:256
+binder 12733:12733 <> T:257
+binder 12735:12735 <> U:258
+binder 12737:12737 <> V:259
+R12743:12743 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12801:12807 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12773:12781 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12745:12747 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12744:12744 PA.ProgramAlgebra <> P:252 var
+R12748:12751 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R12758:12764 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R12762:12764 PA.ProgramAlgebra <> syn:250 var
+R12767:12770 PA.ProgramAlgebra <> bexp:254 var
+R12772:12772 PA.ProgramAlgebra <> S:256 var
+R12753:12755 PA.ProgramAlgebra <> syn:250 var
+R12793:12796 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12783:12786 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12792:12792 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12782:12782 PA.ProgramAlgebra <> S:256 var
+R12787:12790 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R12791:12791 PA.ProgramAlgebra <> U:258 var
+R12797:12798 PA.ProgramAlgebra ProgramAlgebra CH def
+R12800:12800 PA.ProgramAlgebra <> U:258 var
+R12808:12808 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12867:12874 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12946:12946 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12840:12847 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12810:12812 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12809:12809 PA.ProgramAlgebra <> Q:253 var
+R12813:12816 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R12824:12831 PA.ProgramAlgebra ProgramAlgebra.Fact :::'_|_' not
+R12828:12831 PA.ProgramAlgebra <> syn1:251 var
+R12834:12837 PA.ProgramAlgebra <> cexp:255 var
+R12839:12839 PA.ProgramAlgebra <> T:257 var
+R12818:12821 PA.ProgramAlgebra <> syn1:251 var
+R12859:12862 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12849:12852 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12858:12858 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12848:12848 PA.ProgramAlgebra <> T:257 var
+R12853:12856 PA.ProgramAlgebra ProgramAlgebra.Fact :::'|-|'_x not
+R12857:12857 PA.ProgramAlgebra <> V:259 var
+R12863:12864 PA.ProgramAlgebra ProgramAlgebra CH def
+R12866:12866 PA.ProgramAlgebra <> V:259 var
+R12875:12875 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R12915:12924 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R12945:12945 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R12897:12901 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12914:12914 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12889:12891 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12876:12879 PA.ProgramAlgebra <> cexp:255 var
+R12881:12888 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R12892:12896 Coq.Init.Datatypes <> false constr
+R12902:12909 PA.ProgramAlgebra ProgramAlgebra RefineCH def
+R12913:12913 PA.ProgramAlgebra <> V:259 var
+R12911:12911 PA.ProgramAlgebra <> U:258 var
+R12938:12940 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12925:12928 PA.ProgramAlgebra <> bexp:254 var
+R12930:12937 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R12941:12944 Coq.Init.Datatypes <> true constr
+def 12959:12963 ProgramAlgebra EqAlg
+binder 12966:12968 <> syn:260
+binder 12970:12973 <> syn1:261
+R12981:12983 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12985:12987 PA.ProgramAlgebra <> syn:260 var
+binder 12977:12977 <> x:262
+R12995:12997 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R12999:13002 PA.ProgramAlgebra <> syn1:261 var
+binder 12991:12991 <> y:263
+R13019:13019 PA.ProgramAlgebra <> y:263 var
+R13016:13016 PA.ProgramAlgebra <> x:262 var
+R13030:13033 PA.ProgramAlgebra ProgramAlgebra Assn constr
+R13040:13043 PA.ProgramAlgebra ProgramAlgebra Assn constr
+R13052:13057 PA.ProgramAlgebra ProgramAlgebra eqEval def
+R13060:13073 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R13079:13092 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R13101:13105 PA.ProgramAlgebra ProgramAlgebra Chaos constr
+R13110:13114 PA.ProgramAlgebra ProgramAlgebra Chaos constr
+R13121:13124 Coq.Init.Logic <> True ind
+R13130:13133 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R13147:13150 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R13195:13198 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13179:13181 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13171:13178 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R13187:13194 PA.ProgramAlgebra ProgramAlgebra GLOBVARS meth
+R13208:13211 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13199:13203 PA.ProgramAlgebra <> EqAlg:264 def
+R13212:13216 PA.ProgramAlgebra <> EqAlg:264 def
+R13226:13228 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R13237:13239 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R13259:13262 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13250:13254 PA.ProgramAlgebra <> EqAlg:264 def
+R13263:13267 PA.ProgramAlgebra <> EqAlg:264 def
+R13277:13282 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R13291:13296 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R13316:13319 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13307:13311 PA.ProgramAlgebra <> EqAlg:264 def
+R13320:13324 PA.ProgramAlgebra <> EqAlg:264 def
+R13342:13346 Coq.Init.Logic <> False ind
+def 13367:13375 ProgramAlgebra RecurFixb
+binder 13378:13380 <> syn:267
+R13388:13391 PA.ProgramAlgebra ProgramAlgebra clos def
+R13394:13396 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13398:13400 PA.ProgramAlgebra <> syn:267 var
+binder 13384:13384 <> f:268
+R13409:13411 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13413:13415 PA.ProgramAlgebra <> syn:267 var
+binder 13405:13405 <> x:269
+R13421:13425 PA.ProgramAlgebra ProgramAlgebra EqAlg def
+R13430:13430 PA.ProgramAlgebra <> f:268 var
+R13432:13432 PA.ProgramAlgebra <> x:269 var
+R13427:13427 PA.ProgramAlgebra <> x:269 var
+ax 13443:13452 ProgramAlgebra fix_is_glb
+binder 13463:13463 <> s:270
+R13470:13473 PA.ProgramAlgebra ProgramAlgebra clos def
+R13476:13478 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13480:13480 PA.ProgramAlgebra <> s:270 var
+binder 13466:13466 <> f:271
+R13489:13491 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13493:13493 PA.ProgramAlgebra <> s:270 var
+binder 13485:13485 <> x:272
+R13511:13514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13498:13506 PA.ProgramAlgebra ProgramAlgebra RecurFixb def
+R13510:13510 PA.ProgramAlgebra <> x:272 var
+R13508:13508 PA.ProgramAlgebra <> f:271 var
+R13515:13515 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13519:13522 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13516:13516 PA.ProgramAlgebra <> f:271 var
+R13518:13518 PA.ProgramAlgebra <> x:272 var
+R13523:13525 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R13528:13531 PA.ProgramAlgebra ProgramAlgebra iter constr
+R13534:13536 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13538:13538 PA.ProgramAlgebra <> s:270 var
+R13541:13541 PA.ProgramAlgebra <> f:271 var
+R13545:13547 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13549:13549 PA.ProgramAlgebra <> s:270 var
+var 13565:13584 ProgramAlgebra.Fact Refine_is_non_finite
+binder 13595:13597 <> syn:274
+R13602:13605 PA.ProgramAlgebra ProgramAlgebra clos def
+R13608:13610 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13612:13614 PA.ProgramAlgebra <> syn:274 var
+binder 13600:13600 <> f:275
+R13621:13623 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13625:13627 PA.ProgramAlgebra <> syn:274 var
+binder 13619:13619 <> x:276
+R13640:13643 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13631:13633 PA.ProgramAlgebra ProgramAlgebra FNF def
+R13636:13636 PA.ProgramAlgebra <> f:275 var
+R13638:13638 PA.ProgramAlgebra <> x:276 var
+R13644:13649 PA.ProgramAlgebra ProgramAlgebra Refine def
+R13654:13654 PA.ProgramAlgebra <> f:275 var
+R13656:13656 PA.ProgramAlgebra <> x:276 var
+R13651:13651 PA.ProgramAlgebra <> x:276 var
+var 13671:13689 ProgramAlgebra.Fact Refine_non_diverage
+binder 13700:13702 <> syn:278
+R13707:13709 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13711:13713 PA.ProgramAlgebra <> syn:278 var
+binder 13705:13705 <> x:279
+R13717:13722 PA.ProgramAlgebra ProgramAlgebra Refine def
+R13727:13731 PA.ProgramAlgebra ProgramAlgebra Chaos constr
+R13734:13736 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13738:13740 PA.ProgramAlgebra <> syn:278 var
+R13724:13724 PA.ProgramAlgebra <> x:279 var
+def 13756:13763 ProgramAlgebra FNF_pres
+binder 13766:13768 <> syn:281
+R13783:13786 PA.ProgramAlgebra ProgramAlgebra clos def
+R13789:13791 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13793:13795 PA.ProgramAlgebra <> syn:281 var
+binder 13779:13779 <> f:282
+binder 13811:13811 <> x:283
+R13814:13819 PA.ProgramAlgebra ProgramAlgebra Refine def
+R13824:13824 PA.ProgramAlgebra <> f:282 var
+R13826:13826 PA.ProgramAlgebra <> x:283 var
+R13821:13821 PA.ProgramAlgebra <> x:283 var
+ax 13837:13846 ProgramAlgebra Recur_clos
+binder 13858:13860 <> syn:284
+R13875:13878 PA.ProgramAlgebra ProgramAlgebra clos def
+R13881:13883 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13885:13887 PA.ProgramAlgebra <> syn:284 var
+binder 13871:13871 <> F:285
+R13904:13909 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13894:13901 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R13903:13903 PA.ProgramAlgebra <> F:285 var
+R13927:13929 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13910:13914 PA.ProgramAlgebra ProgramAlgebra Recur constr
+R13926:13926 PA.ProgramAlgebra <> F:285 var
+R13917:13919 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13921:13923 PA.ProgramAlgebra <> syn:284 var
+R13930:13932 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R13935:13938 PA.ProgramAlgebra ProgramAlgebra iter constr
+R13941:13943 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13945:13947 PA.ProgramAlgebra <> syn:284 var
+R13950:13950 PA.ProgramAlgebra <> F:285 var
+R13954:13956 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R13958:13960 PA.ProgramAlgebra <> syn:284 var
+ax 13971:13982 ProgramAlgebra Refine_limit
+binder 13993:13995 <> syn:287
+R14002:14004 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14006:14008 PA.ProgramAlgebra <> syn:287 var
+binder 13998:13998 <> x:288
+binder 14011:14011 <> f:289
+R14028:14031 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14014:14019 PA.ProgramAlgebra ProgramAlgebra Refine def
+R14024:14024 PA.ProgramAlgebra <> f:289 var
+R14026:14026 PA.ProgramAlgebra <> x:288 var
+R14021:14021 PA.ProgramAlgebra <> x:288 var
+R14032:14037 PA.ProgramAlgebra ProgramAlgebra Refine def
+R14042:14044 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R14047:14050 PA.ProgramAlgebra ProgramAlgebra iter constr
+R14053:14055 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14057:14059 PA.ProgramAlgebra <> syn:287 var
+R14062:14062 PA.ProgramAlgebra <> f:289 var
+R14066:14068 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14070:14072 PA.ProgramAlgebra <> syn:287 var
+R14039:14039 PA.ProgramAlgebra <> x:288 var
+ax 14084:14100 ProgramAlgebra Recur_over_Choice
+binder 14112:14114 <> syn:291
+R14129:14132 PA.ProgramAlgebra ProgramAlgebra clos def
+R14135:14137 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14139:14141 PA.ProgramAlgebra <> syn:291 var
+binder 14125:14125 <> f:292
+R14150:14152 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14155:14157 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14159:14161 PA.ProgramAlgebra <> syn:291 var
+binder 14146:14146 <> p:293
+R14178:14181 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14168:14175 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R14177:14177 PA.ProgramAlgebra <> f:292 var
+R14187:14190 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14182:14184 PA.ProgramAlgebra ProgramAlgebra FNF def
+R14186:14186 PA.ProgramAlgebra <> p:293 var
+R14235:14241 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R14368:14368 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R14191:14198 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+binder 14205:14205 <> x:294
+R14210:14215 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R14228:14228 PA.ProgramAlgebra <> f:292 var
+R14230:14230 PA.ProgramAlgebra <> x:294 var
+R14233:14233 PA.ProgramAlgebra <> p:293 var
+R14218:14220 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14222:14224 PA.ProgramAlgebra <> syn:291 var
+R14295:14299 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14242:14247 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R14260:14262 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R14265:14268 PA.ProgramAlgebra ProgramAlgebra iter constr
+R14271:14273 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14275:14277 PA.ProgramAlgebra <> syn:291 var
+R14280:14280 PA.ProgramAlgebra <> f:292 var
+R14284:14286 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14288:14290 PA.ProgramAlgebra <> syn:291 var
+R14294:14294 PA.ProgramAlgebra <> p:293 var
+R14250:14252 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14254:14256 PA.ProgramAlgebra <> syn:291 var
+R14300:14302 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R14305:14308 PA.ProgramAlgebra ProgramAlgebra iter constr
+R14311:14313 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14315:14317 PA.ProgramAlgebra <> syn:291 var
+binder 14325:14325 <> g:295
+R14331:14336 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R14349:14349 PA.ProgramAlgebra <> f:292 var
+R14351:14351 PA.ProgramAlgebra <> g:295 var
+R14354:14354 PA.ProgramAlgebra <> p:293 var
+R14339:14341 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14343:14345 PA.ProgramAlgebra <> syn:291 var
+R14360:14362 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14364:14366 PA.ProgramAlgebra <> syn:291 var
+ax 14378:14392 ProgramAlgebra Recur_over_Cond
+binder 14404:14406 <> syn:297
+R14421:14424 PA.ProgramAlgebra ProgramAlgebra clos def
+R14427:14429 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14431:14433 PA.ProgramAlgebra <> syn:297 var
+binder 14417:14417 <> f:298
+R14442:14444 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14447:14449 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14451:14453 PA.ProgramAlgebra <> syn:297 var
+binder 14438:14438 <> p:299
+R14462:14468 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 14458:14458 <> b:300
+R14484:14487 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14474:14481 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R14483:14483 PA.ProgramAlgebra <> f:298 var
+R14493:14496 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14488:14490 PA.ProgramAlgebra ProgramAlgebra FNF def
+R14492:14492 PA.ProgramAlgebra <> p:299 var
+R14543:14549 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R14676:14676 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R14497:14504 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+binder 14511:14511 <> g:301
+R14517:14520 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R14533:14533 PA.ProgramAlgebra <> f:298 var
+R14535:14535 PA.ProgramAlgebra <> g:301 var
+R14538:14538 PA.ProgramAlgebra <> b:300 var
+R14540:14540 PA.ProgramAlgebra <> p:299 var
+R14523:14525 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14527:14529 PA.ProgramAlgebra <> syn:297 var
+R14603:14607 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14550:14553 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R14566:14568 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R14571:14574 PA.ProgramAlgebra ProgramAlgebra iter constr
+R14577:14579 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14581:14583 PA.ProgramAlgebra <> syn:297 var
+R14586:14586 PA.ProgramAlgebra <> f:298 var
+R14590:14592 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14594:14596 PA.ProgramAlgebra <> syn:297 var
+R14600:14600 PA.ProgramAlgebra <> b:300 var
+R14602:14602 PA.ProgramAlgebra <> p:299 var
+R14556:14558 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14560:14562 PA.ProgramAlgebra <> syn:297 var
+R14608:14610 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R14613:14616 PA.ProgramAlgebra ProgramAlgebra iter constr
+R14619:14621 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14623:14625 PA.ProgramAlgebra <> syn:297 var
+binder 14633:14633 <> g:302
+R14639:14642 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R14655:14655 PA.ProgramAlgebra <> f:298 var
+R14657:14657 PA.ProgramAlgebra <> g:302 var
+R14660:14660 PA.ProgramAlgebra <> b:300 var
+R14662:14662 PA.ProgramAlgebra <> p:299 var
+R14645:14647 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14649:14651 PA.ProgramAlgebra <> syn:297 var
+R14668:14670 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14672:14674 PA.ProgramAlgebra <> syn:297 var
+ax 14686:14701 ProgramAlgebra Recur_over_Seq_l
+binder 14713:14715 <> syn:304
+R14730:14733 PA.ProgramAlgebra ProgramAlgebra clos def
+R14736:14738 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14740:14742 PA.ProgramAlgebra <> syn:304 var
+binder 14726:14726 <> f:305
+R14751:14753 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14756:14758 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14760:14762 PA.ProgramAlgebra <> syn:304 var
+binder 14747:14747 <> p:306
+R14779:14782 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14769:14776 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R14778:14778 PA.ProgramAlgebra <> f:305 var
+R14788:14791 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14783:14785 PA.ProgramAlgebra ProgramAlgebra FNF def
+R14787:14787 PA.ProgramAlgebra <> p:306 var
+R14835:14841 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R14962:14962 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R14792:14799 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+binder 14806:14806 <> g:307
+R14812:14814 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R14827:14827 PA.ProgramAlgebra <> f:305 var
+R14829:14829 PA.ProgramAlgebra <> g:307 var
+R14832:14832 PA.ProgramAlgebra <> p:306 var
+R14817:14819 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14821:14823 PA.ProgramAlgebra <> syn:304 var
+R14892:14896 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14842:14844 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R14857:14859 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R14862:14865 PA.ProgramAlgebra ProgramAlgebra iter constr
+R14868:14870 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14872:14874 PA.ProgramAlgebra <> syn:304 var
+R14877:14877 PA.ProgramAlgebra <> f:305 var
+R14881:14883 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14885:14887 PA.ProgramAlgebra <> syn:304 var
+R14891:14891 PA.ProgramAlgebra <> p:306 var
+R14847:14849 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14851:14853 PA.ProgramAlgebra <> syn:304 var
+R14897:14899 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R14902:14905 PA.ProgramAlgebra ProgramAlgebra iter constr
+R14908:14910 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14912:14914 PA.ProgramAlgebra <> syn:304 var
+binder 14922:14922 <> g:308
+R14928:14930 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R14943:14943 PA.ProgramAlgebra <> f:305 var
+R14945:14945 PA.ProgramAlgebra <> g:308 var
+R14948:14948 PA.ProgramAlgebra <> p:306 var
+R14933:14935 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14937:14939 PA.ProgramAlgebra <> syn:304 var
+R14954:14956 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R14958:14960 PA.ProgramAlgebra <> syn:304 var
+ax 14972:14987 ProgramAlgebra Recur_over_Seq_r
+binder 14999:15001 <> syn:310
+R15016:15019 PA.ProgramAlgebra ProgramAlgebra clos def
+R15022:15024 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15026:15028 PA.ProgramAlgebra <> syn:310 var
+binder 15012:15012 <> f:311
+R15037:15039 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15042:15044 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15046:15048 PA.ProgramAlgebra <> syn:310 var
+binder 15033:15033 <> p:312
+R15065:15068 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15055:15062 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R15064:15064 PA.ProgramAlgebra <> f:311 var
+R15074:15077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15069:15071 PA.ProgramAlgebra ProgramAlgebra FNF def
+R15073:15073 PA.ProgramAlgebra <> p:312 var
+R15121:15127 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15248:15248 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15078:15085 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+binder 15092:15092 <> g:313
+R15098:15100 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R15112:15112 PA.ProgramAlgebra <> p:312 var
+R15115:15115 PA.ProgramAlgebra <> f:311 var
+R15117:15117 PA.ProgramAlgebra <> g:313 var
+R15103:15105 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15107:15109 PA.ProgramAlgebra <> syn:310 var
+R15178:15182 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15128:15130 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R15142:15142 PA.ProgramAlgebra <> p:312 var
+R15145:15147 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15150:15153 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15156:15158 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15160:15162 PA.ProgramAlgebra <> syn:310 var
+R15165:15165 PA.ProgramAlgebra <> f:311 var
+R15169:15171 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15173:15175 PA.ProgramAlgebra <> syn:310 var
+R15133:15135 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15137:15139 PA.ProgramAlgebra <> syn:310 var
+R15183:15185 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15188:15191 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15194:15196 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15198:15200 PA.ProgramAlgebra <> syn:310 var
+binder 15208:15208 <> g:314
+R15214:15216 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R15228:15228 PA.ProgramAlgebra <> p:312 var
+R15231:15231 PA.ProgramAlgebra <> f:311 var
+R15233:15233 PA.ProgramAlgebra <> g:314 var
+R15219:15221 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15223:15225 PA.ProgramAlgebra <> syn:310 var
+R15240:15242 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15244:15246 PA.ProgramAlgebra <> syn:310 var
+ax 15258:15278 ProgramAlgebra Recur_over_Rec_Choice
+binder 15290:15292 <> syn:316
+R15309:15312 PA.ProgramAlgebra ProgramAlgebra clos def
+R15315:15317 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15319:15321 PA.ProgramAlgebra <> syn:316 var
+binder 15303:15303 <> f:317
+binder 15305:15305 <> g:318
+R15338:15341 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15328:15335 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R15337:15337 PA.ProgramAlgebra <> f:317 var
+R15352:15355 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15342:15349 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R15351:15351 PA.ProgramAlgebra <> g:318 var
+R15406:15411 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15356:15363 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+binder 15370:15370 <> k:319
+R15376:15381 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R15394:15394 PA.ProgramAlgebra <> f:317 var
+R15396:15396 PA.ProgramAlgebra <> k:319 var
+R15400:15400 PA.ProgramAlgebra <> g:318 var
+R15402:15402 PA.ProgramAlgebra <> k:319 var
+R15384:15386 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15388:15390 PA.ProgramAlgebra <> syn:316 var
+R15498:15502 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15412:15417 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R15430:15432 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15435:15438 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15441:15443 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15445:15447 PA.ProgramAlgebra <> syn:316 var
+R15450:15450 PA.ProgramAlgebra <> f:317 var
+R15454:15456 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15458:15460 PA.ProgramAlgebra <> syn:316 var
+R15465:15467 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15470:15473 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15476:15478 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15480:15482 PA.ProgramAlgebra <> syn:316 var
+R15485:15485 PA.ProgramAlgebra <> g:318 var
+R15489:15491 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15493:15495 PA.ProgramAlgebra <> syn:316 var
+R15420:15422 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15424:15426 PA.ProgramAlgebra <> syn:316 var
+R15503:15505 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15508:15511 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15514:15516 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15518:15520 PA.ProgramAlgebra <> syn:316 var
+binder 15528:15528 <> k:320
+R15534:15539 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R15552:15552 PA.ProgramAlgebra <> f:317 var
+R15554:15554 PA.ProgramAlgebra <> k:320 var
+R15558:15558 PA.ProgramAlgebra <> g:318 var
+R15560:15560 PA.ProgramAlgebra <> k:320 var
+R15542:15544 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15546:15548 PA.ProgramAlgebra <> syn:316 var
+R15567:15569 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15571:15573 PA.ProgramAlgebra <> syn:316 var
+ax 15584:15602 ProgramAlgebra Recur_over_Rec_Cond
+binder 15614:15616 <> syn:322
+R15633:15636 PA.ProgramAlgebra ProgramAlgebra clos def
+R15639:15641 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15643:15645 PA.ProgramAlgebra <> syn:322 var
+binder 15627:15627 <> f:323
+binder 15629:15629 <> g:324
+R15654:15660 PA.ProgramAlgebra ProgramAlgebra Boolexp def
+binder 15650:15650 <> b:325
+R15676:15679 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15666:15673 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R15675:15675 PA.ProgramAlgebra <> f:323 var
+R15690:15693 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15680:15687 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R15689:15689 PA.ProgramAlgebra <> g:324 var
+R15744:15749 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15694:15701 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+binder 15708:15708 <> k:326
+R15714:15717 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R15730:15730 PA.ProgramAlgebra <> f:323 var
+R15732:15732 PA.ProgramAlgebra <> k:326 var
+R15735:15735 PA.ProgramAlgebra <> b:325 var
+R15738:15738 PA.ProgramAlgebra <> g:324 var
+R15740:15740 PA.ProgramAlgebra <> k:326 var
+R15720:15722 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15724:15726 PA.ProgramAlgebra <> syn:322 var
+R15836:15840 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15750:15753 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R15766:15768 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15771:15774 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15777:15779 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15781:15783 PA.ProgramAlgebra <> syn:322 var
+R15786:15786 PA.ProgramAlgebra <> f:323 var
+R15790:15792 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15794:15796 PA.ProgramAlgebra <> syn:322 var
+R15800:15800 PA.ProgramAlgebra <> b:325 var
+R15803:15805 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15808:15811 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15814:15816 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15818:15820 PA.ProgramAlgebra <> syn:322 var
+R15823:15823 PA.ProgramAlgebra <> g:324 var
+R15827:15829 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15831:15833 PA.ProgramAlgebra <> syn:322 var
+R15756:15758 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15760:15762 PA.ProgramAlgebra <> syn:322 var
+R15841:15843 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R15846:15849 PA.ProgramAlgebra ProgramAlgebra iter constr
+R15852:15854 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15856:15858 PA.ProgramAlgebra <> syn:322 var
+binder 15866:15866 <> k:327
+R15872:15875 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R15888:15888 PA.ProgramAlgebra <> f:323 var
+R15890:15890 PA.ProgramAlgebra <> k:327 var
+R15893:15893 PA.ProgramAlgebra <> b:325 var
+R15896:15896 PA.ProgramAlgebra <> g:324 var
+R15898:15898 PA.ProgramAlgebra <> k:327 var
+R15878:15880 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15882:15884 PA.ProgramAlgebra <> syn:322 var
+R15905:15907 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15909:15911 PA.ProgramAlgebra <> syn:322 var
+ax 15922:15939 ProgramAlgebra Recur_over_Rec_Seq
+binder 15951:15953 <> syn:329
+R15970:15973 PA.ProgramAlgebra ProgramAlgebra clos def
+R15976:15978 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R15980:15982 PA.ProgramAlgebra <> syn:329 var
+binder 15964:15964 <> f:330
+binder 15966:15966 <> g:331
+R15999:16002 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15989:15996 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R15998:15998 PA.ProgramAlgebra <> f:330 var
+R16013:16016 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16003:16010 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R16012:16012 PA.ProgramAlgebra <> g:331 var
+R16064:16069 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16017:16024 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+binder 16031:16031 <> k:332
+R16037:16039 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R16052:16052 PA.ProgramAlgebra <> f:330 var
+R16054:16054 PA.ProgramAlgebra <> k:332 var
+R16058:16058 PA.ProgramAlgebra <> g:331 var
+R16060:16060 PA.ProgramAlgebra <> k:332 var
+R16042:16044 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16046:16048 PA.ProgramAlgebra <> syn:329 var
+R16153:16157 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16070:16072 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R16085:16087 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R16090:16093 PA.ProgramAlgebra ProgramAlgebra iter constr
+R16096:16098 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16100:16102 PA.ProgramAlgebra <> syn:329 var
+R16105:16105 PA.ProgramAlgebra <> f:330 var
+R16109:16111 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16113:16115 PA.ProgramAlgebra <> syn:329 var
+R16120:16122 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R16125:16128 PA.ProgramAlgebra ProgramAlgebra iter constr
+R16131:16133 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16135:16137 PA.ProgramAlgebra <> syn:329 var
+R16140:16140 PA.ProgramAlgebra <> g:331 var
+R16144:16146 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16148:16150 PA.ProgramAlgebra <> syn:329 var
+R16075:16077 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16079:16081 PA.ProgramAlgebra <> syn:329 var
+R16158:16160 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R16163:16166 PA.ProgramAlgebra ProgramAlgebra iter constr
+R16169:16171 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16173:16175 PA.ProgramAlgebra <> syn:329 var
+binder 16183:16183 <> k:333
+R16189:16191 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R16204:16204 PA.ProgramAlgebra <> f:330 var
+R16206:16206 PA.ProgramAlgebra <> k:333 var
+R16210:16210 PA.ProgramAlgebra <> g:331 var
+R16212:16212 PA.ProgramAlgebra <> k:333 var
+R16194:16196 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16198:16200 PA.ProgramAlgebra <> syn:329 var
+R16219:16221 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16223:16225 PA.ProgramAlgebra <> syn:329 var
+def 16241:16244 ProgramAlgebra IFNF
+binder 16247:16249 <> syn:335
+R16257:16259 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16262:16264 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16266:16268 PA.ProgramAlgebra <> syn:335 var
+binder 16253:16253 <> p:336
+R16277:16283 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16285:16286 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 16284:16284 <> x:337
+R16323:16326 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R16288:16290 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16287:16287 PA.ProgramAlgebra <> p:336 var
+R16291:16293 PA.ProgramAlgebra <> ProgramAlgebra.Fact.glb var
+R16296:16299 PA.ProgramAlgebra ProgramAlgebra iter constr
+R16302:16304 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16306:16308 PA.ProgramAlgebra <> syn:335 var
+R16311:16311 PA.ProgramAlgebra <> x:337 var
+R16315:16317 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16319:16321 PA.ProgramAlgebra <> syn:335 var
+R16327:16334 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R16336:16336 PA.ProgramAlgebra <> x:337 var
+prf 16346:16367 ProgramAlgebra IFNF_elim_Choice_FNF_l
+binder 16380:16380 <> x:338
+R16389:16391 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16394:16396 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16398:16398 PA.ProgramAlgebra <> x:338 var
+binder 16383:16383 <> a:339
+binder 16385:16385 <> b:340
+R16409:16412 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16403:16406 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16408:16408 PA.ProgramAlgebra <> a:339 var
+R16418:16423 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16413:16415 PA.ProgramAlgebra ProgramAlgebra FNF def
+R16417:16417 PA.ProgramAlgebra <> b:340 var
+R16424:16427 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16430:16435 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R16445:16445 PA.ProgramAlgebra <> a:339 var
+R16447:16447 PA.ProgramAlgebra <> b:340 var
+R16438:16440 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16442:16442 PA.ProgramAlgebra <> x:338 var
+R16473:16476 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16543:16559 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+R16543:16559 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+R16575:16591 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+R16575:16591 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+prf 16611:16632 ProgramAlgebra IFNF_elim_Choice_FNF_r
+binder 16645:16645 <> x:341
+R16654:16656 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16659:16661 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16663:16663 PA.ProgramAlgebra <> x:341 var
+binder 16648:16648 <> a:342
+binder 16650:16650 <> b:343
+R16674:16677 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16668:16671 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16673:16673 PA.ProgramAlgebra <> a:342 var
+R16683:16688 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16678:16680 PA.ProgramAlgebra ProgramAlgebra FNF def
+R16682:16682 PA.ProgramAlgebra <> b:343 var
+R16689:16692 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16695:16700 PA.ProgramAlgebra ProgramAlgebra Choice constr
+R16710:16710 PA.ProgramAlgebra <> b:343 var
+R16712:16712 PA.ProgramAlgebra <> a:342 var
+R16703:16705 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16707:16707 PA.ProgramAlgebra <> x:341 var
+R16738:16741 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16810:16820 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R16810:16820 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R16810:16820 PA.ProgramAlgebra ProgramAlgebra Choice_comm prfax
+R16830:16846 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+R16830:16846 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+R16866:16882 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+R16866:16882 PA.ProgramAlgebra ProgramAlgebra Recur_over_Choice prfax
+prf 16905:16924 ProgramAlgebra IFNF_elim_Cond_FNF_l
+binder 16937:16937 <> x:344
+R16946:16948 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16951:16953 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16955:16955 PA.ProgramAlgebra <> x:344 var
+binder 16940:16940 <> a:345
+binder 16942:16942 <> b:346
+binder 16959:16959 <> c:347
+R16968:16971 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16962:16965 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16967:16967 PA.ProgramAlgebra <> a:345 var
+R16977:16982 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16972:16974 PA.ProgramAlgebra ProgramAlgebra FNF def
+R16976:16976 PA.ProgramAlgebra <> b:346 var
+R16983:16986 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R16989:16992 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R17002:17002 PA.ProgramAlgebra <> a:345 var
+R17004:17004 PA.ProgramAlgebra <> c:347 var
+R17006:17006 PA.ProgramAlgebra <> b:346 var
+R16995:16997 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R16999:16999 PA.ProgramAlgebra <> x:344 var
+R17032:17035 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17102:17116 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+R17102:17116 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+R17133:17147 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+R17133:17147 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+prf 17167:17186 ProgramAlgebra IFNF_elim_Cond_FNF_r
+binder 17199:17199 <> x:348
+R17208:17210 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17213:17215 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17217:17217 PA.ProgramAlgebra <> x:348 var
+binder 17202:17202 <> a:349
+binder 17204:17204 <> b:350
+binder 17221:17221 <> c:351
+R17230:17233 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17224:17227 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17229:17229 PA.ProgramAlgebra <> a:349 var
+R17239:17244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17234:17236 PA.ProgramAlgebra ProgramAlgebra FNF def
+R17238:17238 PA.ProgramAlgebra <> b:350 var
+R17245:17248 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17251:17254 PA.ProgramAlgebra ProgramAlgebra Cond constr
+R17264:17264 PA.ProgramAlgebra <> b:350 var
+R17266:17266 PA.ProgramAlgebra <> c:351 var
+R17268:17268 PA.ProgramAlgebra <> a:349 var
+R17257:17259 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17261:17261 PA.ProgramAlgebra <> x:348 var
+R17294:17297 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17366:17373 PA.ProgramAlgebra ProgramAlgebra Cond_rev prfax
+R17366:17373 PA.ProgramAlgebra ProgramAlgebra Cond_rev prfax
+R17366:17373 PA.ProgramAlgebra ProgramAlgebra Cond_rev prfax
+R17382:17396 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+R17382:17396 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+R17412:17426 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+R17412:17426 PA.ProgramAlgebra ProgramAlgebra Recur_over_Cond prfax
+prf 17446:17464 ProgramAlgebra IFNF_elim_Seq_FNF_l
+binder 17477:17477 <> x:352
+R17486:17488 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17491:17493 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17495:17495 PA.ProgramAlgebra <> x:352 var
+binder 17480:17480 <> a:353
+binder 17482:17482 <> b:354
+R17506:17509 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17500:17503 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17505:17505 PA.ProgramAlgebra <> a:353 var
+R17515:17520 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17510:17512 PA.ProgramAlgebra ProgramAlgebra FNF def
+R17514:17514 PA.ProgramAlgebra <> b:354 var
+R17521:17524 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17527:17529 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R17539:17539 PA.ProgramAlgebra <> a:353 var
+R17541:17541 PA.ProgramAlgebra <> b:354 var
+R17532:17534 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17536:17536 PA.ProgramAlgebra <> x:352 var
+R17567:17570 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17637:17652 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_l prfax
+R17637:17652 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_l prfax
+R17668:17683 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_l prfax
+R17668:17683 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_l prfax
+prf 17703:17721 ProgramAlgebra IFNF_elim_Seq_FNF_r
+binder 17734:17734 <> x:355
+R17743:17745 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17748:17750 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17752:17752 PA.ProgramAlgebra <> x:355 var
+binder 17737:17737 <> a:356
+binder 17739:17739 <> b:357
+R17763:17766 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17757:17760 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17762:17762 PA.ProgramAlgebra <> a:356 var
+R17772:17777 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17767:17769 PA.ProgramAlgebra ProgramAlgebra FNF def
+R17771:17771 PA.ProgramAlgebra <> b:357 var
+R17778:17781 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17784:17786 PA.ProgramAlgebra ProgramAlgebra Seq constr
+R17796:17796 PA.ProgramAlgebra <> b:357 var
+R17798:17798 PA.ProgramAlgebra <> a:356 var
+R17789:17791 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R17793:17793 PA.ProgramAlgebra <> x:355 var
+R17824:17827 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R17894:17909 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_r prfax
+R17894:17909 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_r prfax
+R17925:17940 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_r prfax
+R17925:17940 PA.ProgramAlgebra ProgramAlgebra Recur_over_Seq_r prfax
+prf 17962:17979 ProgramAlgebra Alg_is_FNF_or_IFNF
+R17995:17998 PA.ProgramAlgebra ProgramAlgebra Ualg def
+binder 17991:17991 <> a:358
+binder 18001:18001 <> x:359
+R18019:18022 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R18004:18006 PA.ProgramAlgebra ProgramAlgebra FNF def
+R18009:18009 PA.ProgramAlgebra <> a:358 var
+R18012:18014 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18016:18016 PA.ProgramAlgebra <> x:359 var
+R18023:18026 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R18029:18029 PA.ProgramAlgebra <> a:358 var
+R18032:18034 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18036:18036 PA.ProgramAlgebra <> x:359 var
+R18072:18074 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18072:18074 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18100:18110 PA.ProgramAlgebra ProgramAlgebra Chaos_to_NF prfax
+R18113:18115 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18120:18128 PA.ProgramAlgebra ProgramAlgebra true_stat def
+R18130:18130 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18152:18152 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18131:18132 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18143:18151 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18133:18142 PA.ProgramAlgebra ProgramAlgebra empty_assn def
+R18146:18148 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18100:18110 PA.ProgramAlgebra ProgramAlgebra Chaos_to_NF prfax
+R18113:18115 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18120:18128 PA.ProgramAlgebra ProgramAlgebra true_stat def
+R18130:18130 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18152:18152 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18131:18132 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18143:18151 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18133:18142 PA.ProgramAlgebra ProgramAlgebra empty_assn def
+R18146:18148 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18100:18110 PA.ProgramAlgebra ProgramAlgebra Chaos_to_NF prfax
+R18113:18115 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18120:18128 PA.ProgramAlgebra ProgramAlgebra true_stat def
+R18130:18130 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18152:18152 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18131:18132 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18143:18151 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18133:18142 PA.ProgramAlgebra ProgramAlgebra empty_assn def
+R18146:18148 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18100:18110 PA.ProgramAlgebra ProgramAlgebra Chaos_to_NF prfax
+R18113:18115 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18120:18128 PA.ProgramAlgebra ProgramAlgebra true_stat def
+R18130:18130 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18152:18152 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18131:18132 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18143:18151 PA.ProgramAlgebra ProgramAlgebra.Fact :::'@{'_x_'}' not
+R18133:18142 PA.ProgramAlgebra ProgramAlgebra empty_assn def
+R18146:18148 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18172:18174 PA.ProgramAlgebra ProgramAlgebra FNF def
+R18240:18252 PA.ProgramAlgebra ProgramAlgebra empty_program def
+R18262:18263 PA.ProgramAlgebra ProgramAlgebra CH def
+R18285:18286 Coq.Lists.List <> In def
+R18370:18379 PA.ProgramAlgebra ProgramAlgebra empty_assn def
+R18389:18400 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+R18441:18452 PA.ProgramAlgebra ProgramAlgebra Assign_to_NF prfax
+R18458:18467 PA.ProgramAlgebra ProgramAlgebra false_stat def
+R18470:18472 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18441:18452 PA.ProgramAlgebra ProgramAlgebra Assign_to_NF prfax
+R18458:18467 PA.ProgramAlgebra ProgramAlgebra false_stat def
+R18470:18472 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18441:18452 PA.ProgramAlgebra ProgramAlgebra Assign_to_NF prfax
+R18458:18467 PA.ProgramAlgebra ProgramAlgebra false_stat def
+R18470:18472 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18441:18452 PA.ProgramAlgebra ProgramAlgebra Assign_to_NF prfax
+R18458:18467 PA.ProgramAlgebra ProgramAlgebra false_stat def
+R18470:18472 PA.ProgramAlgebra ProgramAlgebra Alg ind
+R18491:18493 PA.ProgramAlgebra ProgramAlgebra FNF def
+R18563:18564 PA.ProgramAlgebra ProgramAlgebra CH def
+R18582:18583 Coq.Lists.List <> In def
+R18671:18682 PA.ProgramAlgebra ProgramAlgebra Total_Assign def
+R18692:18705 PA.ProgramAlgebra ProgramAlgebra extends_assign def
+R18769:18781 PA.ProgramAlgebra ProgramAlgebra FNF_elim_Cond thm
+R18769:18781 PA.ProgramAlgebra ProgramAlgebra FNF_elim_Cond thm
+R18808:18827 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Cond_FNF_r thm
+R18808:18827 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Cond_FNF_r thm
+R18854:18873 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Cond_FNF_l thm
+R18854:18873 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Cond_FNF_l thm
+R18901:18904 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R19019:19037 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Cond prfax
+R19019:19037 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Cond prfax
+R19051:19069 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Cond prfax
+R19051:19069 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Cond prfax
+R19132:19143 PA.ProgramAlgebra ProgramAlgebra FNF_elim_Seq thm
+R19132:19143 PA.ProgramAlgebra ProgramAlgebra FNF_elim_Seq thm
+R19170:19188 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Seq_FNF_r thm
+R19170:19188 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Seq_FNF_r thm
+R19215:19233 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Seq_FNF_l thm
+R19215:19233 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Seq_FNF_l thm
+R19261:19264 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R19379:19396 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Seq prfax
+R19379:19396 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Seq prfax
+R19410:19427 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Seq prfax
+R19410:19427 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Seq prfax
+R19490:19504 PA.ProgramAlgebra ProgramAlgebra FNF_elim_Choice thm
+R19490:19504 PA.ProgramAlgebra ProgramAlgebra FNF_elim_Choice thm
+R19531:19552 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Choice_FNF_r thm
+R19531:19552 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Choice_FNF_r thm
+R19579:19600 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Choice_FNF_l thm
+R19579:19600 PA.ProgramAlgebra ProgramAlgebra IFNF_elim_Choice_FNF_l thm
+R19628:19631 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R19746:19766 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Choice prfax
+R19746:19766 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Choice prfax
+R19780:19800 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Choice prfax
+R19780:19800 PA.ProgramAlgebra ProgramAlgebra Recur_over_Rec_Choice prfax
+R19826:19829 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R19851:19858 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R19851:19858 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R19880:19887 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R19921:19940 PA.ProgramAlgebra <> ProgramAlgebra.Fact.Refine_is_non_finite var
+R19921:19940 PA.ProgramAlgebra <> ProgramAlgebra.Fact.Refine_is_non_finite var
+R19961:19964 PA.ProgramAlgebra ProgramAlgebra IFNF def
+R20006:20013 PA.ProgramAlgebra ProgramAlgebra FNF_pres def
+R20046:20057 PA.ProgramAlgebra ProgramAlgebra Refine_limit prfax
+R20046:20057 PA.ProgramAlgebra ProgramAlgebra Refine_limit prfax
+R20085:20094 PA.ProgramAlgebra ProgramAlgebra Recur_clos prfax
+R20085:20094 PA.ProgramAlgebra ProgramAlgebra Recur_clos prfax
+R20117:20120 PA.ProgramAlgebra ProgramAlgebra.Fact <> sec
+R20127:20140 PA.ProgramAlgebra ProgramAlgebra <> mod
