@@ -4,8 +4,6 @@ Import List.
 Require Import String.
 Import ListNotations.
 
-Search "Refine".
-
 Variable bot : Type.
 
 Record MyVar := mkVar {
@@ -170,28 +168,67 @@ Proof.
       simpl. intros. auto.
 Qed.
 
-Definition testGCD {s} (x : Alg s) :=
+Fixpoint hdge2inf {s} (x : ProgramAlgebra.Alg s) : bool :=
   match x with
-  | _ => ProgramAlgebra.Cond bot (_|_ bot) ProgramAlgebra.false_stat
-         @{  }
-
-Definition testRec := Recur (Alg bot) F.
-
-
-Definition constidmap {syn} (x : ProgramAlgebra.Alg syn) :
-  ProgramAlgebra.Alg (ProgramAlgebra.Alg syn) := 
-  match x with
-  | ProgramAlgebra.Assn _ e =>
-    ProgramAlgebra.Assn (ProgramAlgebra.Alg syn) e
-  | ProgramAlgebra.Chaos _ =>
-    ProgramAlgebra.Assn (ProgramAlgebra.Alg syn) 
-    (ProgramAlgebra.makeAssign GLOBVARS (fun x => x))
-  | _ => ProgramAlgebra.Chaos (ProgramAlgebra.Alg syn)
+  | ProgramAlgebra.Assn _ a => hdge2 (a.(ProgramAlgebra.values) a.(ProgramAlgebra.ids))
+  | ProgramAlgebra.Choice _ P Q => orb (hdge2inf P) (hdge2inf Q)
+  | _ => false
   end.
 
-Hypothesis mapconst:
-  ProgramAlgebra.Recur (ProgramAlgebra.Alg bot) constidmap
-  = ProgramAlgebra.empty_program (ProgramAlgebra.Alg bot).
+Fixpoint update {s} (x : ProgramAlgebra.Alg s) : ProgramAlgebra.Alg (ProgramAlgebra.Alg s) :=
+  match x with
+  | ProgramAlgebra.Assn _ a => @{ {|
+      ProgramAlgebra.ids := ProgramAlgebra.GLOBVARS;
+      ProgramAlgebra.values :=
+        fun x =>
+        ProgramAlgebra.extends_mapping 
+          (cast [tt]) ascending
+          (a.(ProgramAlgebra.values) x)
+    |} } (ProgramAlgebra.Alg s)
+  | ProgramAlgebra.Choice _ P Q =>
+      ProgramAlgebra.Choice (ProgramAlgebra.Alg s) (update P) (update Q)
+  | _ => |-|[]
+  end.
+
+Fixpoint mapid {s} (x : ProgramAlgebra.Alg s) :=
+  match x with
+  | ProgramAlgebra.Assn _ a => @{a} (ProgramAlgebra.Alg s)
+  | ProgramAlgebra.Choice _ P Q =>
+     ProgramAlgebra.Choice (ProgramAlgebra.Alg s) (mapid P) (mapid Q)
+  | ProgramAlgebra.Chaos _ => _|_ (ProgramAlgebra.Alg s)
+  | _ => |-|[]
+  end.
+
+Definition testIter {s} (x : ProgramAlgebra.Alg s) :=
+  match x with
+  | ProgramAlgebra.Cond _ p b t => if hdge2inf t then
+         ProgramAlgebra.Cond (ProgramAlgebra.Alg s) (mapid p) b (mapid t)
+         else ProgramAlgebra.Cond (ProgramAlgebra.Alg s) (mapid p) b (update t)
+  | _ => ProgramAlgebra.Cond (ProgramAlgebra.Alg s)
+         (_|_ (ProgramAlgebra.Alg s))
+         ProgramAlgebra.false_stat
+         (|-| [])
+  end.
+
+Definition testRec := ProgramAlgebra.Recur (ProgramAlgebra.Alg bot) testIter.
+
+Search "fix_is_glb".
+
+Variable glb : ProgramAlgebra.Closure -> ProgramAlgebra.Ualg.
+
+Hypothesis testIterValid :forall x, ProgramAlgebra.FNF_pres (@testIter x).
+
+Example testlim : testIter testnf = testRec .
+Proof. unfold testRec. rewrite ProgramAlgebra.Recur_clos with (glb := glb).
+rewrite ProgramAlgebra.fix_is_glb with (glb := glb);auto.
+- unfold ProgramAlgebra.RecurFix. unfold testnf. unfold testIter.
+  unfold hdge2inf. unfold testassn. unfold ProgramAlgebra.EqAlg.
+  unfold mapid. simpl. repeat split;auto.
+  unfold ProgramAlgebra.eqEval. intros. simpl in *. auto.
+  unfold ProgramAlgebra.eqEval. intros. auto.
+- apply testIterValid.
+Qed.
+
 
 
 

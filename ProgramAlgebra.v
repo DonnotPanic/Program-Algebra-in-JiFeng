@@ -327,7 +327,7 @@ Inductive Closure :=
   | iter : forall c, clos c -> Closure.
 
 Hypothesis glb : Closure -> Ualg.
-Hypothesis glb_pres: forall x y, (FNF ((glb y) x)).
+Axiom glb_pres: forall x y, (FNF ((glb y) x)).
 
 Definition eqEval (x y : Assign) :=
   forall a, In a (x.(values) x.(ids)) -> In a (y.(values) y.(ids)).
@@ -367,15 +367,15 @@ Fixpoint EqAlg {syn syn1} (x : Alg syn) (y : Alg syn1) :=
   | _, _ => False
   end.
 
-Definition RecurFixb {syn} (f : clos (Alg syn)) (x : Alg syn) := EqAlg x (f x).
+Definition RecurFix {syn} (f : clos (Alg syn)) (x : Alg syn) := EqAlg x (f x).
 
 Axiom fix_is_glb : forall s (f : clos (Alg s)) (x : Alg s),
- RecurFixb f x -> (f x) = glb (iter (Alg s) f) (Alg s).
+ RecurFix f x -> (f x) = glb (iter (Alg s) f) (Alg s).
 
-Hypothesis Refine_is_non_finite : forall syn (f:clos (Alg syn)) (x:Alg syn), FNF (f x) -> Refine x (f x).
-Hypothesis Refine_non_diverage : forall syn (x:Alg syn), Refine x (Chaos (Alg syn)).
+Axiom Refine_is_non_finite : forall syn (f:clos (Alg syn)) (x:Alg syn), FNF (f x) -> Refine x (f x).
+Axiom Refine_non_diverage : forall syn (x:Alg syn), Refine x (Chaos (Alg syn)).
 Definition FNF_pres {syn : Type} (f : clos (Alg syn)) :=
-  forall x, Refine x (f x).
+  forall x, FNF x -> Refine x (f x).
 
 Axiom Recur_clos : forall (syn : Type) (F : clos (Alg syn)),
   FNF_pres F ->
@@ -499,10 +499,13 @@ Proof.
       apply Recur_over_Rec_Choice;auto. apply Recur_over_Rec_Choice;auto.
   - right. unfold IFNF. exists a0. assert (FNF_pres a0). {
       unfold FNF_pres. intros. destruct (H x0). apply Refine_is_non_finite;auto.
-      unfold IFNF in H0. destruct H0. destruct H0. unfold FNF_pres in H1.
-      rewrite H0. apply Refine_limit. auto.
+      unfold IFNF in H1. destruct H1. destruct H1. unfold FNF_pres in H2.
+      rewrite H1. apply Refine_limit. auto.
     } split. apply Recur_clos;auto. auto.
 Qed.
+
+Axiom Ualg_to_Alg : forall syn (x : Alg syn), exists t: Ualg, t syn = x.
+
 End Fact.
 End ProgramAlgebra.
 
