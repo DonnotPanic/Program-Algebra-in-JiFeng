@@ -326,8 +326,7 @@ Definition clos (c : Type) := (c -> Alg c).
 Inductive Closure := 
   | iter : forall c, clos c -> Closure.
 
-Hypothesis glb : Closure -> Ualg.
-Axiom glb_pres: forall x y, (FNF ((glb y) x)).
+Hypothesis lub : Closure -> Ualg.
 
 Definition eqEval (x y : Assign) :=
   forall a, In a (x.(values) x.(ids)) -> In a (y.(values) y.(ids)).
@@ -369,99 +368,99 @@ Fixpoint EqAlg {syn syn1} (x : Alg syn) (y : Alg syn1) :=
 
 Definition RecurFix {syn} (f : clos (Alg syn)) (x : Alg syn) := EqAlg x (f x).
 
-Axiom fix_is_glb : forall s (f : clos (Alg s)) (x : Alg s),
- RecurFix f x -> (f x) = glb (iter (Alg s) f) (Alg s).
+Axiom fix_is_lub : forall s (f : clos (Alg s)) (x : Alg s),
+ RecurFix f x -> (f x) = lub (iter (Alg s) f) (Alg s).
 
-Axiom Refine_is_non_finite : forall syn (f:clos (Alg syn)) (x:Alg syn), FNF (f x) -> Refine x (f x).
-Axiom Refine_non_diverage : forall syn (x:Alg syn), Refine x (Chaos (Alg syn)).
 Definition FNF_pres {syn : Type} (f : clos (Alg syn)) :=
-  forall x, FNF x -> Refine x (f x).
+  forall x, FNF x -> FNF (f x).
 
 Axiom Recur_clos : forall (syn : Type) (F : clos (Alg syn)),
-  FNF_pres F ->
-  Recur (Alg syn) F = glb (iter (Alg syn) F) (Alg syn).
+  Recur (Alg syn) F = lub (iter (Alg syn) F) (Alg syn).
 
-Axiom Refine_limit : forall syn (x : Alg syn) f, Refine x (f x) -> Refine x (glb (iter (Alg syn) f) (Alg syn)).
+Axiom Recur_over_Recur : forall (syn : Type) (f g : clos (Alg syn)) x,
+   f x = lub (iter (Alg syn) g) (Alg syn) ->
+   exists c, FNF_pres c /\
+   lub (iter (Alg syn) f) (Alg syn) = lub (iter (Alg syn) c) (Alg syn).
 
 Axiom Recur_over_Choice : forall (syn : Type) (f : clos (Alg syn)) (p : Alg (Alg syn)),
-  FNF_pres f -> FNF p -> FNF_pres (fun x => Choice (Alg syn) (f x) p) /\
-  (Choice (Alg syn) (glb (iter (Alg syn) f) (Alg syn)) p =
-  glb (iter (Alg syn) (fun g => (Choice (Alg syn) (f g) p))) (Alg syn)).
+  FNF_pres f -> FNF p ->
+  (Choice (Alg syn) (lub (iter (Alg syn) f) (Alg syn)) p =
+  lub (iter (Alg syn) (fun g => (Choice (Alg syn) (f g) p))) (Alg syn)).
 
 Axiom Recur_over_Cond : forall (syn : Type) (f : clos (Alg syn)) (p : Alg (Alg syn)) (b : Boolexp),
-  FNF_pres f -> FNF p -> FNF_pres (fun g => (Cond (Alg syn) (f g) b p)) /\
-  (Cond (Alg syn) (glb (iter (Alg syn) f) (Alg syn)) b p =
-  glb (iter (Alg syn) (fun g => (Cond (Alg syn) (f g) b p))) (Alg syn)).
+  FNF_pres f -> FNF p ->
+  (Cond (Alg syn) (lub (iter (Alg syn) f) (Alg syn)) b p =
+  lub (iter (Alg syn) (fun g => (Cond (Alg syn) (f g) b p))) (Alg syn)).
 
 Axiom Recur_over_Seq_l : forall (syn : Type) (f : clos (Alg syn)) (p : Alg (Alg syn)),
-  FNF_pres f -> FNF p -> FNF_pres (fun g => (Seq (Alg syn) (f g) p)) /\
-  (Seq (Alg syn) (glb (iter (Alg syn) f) (Alg syn)) p =
-  glb (iter (Alg syn) (fun g => (Seq (Alg syn) (f g) p))) (Alg syn)).
+  FNF_pres f -> FNF p ->
+  (Seq (Alg syn) (lub (iter (Alg syn) f) (Alg syn)) p =
+  lub (iter (Alg syn) (fun g => (Seq (Alg syn) (f g) p))) (Alg syn)).
 
 Axiom Recur_over_Seq_r : forall (syn : Type) (f : clos (Alg syn)) (p : Alg (Alg syn)),
-  FNF_pres f -> FNF p -> FNF_pres (fun g => (Seq (Alg syn) p (f g))) /\
-  (Seq (Alg syn) p (glb (iter (Alg syn) f) (Alg syn)) =
-  glb (iter (Alg syn) (fun g => (Seq (Alg syn) p (f g)))) (Alg syn)).
+  FNF_pres f -> FNF p ->
+  (Seq (Alg syn) p (lub (iter (Alg syn) f) (Alg syn)) =
+  lub (iter (Alg syn) (fun g => (Seq (Alg syn) p (f g)))) (Alg syn)).
 
 Axiom Recur_over_Rec_Choice : forall (syn : Type) (f g : clos (Alg syn)),
-  FNF_pres f -> FNF_pres g -> FNF_pres (fun k => (Choice (Alg syn) (f k) (g k))) /\
-  Choice (Alg syn) (glb (iter (Alg syn) f) (Alg syn)) (glb (iter (Alg syn) g) (Alg syn)) =
-  glb (iter (Alg syn) (fun k => (Choice (Alg syn) (f k) (g k)))) (Alg syn).
+  FNF_pres f -> FNF_pres g ->
+  Choice (Alg syn) (lub (iter (Alg syn) f) (Alg syn)) (lub (iter (Alg syn) g) (Alg syn)) =
+  lub (iter (Alg syn) (fun k => (Choice (Alg syn) (f k) (g k)))) (Alg syn).
 
 Axiom Recur_over_Rec_Cond : forall (syn : Type) (f g : clos (Alg syn)) (b : Boolexp),
-  FNF_pres f -> FNF_pres g -> FNF_pres (fun k => (Cond (Alg syn) (f k) b (g k))) /\
-  Cond (Alg syn) (glb (iter (Alg syn) f) (Alg syn)) b (glb (iter (Alg syn) g) (Alg syn)) =
-  glb (iter (Alg syn) (fun k => (Cond (Alg syn) (f k) b (g k)))) (Alg syn).
+  FNF_pres f -> FNF_pres g ->
+  Cond (Alg syn) (lub (iter (Alg syn) f) (Alg syn)) b (lub (iter (Alg syn) g) (Alg syn)) =
+  lub (iter (Alg syn) (fun k => (Cond (Alg syn) (f k) b (g k)))) (Alg syn).
 
 Axiom Recur_over_Rec_Seq : forall (syn : Type) (f g : clos (Alg syn)),
-  FNF_pres f -> FNF_pres g -> FNF_pres (fun k => (Seq (Alg syn) (f k) (g k))) /\
-  Seq (Alg syn) (glb (iter (Alg syn) f) (Alg syn)) (glb (iter (Alg syn) g) (Alg syn)) =
-  glb (iter (Alg syn) (fun k => (Seq (Alg syn) (f k) (g k)))) (Alg syn).
+  FNF_pres f -> FNF_pres g ->
+  Seq (Alg syn) (lub (iter (Alg syn) f) (Alg syn)) (lub (iter (Alg syn) g) (Alg syn)) =
+  lub (iter (Alg syn) (fun k => (Seq (Alg syn) (f k) (g k)))) (Alg syn).
 
 Definition IFNF {syn} (p : Alg (Alg syn)) :=
-  exists x, p = glb (iter (Alg syn) x) (Alg syn) /\ FNF_pres x.
+  exists x, p = lub (iter (Alg syn) x) (Alg syn) /\ FNF_pres x.
 
 Lemma IFNF_elim_Choice_FNF_l :
   forall x (a b : Alg (Alg x)), IFNF a -> FNF b ->
   IFNF (Choice (Alg x) a b).
 Proof. intros. unfold IFNF in *. destruct H. destruct H. eexists.
   split. rewrite H. apply Recur_over_Choice;auto.
-  apply Recur_over_Choice;auto. Qed.
+  unfold FNF_pres. intros. apply FNF_elim_Choice;auto. Qed.
 
 Lemma IFNF_elim_Choice_FNF_r :
   forall x (a b : Alg (Alg x)), IFNF a -> FNF b ->
   IFNF (Choice (Alg x) b a).
 Proof. intros. unfold IFNF in *. destruct H. destruct H. eexists.
   split. rewrite H. rewrite Choice_comm. apply (Recur_over_Choice x);auto.
-  apply (Recur_over_Choice x);auto. Qed.
+  unfold FNF_pres. intros. apply FNF_elim_Choice;auto. Qed.
 
 Lemma IFNF_elim_Cond_FNF_l :
   forall x (a b : Alg (Alg x)) c, IFNF a -> FNF b ->
   IFNF (Cond (Alg x) a c b).
 Proof. intros. unfold IFNF in *. destruct H. destruct H. eexists.
   split. rewrite H. apply Recur_over_Cond;auto. 
-  apply Recur_over_Cond;auto. Qed.
+  unfold FNF_pres. intros. apply FNF_elim_Cond;auto. Qed.
 
 Lemma IFNF_elim_Cond_FNF_r :
   forall x (a b : Alg (Alg x)) c, IFNF a -> FNF b ->
   IFNF (Cond (Alg x) b c a).
 Proof. intros. unfold IFNF in *. destruct H. destruct H. eexists.
   split. rewrite H. rewrite Cond_rev. apply Recur_over_Cond;auto.
-  apply Recur_over_Cond;auto. Qed.
+  unfold FNF_pres. intros. apply FNF_elim_Cond;auto. Qed.
 
 Lemma IFNF_elim_Seq_FNF_l :
   forall x (a b : Alg (Alg x)), IFNF a -> FNF b ->
   IFNF (Seq (Alg x) a b).
 Proof. intros. unfold IFNF in *. destruct H. destruct H. eexists.
   split. rewrite H. apply Recur_over_Seq_l;auto.
-  apply Recur_over_Seq_l;auto. Qed.
+  unfold FNF_pres. intros. apply FNF_elim_Seq;auto. Qed.
 
 Lemma IFNF_elim_Seq_FNF_r :
   forall x (a b : Alg (Alg x)), IFNF a -> FNF b ->
   IFNF (Seq (Alg x) b a).
 Proof. intros. unfold IFNF in *. destruct H. destruct H. eexists.
   split. rewrite H. apply Recur_over_Seq_r;auto.
-  apply Recur_over_Seq_r;auto. Qed.
+  unfold FNF_pres. intros. apply FNF_elim_Seq;auto. Qed.
 
 Theorem Alg_is_FNF_or_IFNF : forall (a : Ualg) x, FNF (a (Alg x)) \/ IFNF (a (Alg x)).
 Proof.
@@ -482,26 +481,31 @@ Proof.
     + right. apply IFNF_elim_Cond_FNF_l;auto.
     + right. unfold IFNF in *. destruct H. destruct H. destruct H0.
       destruct H0. rewrite H. rewrite H0. eexists. split.
-      apply Recur_over_Rec_Cond;auto. apply Recur_over_Rec_Cond;auto.
+      apply Recur_over_Rec_Cond;auto. unfold FNF_pres.
+      intros. apply FNF_elim_Cond;auto.
   - destruct IHa0_1;destruct IHa0_2.
     + left. apply FNF_elim_Seq;auto.
     + right. apply IFNF_elim_Seq_FNF_r;auto.
     + right. apply IFNF_elim_Seq_FNF_l;auto.
     + right. unfold IFNF in *. destruct H. destruct H. destruct H0.
       destruct H0. rewrite H. rewrite H0. eexists. split.
-      apply Recur_over_Rec_Seq;auto. apply Recur_over_Rec_Seq;auto.
+      apply Recur_over_Rec_Seq;auto. unfold FNF_pres.
+      intros. apply FNF_elim_Seq;auto.
   - destruct IHa0_1;destruct IHa0_2.
     + left. apply FNF_elim_Choice;auto.
     + right. apply IFNF_elim_Choice_FNF_r;auto.
     + right. apply IFNF_elim_Choice_FNF_l;auto.
     + right. unfold IFNF in *. destruct H. destruct H. destruct H0.
       destruct H0. rewrite H. rewrite H0. eexists. split.
-      apply Recur_over_Rec_Choice;auto. apply Recur_over_Rec_Choice;auto.
-  - right. unfold IFNF. exists a0. assert (FNF_pres a0). {
-      unfold FNF_pres. intros. destruct (H x0). apply Refine_is_non_finite;auto.
-      unfold IFNF in H1. destruct H1. destruct H1. unfold FNF_pres in H2.
-      rewrite H1. apply Refine_limit. auto.
-    } split. apply Recur_clos;auto. auto.
+      apply Recur_over_Rec_Choice;auto. unfold FNF_pres.
+      intros. apply FNF_elim_Choice;auto.
+  - right. unfold IFNF. exists a0. split. apply Recur_clos.
+    unfold FNF_pres. intros. remember (H x0). clear Heqo.
+    destruct o;auto. unfold IFNF in H1. do 2 destruct H1.
+    remember (Recur_over_Recur x a0 x1 x0). clear Heqe.
+    apply e in H1 as H3. do 2 (destruct H3). unfold FNF_pres in H3.
+    apply H3 in H0. do 2 rewrite <- Recur_clos in H4.
+    inversion H4. auto.
 Qed.
 
 Axiom Ualg_to_Alg : forall syn (x : Alg syn), exists t: Ualg, t syn = x.

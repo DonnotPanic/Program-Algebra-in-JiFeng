@@ -212,25 +212,19 @@ Definition testIter {s} (x : ProgramAlgebra.Alg s) :=
 
 Definition testRec := ProgramAlgebra.Recur (ProgramAlgebra.Alg bot) testIter.
 
-Search "fix_is_glb".
+Search "fix_is_lub".
 
-Variable glb : ProgramAlgebra.Closure -> ProgramAlgebra.Ualg.
-
-Hypothesis testIterValid :forall x, ProgramAlgebra.FNF_pres (@testIter x).
+Variable lub : ProgramAlgebra.Closure -> ProgramAlgebra.Ualg.
 
 Example testlim : testIter testnf = testRec .
-Proof. unfold testRec. rewrite ProgramAlgebra.Recur_clos with (glb := glb).
-rewrite ProgramAlgebra.fix_is_glb with (glb := glb);auto.
-- unfold ProgramAlgebra.RecurFix. unfold testnf. unfold testIter.
-  unfold hdge2inf. unfold testassn. unfold ProgramAlgebra.EqAlg.
-  unfold mapid. simpl. repeat split;auto.
-  unfold ProgramAlgebra.eqEval. intros. simpl in *. auto.
-  unfold ProgramAlgebra.eqEval. intros. auto.
-- apply testIterValid.
+Proof. unfold testRec. rewrite ProgramAlgebra.Recur_clos with (lub := lub).
+rewrite ProgramAlgebra.fix_is_lub with (lub := lub);auto.
+unfold ProgramAlgebra.RecurFix. unfold testnf. unfold testIter.
+unfold hdge2inf. unfold testassn. unfold ProgramAlgebra.EqAlg.
+unfold mapid. simpl. repeat split;auto.
+unfold ProgramAlgebra.eqEval. intros. simpl in *. auto.
+unfold ProgramAlgebra.eqEval. intros. auto.
 Qed.
-
-
-
 
 
 
