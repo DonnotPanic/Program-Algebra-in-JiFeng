@@ -123,14 +123,15 @@ Axiom Assign_compose : forall syn (v : (list Var)) (g h : Exp),
   Seq syn (@{v :== g} syn) (@{v :== h} syn) = (@{v :== (fun x => h (g x))} syn).
 
 (** Law A.2.3 *)
-Definition exp_Cond (g h : Exp) (c : bool) : Exp :=
-  match c with
-   | true => g
-   | false => h
-  end.
+Definition exp_Cond (g h : Exp) b : Exp :=
+ fun x =>
+   match (b x) with
+   | true => g x
+   | false => h x
+   end.
 
 Axiom Assign_Cond : forall syn (v : (list Var)) (g h : Exp) (b : Boolexp) ,
-  Cond syn (@{v :== g} syn) b (@{v :== h} syn) = (@{ v :== (exp_Cond g h (b v))} syn).
+  Cond syn (@{v :== g} syn) b (@{v :== h} syn) = (@{ v :== exp_Cond g h b } syn).
 
 (** Law A.2.4 *)
 Axiom Assign_to_NF : forall (v : (list Var)) (e : Exp) b syn,
@@ -142,12 +143,12 @@ Axiom Chaos_to_NF : forall syn b p, b GLOBVARS = true -> (_|_) syn = (Cond syn (
 
 (** TH1 *)
 
-Definition Total_Assign (a : Assign) := forall v:Var, In v GLOBVARS -> In v a.(ids).
+Definition Total_Assign (a : Assign) := a.(ids) = GLOBVARS.
 Theorem Assign_is_Total : forall a : Assign, exists b : Assign, a=b /\ Total_Assign b.
 Proof.
   intros. exists (extends_assign a). split.
   - apply Assign_extends.
-  - unfold extends_assign. unfold Total_Assign. auto.
+  - unfold Total_Assign. unfold extends_assign. auto.
 Qed.
 
 Theorem Assign_elim_Seq : forall syn (a b: Assign),
@@ -366,7 +367,8 @@ Fixpoint EqAlg {syn syn1} (x : Alg syn) (y : Alg syn1) :=
   | _, _ => False
   end.
 
-Definition RecurFix {syn} (f : clos (Alg syn)) (x : Alg syn) := EqAlg x (f x).
+Definition RecurFix {syn} (f : clos (Alg syn)) (x : Alg syn) :=
+  exists y, y = (f x) /\ EqAlg x y.
 
 Axiom fix_is_lub : forall s (f : clos (Alg s)) (x : Alg s),
  RecurFix f x -> (f x) = lub (iter (Alg s) f) (Alg s).
