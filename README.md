@@ -2,11 +2,11 @@ testGCD.v
 
 初始化程序：
 
-$X=_{def} \{a,b := 10,6\}$
+$X=_\text{def} \{a,b := 10,6\}$
 
 递归程序：
 
-$F=_{def}\lambda X \bullet (X;(\{a,b := b,a ~{mod}~ b\}\triangleleft ~ b \neq 0 ~\triangleright \{a,b:=a,b\}))$
+$F=_\text{def}\lambda X \bullet (X;(\{a,b := b,a \ \text{mod}\  b\}\triangleleft \  b \neq 0 \ \triangleright \{a,b:=a,b\}))$
 
 这个程序无法直接翻译因为 $X$ 的类型与最终生成的程序不一致，需要 `mapid` 提升一层。
 
@@ -27,7 +27,7 @@ Fixpoint mapid {s} (x : ProgramAlgebra.Alg s) :=
   end.
 ```
 
-$\{a,b := b,a ~{mod}~ b\}$ 对应 `gcd_step` ：
+$\{a,b := b,a \ \text{mod}\  b\}$ 对应 `gcd_step` ：
 
 ```coq
 Definition gcd_step := ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS
@@ -69,7 +69,7 @@ Definition testIter {s} (x : ProgramAlgebra.Alg s) :=
 
 不动点：
 
-$\mu_X =_{def} \{a,b:= 2,0 \}$
+$\mu_X =_\text{def} \{a,b:= 2,0 \}$
 
 ```coq
 Definition testnf := @{ ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS 
