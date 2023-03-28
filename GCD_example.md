@@ -1,16 +1,12 @@
-testGCD.v
-
-初始化程序：
+The definition of  intial program：
 
 $X=_\text{def} \{a,b := 10,6\}$
 
-递归程序：
+The recursive program：
 
-$F=_\text{def}\lambda X \bullet (X;(\{a,b := b,a \ \text{mod}\  b\}\triangleleft \  b \neq 0 \ \triangleright \{a,b:=a,b\}))$
+$F=_\text{def}\lambda X \bullet (X;(\{a,b := b,a \ \text{mod}\  b\}\triangleleft \  b \neq 0 \ \triangleright \text{skip}))$
 
-这个程序无法直接翻译因为 $X$ 的类型与最终生成的程序不一致，需要 `mapid` 提升一层。
-
-即从 `Alg s` 到 `Alg (Alg s)` 。
+This program cannot be directly translated because the type of $X$ is inconsistent with the program that will be generated. `mapid` needs to be used to lift one level, from `Alg s` to `Alg (Alg s)`.
 
 ```coq
 Fixpoint mapid {s} (x : ProgramAlgebra.Alg s) :=
@@ -27,7 +23,7 @@ Fixpoint mapid {s} (x : ProgramAlgebra.Alg s) :=
   end.
 ```
 
-$\{a,b := b,a \ \text{mod}\  b\}$ 对应 `gcd_step` ：
+$\{a,b := b,a \ \text{mod}\  b\}$ corresponds to `gcd_step` ：
 
 ```coq
 Definition gcd_step := ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS
@@ -39,7 +35,7 @@ Definition gcd_step := ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS
    end).
 ```
 
-$b\neq 0$ 的对应程序 `eqz_b` :
+$b\neq 0$ corresponds to  `eqz_b` :
 
 ```coq
 Definition eqz_b : ProgramAlgebra.Boolexp :=
@@ -50,14 +46,14 @@ Definition eqz_b : ProgramAlgebra.Boolexp :=
     end.
 ```
 
-$\{a,b := a,b\}$ 对应 `skip` ：
+$\text{skip}$ corrsesponds to  `skip` ：
 
 ```coq
 Definition skip := ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS
   (fun l => l).
 ```
 
-$F$ 对应程序：
+$F$ is defined as `testIter` as follows:
 
 ```coq
 Definition testIter {s} (x : ProgramAlgebra.Alg s) :=
@@ -67,7 +63,7 @@ Definition testIter {s} (x : ProgramAlgebra.Alg s) :=
      (@{skip} (ProgramAlgebra.Alg s))).
 ```
 
-不动点：
+The fixed point of the program
 
 $\mu_X =_\text{def} \{a,b:= 2,0 \}$
 
@@ -76,7 +72,7 @@ Definition testnf := @{ ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS
   (fun l => [(mkVar "a" 2);(mkVar "b" 0)]) } bot.
 ```
 
-$f(\mu_X)=_A \mu_X$
+We hereby are able to prove $f(\mu_X)=_A \mu_X$.
 
 ```coq
 Definition testRec := ProgramAlgebra.Recur (ProgramAlgebra.Alg bot) testIter.
@@ -91,4 +87,3 @@ unfold eqz_b. unfold ProgramAlgebra.exp_Cond.
 simpl. unfold ProgramAlgebra.eqEval. auto.
 Qed.
 ```
-
