@@ -32,19 +32,18 @@ Notation "_|_" := (ProgramAlgebra.Chaos)(at level 10).
 
 Notation "@{ e }" := (fun x => ProgramAlgebra.Assn x e)(at level 10).
 
-Definition gt_a_b : ProgramAlgebra.Boolexp :=
+Definition eqz_b : ProgramAlgebra.Boolexp :=
   fun l =>
-    match (find (fun x => eqb x.(id) "a") l),
-    (find (fun x => eqb x.(id) "b") l) with
-    | Some x, Some y => if (PeanoNat.Nat.leb x.(val) y.(val)) then false else true
-    | _, _ => false
+    match (find (fun x => eqb x.(id) "b") l) with
+    | Some x => if (PeanoNat.Nat.eqb x.(val) 0) then false else true
+    | _ => false
     end.
 
 Definition gcd_step := ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS
   (fun l =>
    match (find (fun x => eqb x.(id) "a") l),
     (find (fun x => eqb x.(id) "b") l) with
-   | Some x, Some y => [(mkVar x.(id) y.(val));(mkVar y.(id) (x.(val) - y.(val)))]
+   | Some x, Some y => [(mkVar x.(id) y.(val));(mkVar y.(id) (modulo x.(val) y.(val)))]
    | _, _ => []
    end).
 
@@ -67,13 +66,13 @@ Fixpoint mapid {s} (x : ProgramAlgebra.Alg s) :=
 Definition testIter {s} (x : ProgramAlgebra.Alg s) :=
   ProgramAlgebra.Seq (ProgramAlgebra.Alg s)
   (mapid x) (ProgramAlgebra.Cond (ProgramAlgebra.Alg s)
-     (@{gcd_step} (ProgramAlgebra.Alg s)) gt_a_b
+     (@{gcd_step} (ProgramAlgebra.Alg s)) eqz_b
      (@{skip} (ProgramAlgebra.Alg s))).
 
 Definition testRec := ProgramAlgebra.Recur (ProgramAlgebra.Alg bot) testIter.
 
 Definition testnf := @{ ProgramAlgebra.makeAssign ProgramAlgebra.GLOBVARS 
-  (fun l => [(mkVar "a" 2);(mkVar "b" 2)]) } bot.
+  (fun l => [(mkVar "a" 2);(mkVar "b" 0)]) } bot.
 
 Variable lub : ProgramAlgebra.Closure -> ProgramAlgebra.Ualg.
 
@@ -84,11 +83,9 @@ unfold ProgramAlgebra.RecurFix. unfold testnf. eexists. split.
 unfold testIter. unfold skip. unfold gcd_step.
 rewrite ProgramAlgebra.Assign_Cond. unfold mapid.
 rewrite ProgramAlgebra.Assign_compose. reflexivity.
-unfold gt_a_b. unfold ProgramAlgebra.exp_Cond.
+unfold eqz_b. unfold ProgramAlgebra.exp_Cond.
 simpl. unfold ProgramAlgebra.eqEval. auto.
 Qed.
-
-
 
 
 
