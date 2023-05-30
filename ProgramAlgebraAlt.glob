@@ -1,0 +1,1701 @@
+DIGEST fe30ea9b6e3b588eea14ccdc4aa277bd
+FPA.ProgramAlgebraAlt
+R15:21 Coq.Lists.Streams <> <> lib
+R23:26 Coq.Lists.List <> <> lib
+R36:48 Coq.Lists.List ListNotations <> mod
+mod 58:74 <> ProgramAlgebraAlt
+rec 84:93 ProgramAlgebraAlt UserParams
+proj 109:111 ProgramAlgebraAlt Var
+proj 123:130 ProgramAlgebraAlt GLOBVARS
+proj 146:148 ProgramAlgebraAlt eqb
+proj 173:182 ProgramAlgebraAlt Constraint
+R134:137 Coq.Init.Datatypes <> list ind
+R139:141 PA.ProgramAlgebraAlt <> Var:2 meth
+R154:157 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R151:153 PA.ProgramAlgebraAlt <> Var:2 meth
+R161:164 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R158:160 PA.ProgramAlgebraAlt <> Var:2 meth
+R165:168 Coq.Init.Datatypes <> bool ind
+sec 252:257 ProgramAlgebraAlt Assign
+R281:290 PA.ProgramAlgebraAlt ProgramAlgebraAlt UserParams class
+binder 271:277 <> UserVar:6
+def 307:309 ProgramAlgebraAlt Exp
+R314:314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R323:328 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R337:337 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R315:318 Coq.Init.Datatypes <> list ind
+R320:322 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+R329:332 Coq.Init.Datatypes <> list ind
+R334:336 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+rec 350:355 ProgramAlgebraAlt Assign
+proj 377:379 ProgramAlgebraAlt ids
+proj 399:404 ProgramAlgebraAlt values
+R384:387 Coq.Init.Datatypes <> list ind
+R389:391 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+R408:410 PA.ProgramAlgebraAlt ProgramAlgebraAlt Exp def
+def 432:439 ProgramAlgebraAlt refl_exp
+R443:445 PA.ProgramAlgebraAlt ProgramAlgebraAlt Exp def
+binder 455:455 <> x:10
+R460:460 PA.ProgramAlgebraAlt <> x:10 var
+def 478:487 ProgramAlgebraAlt empty_assn
+R491:496 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+R505:514 PA.ProgramAlgebraAlt ProgramAlgebraAlt makeAssign constr
+R516:523 PA.ProgramAlgebraAlt ProgramAlgebraAlt GLOBVARS meth
+R525:532 PA.ProgramAlgebraAlt ProgramAlgebraAlt refl_exp def
+R539:544 PA.ProgramAlgebraAlt ProgramAlgebraAlt.Assign <> sec
+sec 556:559 ProgramAlgebraAlt Bool
+R583:592 PA.ProgramAlgebraAlt ProgramAlgebraAlt UserParams class
+binder 573:579 <> UserVar:11
+def 609:615 ProgramAlgebraAlt Boolexp
+R627:627 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R636:640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R628:631 Coq.Init.Datatypes <> list ind
+R633:635 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+R641:644 Coq.Init.Datatypes <> bool ind
+def 660:668 ProgramAlgebraAlt true_stat
+R672:678 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 688:688 <> x:12
+R693:696 Coq.Init.Datatypes <> true constr
+def 713:722 ProgramAlgebraAlt false_stat
+R726:732 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 742:742 <> x:13
+R747:751 Coq.Init.Datatypes <> false constr
+R759:762 PA.ProgramAlgebraAlt ProgramAlgebraAlt.Bool <> sec
+sec 774:776 ProgramAlgebraAlt alg
+R800:809 PA.ProgramAlgebraAlt ProgramAlgebraAlt UserParams class
+binder 790:796 <> UserVar:14
+ind 825:830 ProgramAlgebraAlt Atomic
+constr 846:850 ProgramAlgebraAlt Chaos
+constr 865:868 ProgramAlgebraAlt Assn
+R854:859 PA.ProgramAlgebraAlt <> Atomic:15 ind
+R878:881 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R872:877 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+R882:887 PA.ProgramAlgebraAlt <> Atomic:15 ind
+ind 903:908 ProgramAlgebraAlt Attach
+constr 924:926 ProgramAlgebraAlt Seq
+constr 941:943 ProgramAlgebraAlt UDC
+constr 958:960 ProgramAlgebraAlt CDC
+R930:935 PA.ProgramAlgebraAlt <> Attach:17 ind
+R947:952 PA.ProgramAlgebraAlt <> Attach:17 ind
+R971:974 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R964:970 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+R975:980 PA.ProgramAlgebraAlt <> Attach:17 ind
+ind 1017:1019 ProgramAlgebraAlt Alg
+constr 1035:1038 ProgramAlgebraAlt Lift
+constr 1060:1063 ProgramAlgebraAlt Comb
+R1048:1051 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1042:1047 PA.ProgramAlgebraAlt ProgramAlgebraAlt Atomic ind
+R1052:1054 PA.ProgramAlgebraAlt <> Alg:19 ind
+R1073:1076 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1067:1072 PA.ProgramAlgebraAlt ProgramAlgebraAlt Attach ind
+R1080:1083 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1077:1079 PA.ProgramAlgebraAlt <> Alg:19 ind
+R1087:1090 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1084:1086 PA.ProgramAlgebraAlt <> Alg:19 ind
+R1091:1093 PA.ProgramAlgebraAlt <> Alg:19 ind
+def 1110:1116 ProgramAlgebraAlt UDCList
+R1123:1126 Coq.Init.Datatypes <> list ind
+R1128:1130 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 1119:1119 <> l:21
+R1135:1137 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+R1152:1152 PA.ProgramAlgebraAlt <> l:21 var
+R1165:1166 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1171:1174 PA.ProgramAlgebraAlt ProgramAlgebraAlt Lift constr
+R1177:1180 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assn constr
+R1182:1191 PA.ProgramAlgebraAlt ProgramAlgebraAlt empty_assn def
+R1201:1204 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1205:1206 Coq.Lists.List <> tl def
+R1211:1219 Coq.Lists.List <> fold_left def
+binder 1226:1226 <> a:23
+binder 1228:1228 <> b:24
+R1234:1237 PA.ProgramAlgebraAlt ProgramAlgebraAlt Comb constr
+R1239:1241 PA.ProgramAlgebraAlt ProgramAlgebraAlt UDC constr
+R1243:1243 PA.ProgramAlgebraAlt <> a:23 var
+R1245:1245 PA.ProgramAlgebraAlt <> b:24 var
+R1267:1269 PA.ProgramAlgebraAlt ProgramAlgebraAlt.alg <> sec
+sec 1281:1286 ProgramAlgebraAlt rwtrel
+R1310:1319 PA.ProgramAlgebraAlt ProgramAlgebraAlt UserParams class
+binder 1300:1306 <> UserVar:25
+ind 1335:1340 ProgramAlgebraAlt rwtrel
+constr 1375:1382 ProgramAlgebraAlt rwt_refl
+constr 1403:1411 ProgramAlgebraAlt rwt_trans
+R1347:1349 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 1343:1343 <> a:26
+R1357:1360 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1354:1356 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+R1386:1391 PA.ProgramAlgebraAlt <> rwtrel:27 ind
+R1395:1395 PA.ProgramAlgebraAlt <> a:26 var
+R1393:1393 PA.ProgramAlgebraAlt <> a:26 var
+R1429:1431 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 1423:1423 <> b:29
+binder 1425:1425 <> c:30
+R1445:1454 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1435:1440 PA.ProgramAlgebraAlt <> rwtrel:27 ind
+R1444:1444 PA.ProgramAlgebraAlt <> b:29 var
+R1442:1442 PA.ProgramAlgebraAlt <> a:26 var
+R1465:1468 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1455:1460 PA.ProgramAlgebraAlt <> rwtrel:27 ind
+R1464:1464 PA.ProgramAlgebraAlt <> c:30 var
+R1462:1462 PA.ProgramAlgebraAlt <> b:29 var
+R1469:1474 PA.ProgramAlgebraAlt <> rwtrel:27 ind
+R1478:1478 PA.ProgramAlgebraAlt <> c:30 var
+R1476:1476 PA.ProgramAlgebraAlt <> a:26 var
+ax 1489:1496 ProgramAlgebraAlt rwt_comm
+R1514:1516 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 1508:1508 <> a:31
+binder 1510:1510 <> b:32
+R1530:1533 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1520:1525 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwtrel ind
+R1527:1527 PA.ProgramAlgebraAlt <> a:31 var
+R1529:1529 PA.ProgramAlgebraAlt <> b:32 var
+R1534:1539 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwtrel ind
+R1541:1541 PA.ProgramAlgebraAlt <> b:32 var
+R1543:1543 PA.ProgramAlgebraAlt <> a:31 var
+ax 1554:1561 ProgramAlgebraAlt rwt_comb
+R1583:1585 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 1573:1573 <> a:34
+binder 1575:1575 <> b:35
+binder 1577:1577 <> c:36
+binder 1579:1579 <> d:37
+R1593:1598 PA.ProgramAlgebraAlt ProgramAlgebraAlt Attach ind
+binder 1589:1589 <> e:38
+R1612:1621 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1602:1607 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwtrel ind
+R1609:1609 PA.ProgramAlgebraAlt <> a:34 var
+R1611:1611 PA.ProgramAlgebraAlt <> b:35 var
+R1632:1635 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1622:1627 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwtrel ind
+R1629:1629 PA.ProgramAlgebraAlt <> c:36 var
+R1631:1631 PA.ProgramAlgebraAlt <> d:37 var
+R1636:1641 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwtrel ind
+R1644:1647 PA.ProgramAlgebraAlt ProgramAlgebraAlt Comb constr
+R1649:1649 PA.ProgramAlgebraAlt <> e:38 var
+R1651:1651 PA.ProgramAlgebraAlt <> a:34 var
+R1653:1653 PA.ProgramAlgebraAlt <> c:36 var
+R1657:1660 PA.ProgramAlgebraAlt ProgramAlgebraAlt Comb constr
+R1662:1662 PA.ProgramAlgebraAlt <> e:38 var
+R1664:1664 PA.ProgramAlgebraAlt <> b:35 var
+R1666:1666 PA.ProgramAlgebraAlt <> d:37 var
+R1674:1679 PA.ProgramAlgebraAlt ProgramAlgebraAlt.rwtrel <> sec
+R1710:1719 PA.ProgramAlgebraAlt ProgramAlgebraAlt makeAssign constr
+not 1692:1692 ProgramAlgebraAlt ::alg_scope:x_':=='_x
+R1778:1781 PA.ProgramAlgebraAlt ProgramAlgebraAlt Lift constr
+R1784:1787 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assn constr
+not 1765:1765 ProgramAlgebraAlt ::alg_scope:'@{'_x_'}'
+R1838:1841 PA.ProgramAlgebraAlt ProgramAlgebraAlt Lift constr
+R1843:1847 PA.ProgramAlgebraAlt ProgramAlgebraAlt Chaos constr
+not 1828:1828 ProgramAlgebraAlt ::alg_scope:'_|_'
+R1900:1905 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwtrel ind
+not 1885:1885 ProgramAlgebraAlt ::alg_scope:x_'<-->'_x
+R1986:1989 PA.ProgramAlgebraAlt ProgramAlgebraAlt Comb constr
+R1992:1994 PA.ProgramAlgebraAlt ProgramAlgebraAlt CDC constr
+not 1968:1968 ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x
+R2052:2055 PA.ProgramAlgebraAlt ProgramAlgebraAlt Comb constr
+R2057:2059 PA.ProgramAlgebraAlt ProgramAlgebraAlt Seq constr
+not 2039:2039 ProgramAlgebraAlt ::alg_scope:x_';;'_x
+R2134:2137 PA.ProgramAlgebraAlt ProgramAlgebraAlt Comb constr
+R2139:2141 PA.ProgramAlgebraAlt ProgramAlgebraAlt UDC constr
+not 2120:2120 ProgramAlgebraAlt ::alg_scope:x_'/-\'_x
+R2220:2229 PA.ProgramAlgebraAlt ProgramAlgebraAlt makeAssign constr
+not 2202:2202 ProgramAlgebraAlt ::alg_scope:x_':=='_x
+R2286:2292 PA.ProgramAlgebraAlt ProgramAlgebraAlt UDCList def
+not 2274:2274 ProgramAlgebraAlt ::alg_scope:'|-|'_x
+sec 2331:2334 ProgramAlgebraAlt Fact
+R2358:2367 PA.ProgramAlgebraAlt ProgramAlgebraAlt UserParams class
+binder 2348:2354 <> UserVar:40
+ax 2428:2446 ProgramAlgebraAlt Chaos_zero_Choice_l
+R2462:2464 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 2458:2458 <> p:41
+R2468:2468 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2480:2486 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2469:2469 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2473:2478 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2470:2472 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R2479:2479 PA.ProgramAlgebraAlt <> p:41 var
+R2487:2489 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+ax 2500:2515 ProgramAlgebraAlt Chaos_zero_Seq_l
+R2531:2533 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 2527:2527 <> p:43
+R2537:2537 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2548:2554 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2538:2538 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R2542:2546 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R2539:2541 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R2547:2547 PA.ProgramAlgebraAlt <> p:43 var
+R2555:2557 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+ax 2568:2583 ProgramAlgebraAlt Chaos_zero_Seq_r
+R2599:2601 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 2595:2595 <> p:45
+R2605:2605 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2616:2622 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2607:2611 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R2615:2615 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R2606:2606 PA.ProgramAlgebraAlt <> p:45 var
+R2612:2614 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R2623:2625 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+ax 2656:2666 ProgramAlgebraAlt Choice_comm
+R2684:2686 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 2678:2678 <> p:47
+binder 2680:2680 <> q:48
+R2690:2690 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2698:2705 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2713:2713 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2692:2696 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2691:2691 PA.ProgramAlgebraAlt <> p:47 var
+R2697:2697 PA.ProgramAlgebraAlt <> q:48 var
+R2707:2711 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2706:2706 PA.ProgramAlgebraAlt <> q:48 var
+R2712:2712 PA.ProgramAlgebraAlt <> p:47 var
+prf 2726:2744 ProgramAlgebraAlt Chaos_zero_Choice_r
+R2760:2762 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 2756:2756 <> p:50
+R2766:2766 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2778:2784 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2768:2773 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2777:2777 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2767:2767 PA.ProgramAlgebraAlt <> p:50 var
+R2774:2776 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R2785:2787 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R2814:2822 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R2827:2827 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2831:2836 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2828:2830 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R2814:2822 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R2827:2827 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2831:2836 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2828:2830 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R2848:2858 PA.ProgramAlgebraAlt ProgramAlgebraAlt Choice_comm prfax
+R2848:2858 PA.ProgramAlgebraAlt ProgramAlgebraAlt Choice_comm prfax
+R2870:2888 PA.ProgramAlgebraAlt ProgramAlgebraAlt Chaos_zero_Choice_l prfax
+R2870:2888 PA.ProgramAlgebraAlt ProgramAlgebraAlt Chaos_zero_Choice_l prfax
+ax 2904:2915 ProgramAlgebraAlt Choice_assoc
+R2935:2937 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 2927:2927 <> p:51
+binder 2929:2929 <> q:52
+binder 2931:2931 <> r:53
+R2944:2944 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2960:2967 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2983:2983 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R2945:2945 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2953:2958 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2947:2951 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2946:2946 PA.ProgramAlgebraAlt <> p:51 var
+R2952:2952 PA.ProgramAlgebraAlt <> q:52 var
+R2959:2959 PA.ProgramAlgebraAlt <> r:53 var
+R2969:2974 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2982:2982 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2968:2968 PA.ProgramAlgebraAlt <> p:51 var
+R2976:2980 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R2975:2975 PA.ProgramAlgebraAlt <> q:52 var
+R2981:2981 PA.ProgramAlgebraAlt <> r:53 var
+ax 3014:3021 ProgramAlgebraAlt Cond_rev
+R3039:3041 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 3033:3033 <> p:55
+binder 3035:3035 <> q:56
+R3049:3055 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 3045:3045 <> b:57
+R3063:3063 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R3075:3082 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R3114:3114 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R3065:3068 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R3070:3073 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R3069:3069 PA.ProgramAlgebraAlt <> b:57 var
+R3064:3064 PA.ProgramAlgebraAlt <> p:55 var
+R3074:3074 PA.ProgramAlgebraAlt <> q:56 var
+R3084:3088 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R3108:3112 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 3093:3093 <> g:58
+R3098:3101 Coq.Init.Datatypes <> negb def
+R3104:3104 PA.ProgramAlgebraAlt <> b:57 var
+R3106:3106 PA.ProgramAlgebraAlt <> g:58 var
+R3083:3083 PA.ProgramAlgebraAlt <> q:56 var
+R3113:3113 PA.ProgramAlgebraAlt <> p:55 var
+ax 3145:3153 ProgramAlgebraAlt Seq_assoc
+R3173:3175 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 3165:3165 <> p:60
+binder 3167:3167 <> q:61
+binder 3169:3169 <> r:62
+R3184:3184 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R3198:3205 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R3219:3219 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R3185:3185 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R3192:3196 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R3187:3190 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R3186:3186 PA.ProgramAlgebraAlt <> p:60 var
+R3191:3191 PA.ProgramAlgebraAlt <> q:61 var
+R3197:3197 PA.ProgramAlgebraAlt <> r:62 var
+R3207:3211 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R3218:3218 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R3206:3206 PA.ProgramAlgebraAlt <> p:60 var
+R3213:3216 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R3212:3212 PA.ProgramAlgebraAlt <> q:61 var
+R3217:3217 PA.ProgramAlgebraAlt <> r:62 var
+def 3270:3280 ProgramAlgebraAlt lookup_help
+R3286:3288 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 3283:3283 <> a:64
+R3300:3303 Coq.Init.Datatypes <> list ind
+R3305:3307 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 3292:3293 <> vs:65
+binder 3295:3296 <> rs:66
+R3313:3315 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+R3332:3333 PA.ProgramAlgebraAlt <> rs:66 var
+R3328:3329 PA.ProgramAlgebraAlt <> vs:65 var
+R3347:3348 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3353:3353 PA.ProgramAlgebraAlt <> a:64 var
+R3359:3360 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3368:3368 PA.ProgramAlgebraAlt <> a:64 var
+R3375:3376 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3382:3383 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3394:3396 PA.ProgramAlgebraAlt ProgramAlgebraAlt eqb meth
+R3398:3398 PA.ProgramAlgebraAlt <> a:64 var
+R3415:3425 PA.ProgramAlgebraAlt <> lookup_help:67 def
+R3427:3427 PA.ProgramAlgebraAlt <> a:64 var
+def 3453:3472 ProgramAlgebraAlt extends_mapping_help
+R3486:3489 Coq.Init.Datatypes <> list ind
+R3491:3493 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 3475:3476 <> us:70
+binder 3478:3479 <> rs:71
+binder 3481:3481 <> k:72
+R3500:3503 Coq.Init.Datatypes <> list ind
+R3505:3507 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+R3523:3523 PA.ProgramAlgebraAlt <> k:72 var
+R3536:3537 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3542:3543 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R3552:3553 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3579:3582 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3560:3570 PA.ProgramAlgebraAlt ProgramAlgebraAlt lookup_help def
+R3574:3575 PA.ProgramAlgebraAlt <> us:70 var
+R3577:3578 PA.ProgramAlgebraAlt <> rs:71 var
+R3583:3602 PA.ProgramAlgebraAlt <> extends_mapping_help:73 def
+R3607:3608 PA.ProgramAlgebraAlt <> rs:71 var
+R3604:3605 PA.ProgramAlgebraAlt <> us:70 var
+def 3635:3649 ProgramAlgebraAlt extends_mapping
+R3658:3661 Coq.Init.Datatypes <> list ind
+R3663:3665 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 3652:3653 <> us:75
+R3674:3674 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3683:3688 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3697:3697 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3675:3678 Coq.Init.Datatypes <> list ind
+R3680:3682 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+R3689:3692 Coq.Init.Datatypes <> list ind
+R3694:3696 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 3670:3670 <> m:76
+binder 3710:3710 <> k:77
+R3716:3735 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_mapping_help def
+R3737:3738 PA.ProgramAlgebraAlt <> us:75 var
+R3741:3741 PA.ProgramAlgebraAlt <> m:76 var
+R3743:3744 PA.ProgramAlgebraAlt <> us:75 var
+R3747:3747 PA.ProgramAlgebraAlt <> k:77 var
+def 3764:3777 ProgramAlgebraAlt extends_assign
+R3784:3789 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 3780:3780 <> v:78
+R3800:3809 PA.ProgramAlgebraAlt ProgramAlgebraAlt makeAssign constr
+R3818:3825 PA.ProgramAlgebraAlt ProgramAlgebraAlt GLOBVARS meth
+R3835:3849 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_mapping def
+R3854:3856 PA.ProgramAlgebraAlt ProgramAlgebraAlt ids proj
+R3851:3851 PA.ProgramAlgebraAlt <> v:78 var
+R3862:3867 PA.ProgramAlgebraAlt ProgramAlgebraAlt values proj
+R3859:3859 PA.ProgramAlgebraAlt <> v:78 var
+ax 3880:3893 ProgramAlgebraAlt Assign_extends
+R3909:3914 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 3905:3905 <> v:79
+R3925:3930 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R3921:3922 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R3924:3924 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R3923:3923 PA.ProgramAlgebraAlt <> v:79 var
+R3931:3932 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R3949:3949 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R3933:3946 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R3948:3948 PA.ProgramAlgebraAlt <> v:79 var
+ax 3980:3989 ProgramAlgebraAlt Assign_Seq
+R4005:4008 Coq.Init.Datatypes <> list ind
+R4010:4012 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 4001:4001 <> v:81
+R4022:4024 PA.ProgramAlgebraAlt ProgramAlgebraAlt Exp def
+binder 4016:4016 <> g:82
+binder 4018:4018 <> h:83
+R4056:4061 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R4042:4045 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R4032:4033 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4041:4041 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4035:4039 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4034:4034 PA.ProgramAlgebraAlt <> v:81 var
+R4040:4040 PA.ProgramAlgebraAlt <> g:82 var
+R4046:4047 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4055:4055 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4049:4053 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4048:4048 PA.ProgramAlgebraAlt <> v:81 var
+R4054:4054 PA.ProgramAlgebraAlt <> h:83 var
+R4062:4063 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4088:4088 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4065:4070 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4087:4087 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4064:4064 PA.ProgramAlgebraAlt <> v:81 var
+binder 4075:4075 <> x:84
+R4080:4080 PA.ProgramAlgebraAlt <> h:83 var
+R4083:4083 PA.ProgramAlgebraAlt <> g:82 var
+R4085:4085 PA.ProgramAlgebraAlt <> x:84 var
+def 4124:4131 ProgramAlgebraAlt exp_Cond
+R4140:4142 PA.ProgramAlgebraAlt ProgramAlgebraAlt Exp def
+binder 4134:4134 <> g:86
+binder 4136:4136 <> h:87
+binder 4145:4145 <> b:88
+R4149:4151 PA.ProgramAlgebraAlt ProgramAlgebraAlt Exp def
+binder 4163:4163 <> x:89
+R4180:4180 PA.ProgramAlgebraAlt <> b:88 var
+R4182:4182 PA.ProgramAlgebraAlt <> x:89 var
+R4197:4200 Coq.Init.Datatypes <> true constr
+R4205:4205 PA.ProgramAlgebraAlt <> g:86 var
+R4207:4207 PA.ProgramAlgebraAlt <> x:89 var
+R4216:4220 Coq.Init.Datatypes <> false constr
+R4225:4225 PA.ProgramAlgebraAlt <> h:87 var
+R4227:4227 PA.ProgramAlgebraAlt <> x:89 var
+ax 4248:4258 ProgramAlgebraAlt Assign_Cond
+R4275:4278 Coq.Init.Datatypes <> list ind
+R4280:4282 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 4270:4270 <> v:90
+R4293:4295 PA.ProgramAlgebraAlt ProgramAlgebraAlt Exp def
+binder 4287:4287 <> g:91
+binder 4289:4289 <> h:92
+R4303:4309 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 4299:4299 <> b:93
+R4347:4352 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R4328:4331 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4333:4336 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4332:4332 PA.ProgramAlgebraAlt <> b:93 var
+R4318:4319 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4327:4327 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4321:4325 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4320:4320 PA.ProgramAlgebraAlt <> v:90 var
+R4326:4326 PA.ProgramAlgebraAlt <> g:91 var
+R4337:4338 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4346:4346 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4340:4344 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4339:4339 PA.ProgramAlgebraAlt <> v:90 var
+R4345:4345 PA.ProgramAlgebraAlt <> h:92 var
+R4353:4355 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4376:4377 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4357:4361 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4356:4356 PA.ProgramAlgebraAlt <> v:90 var
+R4362:4369 PA.ProgramAlgebraAlt ProgramAlgebraAlt exp_Cond def
+R4371:4371 PA.ProgramAlgebraAlt <> g:91 var
+R4373:4373 PA.ProgramAlgebraAlt <> h:92 var
+R4375:4375 PA.ProgramAlgebraAlt <> b:93 var
+ax 4408:4419 ProgramAlgebraAlt Assign_to_NF
+R4436:4439 Coq.Init.Datatypes <> list ind
+R4441:4443 PA.ProgramAlgebraAlt ProgramAlgebraAlt Var meth
+binder 4431:4431 <> v:95
+R4452:4454 PA.ProgramAlgebraAlt ProgramAlgebraAlt Exp def
+binder 4448:4448 <> e:96
+R4472:4477 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R4462:4463 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4471:4471 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4465:4469 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4464:4464 PA.ProgramAlgebraAlt <> v:95 var
+R4470:4470 PA.ProgramAlgebraAlt <> e:96 var
+R4478:4478 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4482:4486 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4497:4501 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4518:4518 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4487:4496 PA.ProgramAlgebraAlt ProgramAlgebraAlt false_stat def
+R4479:4481 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R4502:4505 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R4506:4506 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4517:4517 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R4507:4508 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4516:4516 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4510:4514 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_':=='_x not
+R4509:4509 PA.ProgramAlgebraAlt <> v:95 var
+R4515:4515 PA.ProgramAlgebraAlt <> e:96 var
+ax 4551:4561 ProgramAlgebraAlt Chaos_to_NF
+binder 4572:4572 <> p:98
+R4575:4575 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R4579:4586 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R4616:4616 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R4576:4578 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R4587:4587 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4591:4595 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4605:4609 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4615:4615 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R4596:4604 PA.ProgramAlgebraAlt ProgramAlgebraAlt true_stat def
+R4588:4590 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R4610:4613 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R4614:4614 PA.ProgramAlgebraAlt <> p:98 var
+def 4647:4658 ProgramAlgebraAlt Total_Assign
+R4665:4670 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 4661:4661 <> a:100
+binder 4683:4683 <> x:101
+R4699:4702 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4686:4687 Coq.Lists.List <> In def
+R4691:4698 PA.ProgramAlgebraAlt ProgramAlgebraAlt GLOBVARS meth
+R4689:4689 PA.ProgramAlgebraAlt <> x:101 var
+R4703:4704 Coq.Lists.List <> In def
+R4711:4713 PA.ProgramAlgebraAlt ProgramAlgebraAlt ids proj
+R4708:4708 PA.ProgramAlgebraAlt <> a:100 var
+R4706:4706 PA.ProgramAlgebraAlt <> x:101 var
+prf 4727:4741 ProgramAlgebraAlt Assign_is_Total
+R4756:4761 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 4752:4752 <> a:102
+R4764:4770 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4781:4782 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4775:4780 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 4771:4771 <> b:103
+R4797:4800 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4787:4792 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R4783:4784 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4786:4786 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4785:4785 PA.ProgramAlgebraAlt <> a:102 var
+R4793:4794 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4796:4796 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R4795:4795 PA.ProgramAlgebraAlt <> b:103 var
+R4801:4812 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+R4814:4814 PA.ProgramAlgebraAlt <> b:103 var
+R4846:4859 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R4846:4859 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R4884:4897 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R4884:4897 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R4913:4924 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+R4934:4947 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+prf 4974:4988 ProgramAlgebraAlt Assign_elim_Seq
+R5005:5010 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 5000:5000 <> a:104
+binder 5002:5002 <> b:105
+R5021:5028 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5038:5040 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5032:5037 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 5029:5029 <> c:106
+R5063:5066 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5053:5058 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R5045:5048 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R5041:5042 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5044:5044 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5043:5043 PA.ProgramAlgebraAlt <> a:104 var
+R5049:5050 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5052:5052 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5051:5051 PA.ProgramAlgebraAlt <> b:105 var
+R5059:5060 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5062:5062 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5061:5061 PA.ProgramAlgebraAlt <> c:106 var
+R5067:5078 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+R5080:5080 PA.ProgramAlgebraAlt <> c:106 var
+R5126:5134 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R5158:5161 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R5139:5140 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5157:5157 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5141:5154 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5162:5163 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5180:5180 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5164:5177 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5126:5134 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R5158:5161 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R5139:5140 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5157:5157 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5141:5154 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5162:5163 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5180:5180 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5164:5177 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5197:5204 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R5212:5225 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R5197:5204 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R5212:5225 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R5212:5225 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R5241:5254 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5263:5272 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_Seq prfax
+R5263:5272 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_Seq prfax
+R5288:5299 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+prf 5326:5341 ProgramAlgebraAlt Assign_elim_Cond
+R5358:5363 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 5353:5353 <> a:107
+binder 5355:5355 <> b:108
+R5371:5377 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 5367:5367 <> d:109
+R5388:5395 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5405:5407 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5399:5404 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 5396:5396 <> c:110
+R5435:5438 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5425:5430 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R5412:5415 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R5417:5420 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R5416:5416 PA.ProgramAlgebraAlt <> d:109 var
+R5408:5409 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5411:5411 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5410:5410 PA.ProgramAlgebraAlt <> a:107 var
+R5421:5422 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5424:5424 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5423:5423 PA.ProgramAlgebraAlt <> b:108 var
+R5431:5432 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5434:5434 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5433:5433 PA.ProgramAlgebraAlt <> c:110 var
+R5439:5450 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+R5452:5452 PA.ProgramAlgebraAlt <> c:110 var
+R5498:5506 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R5530:5533 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R5535:5538 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R5511:5512 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5529:5529 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5513:5526 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5539:5540 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5557:5557 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5541:5554 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5498:5506 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R5530:5533 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R5535:5538 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R5511:5512 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5529:5529 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5513:5526 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5539:5540 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5557:5557 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5541:5554 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5574:5581 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R5589:5602 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R5574:5581 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R5589:5602 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R5589:5602 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_extends prfax
+R5618:5631 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R5640:5650 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_Cond prfax
+R5640:5650 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_Cond prfax
+R5666:5677 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+def 5724:5725 ProgramAlgebraAlt CH
+R5732:5735 Coq.Init.Datatypes <> list ind
+R5737:5739 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 5728:5728 <> p:111
+R5768:5770 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 5764:5764 <> x:112
+R5780:5783 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5774:5775 Coq.Lists.List <> In def
+R5779:5779 PA.ProgramAlgebraAlt <> p:111 var
+R5777:5777 PA.ProgramAlgebraAlt <> x:112 var
+R5784:5790 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5792:5793 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5791:5791 <> y:113
+R5805:5808 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5795:5800 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R5794:5794 PA.ProgramAlgebraAlt <> x:112 var
+R5801:5802 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5804:5804 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R5803:5803 PA.ProgramAlgebraAlt <> y:113 var
+R5809:5820 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+R5822:5822 PA.ProgramAlgebraAlt <> y:113 var
+ax 5853:5864 ProgramAlgebraAlt Choice_distr
+R5882:5885 Coq.Init.Datatypes <> list ind
+R5887:5889 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 5876:5876 <> a:114
+binder 5878:5878 <> b:115
+R5901:5904 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5897:5898 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R5900:5900 PA.ProgramAlgebraAlt <> a:114 var
+R5909:5912 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5905:5906 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R5908:5908 PA.ProgramAlgebraAlt <> b:115 var
+R5913:5913 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R5933:5940 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R5953:5953 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R5914:5914 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R5920:5926 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R5932:5932 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R5915:5918 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R5919:5919 PA.ProgramAlgebraAlt <> a:114 var
+R5927:5930 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R5931:5931 PA.ProgramAlgebraAlt <> b:115 var
+R5941:5945 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R5952:5952 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R5947:5950 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5946:5946 PA.ProgramAlgebraAlt <> a:114 var
+R5951:5951 PA.ProgramAlgebraAlt <> b:115 var
+ax 5984:5999 ProgramAlgebraAlt Cond_over_Choice
+R6017:6020 Coq.Init.Datatypes <> list ind
+R6022:6024 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 6011:6011 <> a:117
+binder 6013:6013 <> b:118
+R6035:6041 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 6028:6031 <> bexp:119
+R6053:6056 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6049:6050 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6052:6052 PA.ProgramAlgebraAlt <> a:117 var
+R6061:6068 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6057:6058 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6060:6060 PA.ProgramAlgebraAlt <> b:118 var
+R6095:6100 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R6069:6069 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6075:6079 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6084:6088 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6094:6094 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6080:6083 PA.ProgramAlgebraAlt <> bexp:119 var
+R6070:6073 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6074:6074 PA.ProgramAlgebraAlt <> a:117 var
+R6089:6092 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6093:6093 PA.ProgramAlgebraAlt <> b:118 var
+R6101:6105 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6163:6163 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6106:6108 Coq.Lists.List <> map def
+R6149:6157 Coq.Lists.List <> list_prod def
+R6161:6161 PA.ProgramAlgebraAlt <> b:118 var
+R6159:6159 PA.ProgramAlgebraAlt <> a:117 var
+binder 6115:6115 <> g:120
+R6120:6120 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6126:6130 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6135:6139 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6145:6145 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6131:6134 PA.ProgramAlgebraAlt <> bexp:119 var
+R6121:6123 Coq.Init.Datatypes <> fst def
+R6125:6125 PA.ProgramAlgebraAlt <> g:120 var
+R6140:6142 Coq.Init.Datatypes <> snd def
+R6144:6144 PA.ProgramAlgebraAlt <> g:120 var
+ax 6194:6208 ProgramAlgebraAlt Seq_over_Choice
+R6226:6229 Coq.Init.Datatypes <> list ind
+R6231:6233 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 6220:6220 <> a:122
+binder 6222:6222 <> b:123
+R6245:6248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6241:6242 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6244:6244 PA.ProgramAlgebraAlt <> a:122 var
+R6253:6260 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6249:6250 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6252:6252 PA.ProgramAlgebraAlt <> b:123 var
+R6279:6284 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R6261:6261 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R6267:6272 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R6278:6278 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R6262:6265 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6266:6266 PA.ProgramAlgebraAlt <> a:122 var
+R6273:6276 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6277:6277 PA.ProgramAlgebraAlt <> b:123 var
+R6285:6289 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6339:6339 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6290:6292 Coq.Lists.List <> map def
+R6325:6333 Coq.Lists.List <> list_prod def
+R6337:6337 PA.ProgramAlgebraAlt <> b:123 var
+R6335:6335 PA.ProgramAlgebraAlt <> a:122 var
+binder 6299:6299 <> g:124
+R6304:6304 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R6310:6315 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R6321:6321 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R6305:6307 Coq.Init.Datatypes <> fst def
+R6309:6309 PA.ProgramAlgebraAlt <> g:124 var
+R6316:6318 Coq.Init.Datatypes <> snd def
+R6320:6320 PA.ProgramAlgebraAlt <> g:124 var
+ax 6370:6381 ProgramAlgebraAlt Choice_to_NF
+R6397:6400 Coq.Init.Datatypes <> list ind
+R6402:6404 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 6393:6393 <> a:126
+binder 6407:6407 <> b:127
+R6418:6421 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6414:6415 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6417:6417 PA.ProgramAlgebraAlt <> a:126 var
+R6440:6447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6432:6434 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6422:6422 PA.ProgramAlgebraAlt <> b:127 var
+R6424:6431 PA.ProgramAlgebraAlt ProgramAlgebraAlt GLOBVARS meth
+R6435:6439 Coq.Init.Datatypes <> false constr
+R6448:6448 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R6454:6460 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R6449:6452 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6453:6453 PA.ProgramAlgebraAlt <> a:126 var
+R6461:6461 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6465:6469 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6471:6475 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6481:6481 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6470:6470 PA.ProgramAlgebraAlt <> b:127 var
+R6462:6464 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R6476:6479 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6480:6480 PA.ProgramAlgebraAlt <> a:126 var
+prf 6506:6517 ProgramAlgebraAlt CH_elim_Cond
+R6535:6538 Coq.Init.Datatypes <> list ind
+R6540:6542 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 6529:6529 <> p:129
+binder 6531:6531 <> q:130
+R6550:6556 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 6546:6546 <> b:131
+R6568:6571 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6564:6565 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6567:6567 PA.ProgramAlgebraAlt <> p:129 var
+R6576:6579 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6572:6573 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6575:6575 PA.ProgramAlgebraAlt <> q:130 var
+R6580:6586 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6588:6589 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6587:6587 <> c:132
+R6624:6627 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6590:6590 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R6610:6617 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R6623:6623 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R6596:6599 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6601:6604 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R6600:6600 PA.ProgramAlgebraAlt <> b:131 var
+R6591:6594 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6595:6595 PA.ProgramAlgebraAlt <> p:129 var
+R6605:6608 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6609:6609 PA.ProgramAlgebraAlt <> q:130 var
+R6618:6621 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R6622:6622 PA.ProgramAlgebraAlt <> c:132 var
+R6628:6629 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6631:6631 PA.ProgramAlgebraAlt <> c:132 var
+R6676:6691 PA.ProgramAlgebraAlt ProgramAlgebraAlt Cond_over_Choice prfax
+R6676:6691 PA.ProgramAlgebraAlt ProgramAlgebraAlt Cond_over_Choice prfax
+R6710:6711 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6728:6737 Coq.Lists.List <> in_map_iff thm
+R6728:6737 Coq.Lists.List <> in_map_iff thm
+R6787:6797 Coq.Lists.List <> in_prod_iff thm
+R6787:6797 Coq.Lists.List <> in_prod_iff thm
+R6858:6859 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6911:6912 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R6965:6980 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_elim_Cond thm
+R6965:6980 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_elim_Cond thm
+R7050:7058 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R7068:7071 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R7073:7076 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R7063:7064 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7067:7067 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7077:7078 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7081:7081 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7050:7058 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R7068:7071 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R7073:7076 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R7063:7064 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7067:7067 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7077:7078 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7081:7081 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7096:7103 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R7096:7103 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+prf 7133:7143 ProgramAlgebraAlt CH_elim_Seq
+R7161:7164 Coq.Init.Datatypes <> list ind
+R7166:7168 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 7155:7155 <> p:133
+binder 7157:7157 <> q:134
+R7180:7183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7176:7177 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7179:7179 PA.ProgramAlgebraAlt <> p:133 var
+R7188:7191 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7184:7185 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7187:7187 PA.ProgramAlgebraAlt <> q:134 var
+R7192:7198 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7200:7201 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7199:7199 <> c:135
+R7235:7238 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7202:7202 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R7221:7228 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R7234:7234 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R7203:7203 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R7209:7214 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R7220:7220 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R7204:7207 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R7208:7208 PA.ProgramAlgebraAlt <> p:133 var
+R7215:7218 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R7219:7219 PA.ProgramAlgebraAlt <> q:134 var
+R7229:7232 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R7233:7233 PA.ProgramAlgebraAlt <> c:135 var
+R7239:7240 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7242:7242 PA.ProgramAlgebraAlt <> c:135 var
+R7287:7301 PA.ProgramAlgebraAlt ProgramAlgebraAlt Seq_over_Choice prfax
+R7287:7301 PA.ProgramAlgebraAlt ProgramAlgebraAlt Seq_over_Choice prfax
+R7320:7321 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7338:7347 Coq.Lists.List <> in_map_iff thm
+R7338:7347 Coq.Lists.List <> in_map_iff thm
+R7397:7407 Coq.Lists.List <> in_prod_iff thm
+R7397:7407 Coq.Lists.List <> in_prod_iff thm
+R7468:7469 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7521:7522 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7575:7589 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_elim_Seq thm
+R7575:7589 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_elim_Seq thm
+R7657:7665 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R7675:7678 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R7670:7671 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7674:7674 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7679:7680 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7683:7683 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7657:7665 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R7675:7678 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R7670:7671 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7674:7674 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7679:7680 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7683:7683 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'@{'_x_'}' not
+R7698:7705 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R7698:7705 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+prf 7735:7744 ProgramAlgebraAlt CH_app_rev
+R7764:7767 Coq.Init.Datatypes <> list ind
+R7769:7771 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 7756:7757 <> l1:136
+binder 7759:7760 <> l2:137
+R7784:7787 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7779:7780 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7782:7783 PA.ProgramAlgebraAlt <> l1:136 var
+R7793:7796 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7788:7789 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7791:7792 PA.ProgramAlgebraAlt <> l2:137 var
+R7797:7798 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7803:7806 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7801:7802 PA.ProgramAlgebraAlt <> l1:136 var
+R7807:7808 PA.ProgramAlgebraAlt <> l2:137 var
+R7840:7841 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R7863:7871 Coq.Lists.List <> in_app_or thm
+R7863:7871 Coq.Lists.List <> in_app_or thm
+prf 7963:7976 ProgramAlgebraAlt CH_elim_Choice
+R7994:7997 Coq.Init.Datatypes <> list ind
+R7999:8001 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 7988:7988 <> p:138
+binder 7990:7990 <> q:139
+R8013:8016 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8009:8010 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R8012:8012 PA.ProgramAlgebraAlt <> p:138 var
+R8021:8024 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8017:8018 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R8020:8020 PA.ProgramAlgebraAlt <> q:139 var
+R8025:8031 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8033:8034 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8032:8032 <> c:140
+R8069:8072 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8035:8035 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8055:8062 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8068:8068 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8036:8036 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8042:8048 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8054:8054 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8037:8040 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8041:8041 PA.ProgramAlgebraAlt <> p:138 var
+R8049:8052 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8053:8053 PA.ProgramAlgebraAlt <> q:139 var
+R8063:8066 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8067:8067 PA.ProgramAlgebraAlt <> c:140 var
+R8073:8074 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R8076:8076 PA.ProgramAlgebraAlt <> c:140 var
+R8109:8110 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8109:8110 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8128:8139 PA.ProgramAlgebraAlt ProgramAlgebraAlt Choice_distr prfax
+R8128:8139 PA.ProgramAlgebraAlt ProgramAlgebraAlt Choice_distr prfax
+R8157:8166 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_app_rev thm
+R8157:8166 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_app_rev thm
+ax 8226:8239 ProgramAlgebraAlt NF_over_Choice
+R8257:8260 Coq.Init.Datatypes <> list ind
+R8262:8264 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 8251:8251 <> a:141
+binder 8253:8253 <> b:142
+R8274:8280 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 8268:8268 <> c:143
+binder 8270:8270 <> d:144
+R8292:8295 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8288:8289 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R8291:8291 PA.ProgramAlgebraAlt <> a:141 var
+R8300:8307 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8296:8297 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R8299:8299 PA.ProgramAlgebraAlt <> b:142 var
+R8308:8308 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8360:8371 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8431:8431 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8309:8309 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8331:8337 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8359:8359 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8310:8310 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8314:8318 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8320:8324 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8330:8330 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8319:8319 PA.ProgramAlgebraAlt <> c:143 var
+R8311:8313 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R8325:8328 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8329:8329 PA.ProgramAlgebraAlt <> a:141 var
+R8338:8338 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8342:8346 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8348:8352 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8358:8358 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8347:8347 PA.ProgramAlgebraAlt <> d:144 var
+R8339:8341 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R8353:8356 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8357:8357 PA.ProgramAlgebraAlt <> b:142 var
+R8372:8372 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8376:8381 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8406:8411 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8430:8430 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 8386:8386 <> g:145
+R8391:8393 Coq.Init.Datatypes <> orb def
+R8402:8402 PA.ProgramAlgebraAlt <> d:144 var
+R8404:8404 PA.ProgramAlgebraAlt <> g:145 var
+R8396:8396 PA.ProgramAlgebraAlt <> c:143 var
+R8398:8398 PA.ProgramAlgebraAlt <> g:145 var
+R8373:8375 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R8412:8412 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8417:8423 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8429:8429 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R8413:8415 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8416:8416 PA.ProgramAlgebraAlt <> a:141 var
+R8424:8427 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8428:8428 PA.ProgramAlgebraAlt <> b:142 var
+ax 8462:8473 ProgramAlgebraAlt NF_over_Cond
+R8491:8494 Coq.Init.Datatypes <> list ind
+R8496:8498 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 8485:8485 <> a:147
+binder 8487:8487 <> b:148
+R8510:8516 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 8502:8502 <> c:149
+binder 8504:8504 <> d:150
+binder 8506:8506 <> e:151
+R8528:8531 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8524:8525 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R8527:8527 PA.ProgramAlgebraAlt <> a:147 var
+R8536:8543 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8532:8533 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R8535:8535 PA.ProgramAlgebraAlt <> b:148 var
+R8544:8544 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8599:8610 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8689:8689 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R8545:8545 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8566:8570 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8572:8576 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8598:8598 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8571:8571 PA.ProgramAlgebraAlt <> d:150 var
+R8546:8546 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8550:8554 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8556:8560 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8565:8565 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8555:8555 PA.ProgramAlgebraAlt <> c:149 var
+R8547:8549 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R8561:8563 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8564:8564 PA.ProgramAlgebraAlt <> a:147 var
+R8577:8577 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8581:8585 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8587:8591 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8597:8597 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8586:8586 PA.ProgramAlgebraAlt <> e:151 var
+R8578:8580 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R8592:8595 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8596:8596 PA.ProgramAlgebraAlt <> b:148 var
+R8611:8611 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8615:8620 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8660:8665 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8688:8688 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 8625:8625 <> g:152
+R8634:8634 PA.ProgramAlgebraAlt <> d:150 var
+R8636:8636 PA.ProgramAlgebraAlt <> g:152 var
+R8656:8656 PA.ProgramAlgebraAlt <> e:151 var
+R8658:8658 PA.ProgramAlgebraAlt <> g:152 var
+R8645:8645 PA.ProgramAlgebraAlt <> c:149 var
+R8647:8647 PA.ProgramAlgebraAlt <> g:152 var
+R8612:8614 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R8666:8666 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8671:8675 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8677:8681 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8687:8687 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R8676:8676 PA.ProgramAlgebraAlt <> d:150 var
+R8667:8669 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8670:8670 PA.ProgramAlgebraAlt <> a:147 var
+R8682:8685 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R8686:8686 PA.ProgramAlgebraAlt <> b:148 var
+def 8732:8750 ProgramAlgebraAlt Assign_over_Boolexp
+R8757:8763 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 8753:8753 <> b:154
+R8771:8773 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 8767:8767 <> a:155
+R8788:8788 PA.ProgramAlgebraAlt <> a:155 var
+R8801:8804 PA.ProgramAlgebraAlt ProgramAlgebraAlt Lift constr
+R8842:8845 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assn constr
+R8852:8852 PA.ProgramAlgebraAlt <> b:154 var
+R8856:8870 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_mapping def
+R8875:8877 PA.ProgramAlgebraAlt ProgramAlgebraAlt ids proj
+R8883:8888 PA.ProgramAlgebraAlt ProgramAlgebraAlt values proj
+R8892:8899 PA.ProgramAlgebraAlt ProgramAlgebraAlt GLOBVARS meth
+R8925:8929 Coq.Init.Datatypes <> false constr
+R8962:8966 Coq.Init.Datatypes <> false constr
+def 8990:9004 ProgramAlgebraAlt CH_over_Boolexp
+R9011:9014 Coq.Init.Datatypes <> list ind
+R9016:9018 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 9007:9007 <> a:158
+R9026:9032 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 9022:9022 <> b:159
+R9042:9050 Coq.Lists.List <> fold_left def
+R9088:9091 Coq.Init.Datatypes <> true constr
+R9057:9059 Coq.Lists.List <> map def
+R9085:9085 PA.ProgramAlgebraAlt <> a:158 var
+R9062:9080 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_over_Boolexp def
+R9082:9082 PA.ProgramAlgebraAlt <> b:159 var
+R9052:9054 Coq.Init.Datatypes <> orb def
+ax 9122:9132 ProgramAlgebraAlt NF_over_Seq
+R9150:9153 Coq.Init.Datatypes <> list ind
+R9155:9157 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 9144:9144 <> a:160
+binder 9146:9146 <> b:161
+R9167:9173 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 9161:9161 <> c:162
+binder 9163:9163 <> d:163
+R9185:9188 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9181:9182 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R9184:9184 PA.ProgramAlgebraAlt <> a:160 var
+R9193:9200 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9189:9190 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R9192:9192 PA.ProgramAlgebraAlt <> b:161 var
+R9201:9201 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R9252:9263 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R9339:9339 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R9202:9202 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R9224:9229 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R9251:9251 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R9203:9203 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9207:9211 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9213:9217 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9223:9223 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9212:9212 PA.ProgramAlgebraAlt <> c:162 var
+R9204:9206 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9218:9221 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9222:9222 PA.ProgramAlgebraAlt <> a:160 var
+R9230:9230 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9234:9238 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9240:9244 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9250:9250 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9239:9239 PA.ProgramAlgebraAlt <> d:163 var
+R9231:9233 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9245:9248 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9249:9249 PA.ProgramAlgebraAlt <> b:161 var
+R9264:9264 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9268:9273 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9314:9319 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9338:9338 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 9278:9278 <> g:164
+R9283:9285 Coq.Init.Datatypes <> orb def
+R9294:9308 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_over_Boolexp def
+R9310:9310 PA.ProgramAlgebraAlt <> a:160 var
+R9312:9312 PA.ProgramAlgebraAlt <> d:163 var
+R9288:9288 PA.ProgramAlgebraAlt <> c:162 var
+R9290:9290 PA.ProgramAlgebraAlt <> g:164 var
+R9265:9267 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9320:9320 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R9326:9331 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R9337:9337 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R9321:9324 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9325:9325 PA.ProgramAlgebraAlt <> a:160 var
+R9332:9335 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9336:9336 PA.ProgramAlgebraAlt <> b:161 var
+def 9370:9372 ProgramAlgebraAlt FNF
+R9379:9381 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 9375:9375 <> P:166
+R9397:9403 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9410:9411 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9404:9407 <> bexp:167
+binder 9409:9409 <> R:168
+R9440:9443 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9413:9415 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9412:9412 PA.ProgramAlgebraAlt <> P:166 var
+R9416:9416 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9420:9424 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9429:9433 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9439:9439 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9425:9428 PA.ProgramAlgebraAlt <> bexp:167 var
+R9417:9419 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9434:9437 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9438:9438 PA.ProgramAlgebraAlt <> R:168 var
+R9444:9445 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R9447:9447 PA.ProgramAlgebraAlt <> R:168 var
+prf 9459:9471 ProgramAlgebraAlt FNF_elim_Cond
+R9489:9491 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 9483:9483 <> P:169
+binder 9485:9485 <> Q:170
+R9499:9505 PA.ProgramAlgebraAlt ProgramAlgebraAlt Boolexp def
+binder 9495:9495 <> b:171
+R9518:9521 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9513:9515 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R9517:9517 PA.ProgramAlgebraAlt <> P:169 var
+R9527:9530 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9522:9524 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R9526:9526 PA.ProgramAlgebraAlt <> Q:170 var
+R9531:9537 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9539:9540 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9538:9538 <> R:172
+R9561:9564 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9541:9541 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R9553:9559 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R9543:9546 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9548:9551 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9547:9547 PA.ProgramAlgebraAlt <> b:171 var
+R9542:9542 PA.ProgramAlgebraAlt <> P:169 var
+R9552:9552 PA.ProgramAlgebraAlt <> Q:170 var
+R9560:9560 PA.ProgramAlgebraAlt <> R:172 var
+R9565:9567 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R9569:9569 PA.ProgramAlgebraAlt <> R:172 var
+R9600:9602 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R9638:9640 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R9700:9711 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_elim_Cond thm
+R9700:9711 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_elim_Cond thm
+R9782:9785 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9827:9830 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 9790:9790 <> g:173
+R9800:9800 PA.ProgramAlgebraAlt <> g:173 var
+R9826:9826 PA.ProgramAlgebraAlt <> g:173 var
+R9809:9809 PA.ProgramAlgebraAlt <> g:173 var
+R9779:9781 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9831:9834 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9782:9785 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9827:9830 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 9790:9790 <> g:174
+R9800:9800 PA.ProgramAlgebraAlt <> g:174 var
+R9826:9826 PA.ProgramAlgebraAlt <> g:174 var
+R9809:9809 PA.ProgramAlgebraAlt <> g:174 var
+R9779:9781 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9831:9834 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9854:9862 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R9870:9873 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9915:9919 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9941:9941 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 9878:9878 <> g:175
+R9895:9895 PA.ProgramAlgebraAlt <> g:175 var
+R9914:9914 PA.ProgramAlgebraAlt <> g:175 var
+R9904:9904 PA.ProgramAlgebraAlt <> g:175 var
+R9867:9869 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9926:9929 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9931:9934 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9920:9923 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9935:9938 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9854:9862 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R9870:9873 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9915:9919 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9941:9941 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 9878:9878 <> g:176
+R9895:9895 PA.ProgramAlgebraAlt <> g:176 var
+R9914:9914 PA.ProgramAlgebraAlt <> g:176 var
+R9904:9904 PA.ProgramAlgebraAlt <> g:176 var
+R9867:9869 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R9926:9929 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9931:9934 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R9920:9923 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9935:9938 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R9956:9967 PA.ProgramAlgebraAlt ProgramAlgebraAlt NF_over_Cond prfax
+R9956:9967 PA.ProgramAlgebraAlt ProgramAlgebraAlt NF_over_Cond prfax
+R9981:9988 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R9981:9988 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R10002:10009 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_refl constr
+R10002:10009 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_refl constr
+R10023:10025 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+prf 10065:10079 ProgramAlgebraAlt FNF_elim_Choice
+R10098:10100 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 10092:10092 <> P:177
+binder 10094:10094 <> Q:178
+R10113:10116 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10108:10110 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10112:10112 PA.ProgramAlgebraAlt <> P:177 var
+R10122:10125 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10117:10119 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10121:10121 PA.ProgramAlgebraAlt <> Q:178 var
+R10126:10132 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10134:10135 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10133:10133 <> R:179
+R10152:10155 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10136:10136 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R10144:10150 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R10138:10142 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R10137:10137 PA.ProgramAlgebraAlt <> P:177 var
+R10143:10143 PA.ProgramAlgebraAlt <> Q:178 var
+R10151:10151 PA.ProgramAlgebraAlt <> R:179 var
+R10156:10158 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10160:10160 PA.ProgramAlgebraAlt <> R:179 var
+R10191:10193 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10229:10231 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10291:10304 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_elim_Choice thm
+R10291:10304 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_elim_Choice thm
+R10373:10377 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10403:10407 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 10382:10382 <> g:180
+R10387:10389 Coq.Init.Datatypes <> orb def
+R10401:10401 PA.ProgramAlgebraAlt <> g:180 var
+R10394:10394 PA.ProgramAlgebraAlt <> g:180 var
+R10370:10372 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R10408:10411 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R10373:10377 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10403:10407 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 10382:10382 <> g:181
+R10387:10389 Coq.Init.Datatypes <> orb def
+R10401:10401 PA.ProgramAlgebraAlt <> g:181 var
+R10394:10394 PA.ProgramAlgebraAlt <> g:181 var
+R10370:10372 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R10408:10411 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R10435:10443 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R10451:10455 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10481:10493 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10511:10511 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 10460:10460 <> g:182
+R10465:10467 Coq.Init.Datatypes <> orb def
+R10479:10479 PA.ProgramAlgebraAlt <> g:182 var
+R10472:10472 PA.ProgramAlgebraAlt <> g:182 var
+R10448:10450 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R10500:10504 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R10494:10497 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R10505:10508 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R10435:10443 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R10451:10455 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10481:10493 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10511:10511 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 10460:10460 <> g:183
+R10465:10467 Coq.Init.Datatypes <> orb def
+R10479:10479 PA.ProgramAlgebraAlt <> g:183 var
+R10472:10472 PA.ProgramAlgebraAlt <> g:183 var
+R10448:10450 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R10500:10504 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R10494:10497 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R10505:10508 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R10526:10539 PA.ProgramAlgebraAlt ProgramAlgebraAlt NF_over_Choice prfax
+R10526:10539 PA.ProgramAlgebraAlt ProgramAlgebraAlt NF_over_Choice prfax
+R10553:10560 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R10553:10560 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R10574:10581 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_refl constr
+R10574:10581 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_refl constr
+R10595:10597 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+prf 10637:10648 ProgramAlgebraAlt FNF_elim_Seq
+R10666:10668 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 10660:10660 <> P:184
+binder 10662:10662 <> Q:185
+R10681:10684 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10676:10678 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10680:10680 PA.ProgramAlgebraAlt <> P:184 var
+R10690:10693 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10685:10687 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10689:10689 PA.ProgramAlgebraAlt <> Q:185 var
+R10694:10700 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10702:10703 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10701:10701 <> R:186
+R10719:10722 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10704:10704 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R10711:10717 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R10706:10709 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R10705:10705 PA.ProgramAlgebraAlt <> P:184 var
+R10710:10710 PA.ProgramAlgebraAlt <> Q:185 var
+R10718:10718 PA.ProgramAlgebraAlt <> R:186 var
+R10723:10725 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10727:10727 PA.ProgramAlgebraAlt <> R:186 var
+R10758:10760 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10796:10798 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R10858:10868 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_elim_Seq thm
+R10858:10868 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_elim_Seq thm
+R10937:10941 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10984:10988 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 10946:10946 <> g:187
+R10951:10953 Coq.Init.Datatypes <> orb def
+R10962:10976 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_over_Boolexp def
+R10958:10958 PA.ProgramAlgebraAlt <> g:187 var
+R10934:10936 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R10989:10992 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R10937:10941 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R10984:10988 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 10946:10946 <> g:188
+R10951:10953 Coq.Init.Datatypes <> orb def
+R10962:10976 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_over_Boolexp def
+R10958:10958 PA.ProgramAlgebraAlt <> g:188 var
+R10934:10936 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R10989:10992 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R11016:11024 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R11032:11036 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R11079:11091 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R11108:11108 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 11041:11041 <> g:189
+R11046:11048 Coq.Init.Datatypes <> orb def
+R11057:11071 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_over_Boolexp def
+R11053:11053 PA.ProgramAlgebraAlt <> g:189 var
+R11029:11031 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R11098:11101 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R11092:11095 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R11102:11105 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R11016:11024 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R11032:11036 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R11079:11091 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R11108:11108 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+binder 11041:11041 <> g:190
+R11046:11048 Coq.Init.Datatypes <> orb def
+R11057:11071 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH_over_Boolexp def
+R11053:11053 PA.ProgramAlgebraAlt <> g:190 var
+R11029:11031 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R11098:11101 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R11092:11095 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R11102:11105 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R11123:11133 PA.ProgramAlgebraAlt ProgramAlgebraAlt NF_over_Seq prfax
+R11123:11133 PA.ProgramAlgebraAlt ProgramAlgebraAlt NF_over_Seq prfax
+R11147:11154 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R11147:11154 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R11168:11175 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_refl constr
+R11168:11175 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_refl constr
+R11189:11191 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+prf 11233:11243 ProgramAlgebraAlt FNF_closure
+R11259:11261 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 11255:11255 <> P:191
+R11269:11275 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11277:11278 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 11276:11276 <> Q:192
+R11287:11290 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R11280:11285 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R11279:11279 PA.ProgramAlgebraAlt <> P:191 var
+R11286:11286 PA.ProgramAlgebraAlt <> Q:192 var
+R11291:11293 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R11295:11295 PA.ProgramAlgebraAlt <> Q:192 var
+R11381:11391 PA.ProgramAlgebraAlt ProgramAlgebraAlt Chaos_to_NF prfax
+R11393:11394 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11381:11391 PA.ProgramAlgebraAlt ProgramAlgebraAlt Chaos_to_NF prfax
+R11393:11394 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R11418:11420 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R11499:11510 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_to_NF prfax
+R11499:11510 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_to_NF prfax
+R11533:11535 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R11579:11580 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R11648:11662 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_is_Total thm
+R11648:11662 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign_is_Total thm
+R11817:11828 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF_elim_Seq thm
+R11817:11828 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF_elim_Seq thm
+R11895:11903 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R11909:11910 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R11895:11903 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R11909:11910 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_';;'_x not
+R11936:11943 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R11936:11943 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R11969:11983 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF_elim_Choice thm
+R11969:11983 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF_elim_Choice thm
+R12050:12058 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R12064:12066 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R12050:12058 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R12064:12066 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'/-\'_x not
+R12092:12099 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R12092:12099 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R12125:12137 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF_elim_Cond thm
+R12125:12137 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF_elim_Cond thm
+R12206:12214 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R12220:12222 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12224:12226 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12206:12214 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_trans constr
+R12220:12222 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12224:12226 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12252:12259 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+R12252:12259 PA.ProgramAlgebraAlt ProgramAlgebraAlt rwt_comb prfax
+def 12332:12337 ProgramAlgebraAlt eqEval
+R12346:12351 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assign rec
+binder 12340:12340 <> x:193
+binder 12342:12342 <> y:194
+binder 12366:12366 <> a:195
+R12394:12397 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12369:12370 Coq.Lists.List <> In def
+R12378:12383 PA.ProgramAlgebraAlt ProgramAlgebraAlt values proj
+R12375:12375 PA.ProgramAlgebraAlt <> x:193 var
+R12389:12391 PA.ProgramAlgebraAlt ProgramAlgebraAlt ids proj
+R12386:12386 PA.ProgramAlgebraAlt <> x:193 var
+R12372:12372 PA.ProgramAlgebraAlt <> a:195 var
+R12398:12399 Coq.Lists.List <> In def
+R12407:12412 PA.ProgramAlgebraAlt ProgramAlgebraAlt values proj
+R12404:12404 PA.ProgramAlgebraAlt <> y:194 var
+R12418:12420 PA.ProgramAlgebraAlt ProgramAlgebraAlt ids proj
+R12415:12415 PA.ProgramAlgebraAlt <> y:194 var
+R12401:12401 PA.ProgramAlgebraAlt <> a:195 var
+def 12439:12444 ProgramAlgebraAlt eqAssn
+R12451:12453 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 12447:12447 <> x:196
+R12461:12463 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 12457:12457 <> y:197
+R12482:12482 PA.ProgramAlgebraAlt <> y:197 var
+R12479:12479 PA.ProgramAlgebraAlt <> x:196 var
+R12495:12498 PA.ProgramAlgebraAlt ProgramAlgebraAlt Lift constr
+R12503:12506 PA.ProgramAlgebraAlt ProgramAlgebraAlt Lift constr
+R12543:12546 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assn constr
+R12551:12554 PA.ProgramAlgebraAlt ProgramAlgebraAlt Assn constr
+R12561:12566 PA.ProgramAlgebraAlt ProgramAlgebraAlt eqEval def
+R12569:12582 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R12588:12601 PA.ProgramAlgebraAlt ProgramAlgebraAlt extends_assign def
+R12621:12625 Coq.Init.Logic <> False ind
+R12651:12655 Coq.Init.Logic <> False ind
+def 12680:12687 ProgramAlgebraAlt RefineCH
+R12694:12697 Coq.Init.Datatypes <> list ind
+R12699:12701 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 12690:12690 <> A:202
+R12709:12712 Coq.Init.Datatypes <> list ind
+R12714:12716 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 12705:12705 <> B:203
+binder 12732:12732 <> x:204
+R12741:12744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12735:12736 Coq.Lists.List <> In def
+R12740:12740 PA.ProgramAlgebraAlt <> B:203 var
+R12738:12738 PA.ProgramAlgebraAlt <> x:204 var
+R12745:12751 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12753:12755 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12752:12752 <> y:205
+R12762:12765 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12756:12757 Coq.Lists.List <> In def
+R12761:12761 PA.ProgramAlgebraAlt <> A:202 var
+R12759:12759 PA.ProgramAlgebraAlt <> y:205 var
+R12766:12771 PA.ProgramAlgebraAlt ProgramAlgebraAlt eqAssn def
+R12773:12773 PA.ProgramAlgebraAlt <> x:204 var
+R12775:12775 PA.ProgramAlgebraAlt <> y:205 var
+def 12792:12797 ProgramAlgebraAlt Refine
+R12806:12808 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 12800:12800 <> P:206
+binder 12802:12802 <> Q:207
+R12818:12824 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12838:12844 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 12825:12828 <> bexp:208
+binder 12830:12833 <> cexp:209
+binder 12835:12835 <> U:210
+binder 12837:12837 <> V:211
+R12845:12845 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12882:12890 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12874:12877 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12847:12849 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12846:12846 PA.ProgramAlgebraAlt <> P:206 var
+R12850:12850 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12854:12858 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12863:12867 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12873:12873 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12859:12862 PA.ProgramAlgebraAlt <> bexp:208 var
+R12851:12853 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R12868:12871 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R12872:12872 PA.ProgramAlgebraAlt <> U:210 var
+R12878:12879 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R12881:12881 PA.ProgramAlgebraAlt <> U:210 var
+R12891:12891 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12928:12937 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13027:13027 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12920:12923 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12893:12895 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12892:12892 PA.ProgramAlgebraAlt <> Q:207 var
+R12896:12896 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12900:12904 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12909:12913 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12919:12919 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<|'_x_'|>'_x not
+R12905:12908 PA.ProgramAlgebraAlt <> cexp:209 var
+R12897:12899 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'_|_' not
+R12914:12917 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:'|-|'_x not
+R12918:12918 PA.ProgramAlgebraAlt <> V:211 var
+R12924:12925 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R12927:12927 PA.ProgramAlgebraAlt <> V:211 var
+R12948:12952 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13026:13026 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12938:12947 PA.ProgramAlgebraAlt ProgramAlgebraAlt Constraint meth
+R12953:12953 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R12993:13004 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R13025:13025 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R12975:12979 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12992:12992 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R12967:12969 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12954:12957 PA.ProgramAlgebraAlt <> cexp:209 var
+R12959:12966 PA.ProgramAlgebraAlt ProgramAlgebraAlt GLOBVARS meth
+R12970:12974 Coq.Init.Datatypes <> false constr
+R12980:12987 PA.ProgramAlgebraAlt ProgramAlgebraAlt RefineCH def
+R12989:12989 PA.ProgramAlgebraAlt <> U:210 var
+R12991:12991 PA.ProgramAlgebraAlt <> V:211 var
+R13018:13020 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13005:13008 PA.ProgramAlgebraAlt <> bexp:208 var
+R13010:13017 PA.ProgramAlgebraAlt ProgramAlgebraAlt GLOBVARS meth
+R13021:13024 Coq.Init.Datatypes <> true constr
+R13034:13037 PA.ProgramAlgebraAlt ProgramAlgebraAlt.Fact <> sec
+sec 13050:13054 ProgramAlgebraAlt Infty
+R13078:13087 PA.ProgramAlgebraAlt ProgramAlgebraAlt UserParams class
+binder 13068:13074 <> UserVar:212
+var 13102:13102 ProgramAlgebraAlt.Infty f
+R13109:13112 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13106:13108 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+R13113:13115 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+def 13132:13137 ProgramAlgebraAlt AlgStr
+R13142:13147 Coq.Lists.Streams <> Stream coind
+R13149:13151 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+def 13167:13171 ProgramAlgebraAlt Recur
+R13178:13180 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 13174:13174 <> a:214
+R13185:13190 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgStr def
+R13195:13198 Coq.Lists.Streams <> Cons constr
+R13203:13207 PA.ProgramAlgebraAlt <> Recur:215 def
+R13210:13210 PA.ProgramAlgebraAlt <> ProgramAlgebraAlt.Infty.f var
+R13212:13212 PA.ProgramAlgebraAlt <> a:214 var
+R13200:13200 PA.ProgramAlgebraAlt <> a:214 var
+def 13231:13237 ProgramAlgebraAlt FNFPres
+R13245:13247 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 13239:13239 <> P:216
+binder 13241:13241 <> Q:217
+R13255:13261 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13265:13266 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 13262:13262 <> R:218
+binder 13264:13264 <> S:219
+R13267:13267 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13285:13289 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13276:13279 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13269:13274 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R13268:13268 PA.ProgramAlgebraAlt <> P:216 var
+R13275:13275 PA.ProgramAlgebraAlt <> R:218 var
+R13280:13282 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R13284:13284 PA.ProgramAlgebraAlt <> R:218 var
+R13290:13290 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13308:13312 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13299:13302 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R13292:13297 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R13291:13291 PA.ProgramAlgebraAlt <> Q:217 var
+R13298:13298 PA.ProgramAlgebraAlt <> S:219 var
+R13303:13305 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R13307:13307 PA.ProgramAlgebraAlt <> S:219 var
+R13313:13318 PA.ProgramAlgebraAlt ProgramAlgebraAlt Refine def
+R13320:13320 PA.ProgramAlgebraAlt <> R:218 var
+R13322:13322 PA.ProgramAlgebraAlt <> S:219 var
+def 13339:13349 ProgramAlgebraAlt AlgPresStep
+R13356:13361 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgStr def
+binder 13352:13352 <> s:220
+R13380:13389 Coq.Lists.Streams <> hd def
+R13391:13391 PA.ProgramAlgebraAlt <> s:220 var
+binder 13375:13375 <> h:221
+R13409:13418 Coq.Lists.Streams <> hd def
+R13421:13430 Coq.Lists.Streams <> tl def
+R13432:13432 PA.ProgramAlgebraAlt <> s:220 var
+binder 13404:13404 <> m:222
+R13442:13448 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNFPres def
+R13450:13450 PA.ProgramAlgebraAlt <> h:221 var
+R13452:13452 PA.ProgramAlgebraAlt <> m:222 var
+def 13468:13474 ProgramAlgebraAlt AlgPres
+R13479:13492 Coq.Lists.Streams <> ForAll coind
+R13494:13504 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgPresStep def
+def 13521:13527 ProgramAlgebraAlt SthStep
+R13534:13536 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 13530:13530 <> a:223
+R13544:13549 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgStr def
+binder 13540:13540 <> s:224
+R13568:13577 Coq.Lists.Streams <> hd def
+R13579:13579 PA.ProgramAlgebraAlt <> s:224 var
+binder 13563:13563 <> h:225
+R13589:13594 PA.ProgramAlgebraAlt ProgramAlgebraAlt ::alg_scope:x_'<-->'_x not
+R13588:13588 PA.ProgramAlgebraAlt <> a:223 var
+R13595:13595 PA.ProgramAlgebraAlt <> h:225 var
+def 13611:13619 ProgramAlgebraAlt SthExists
+R13626:13628 PA.ProgramAlgebraAlt ProgramAlgebraAlt Alg ind
+binder 13622:13622 <> a:226
+R13634:13647 Coq.Lists.Streams <> Exists ind
+R13650:13656 PA.ProgramAlgebraAlt ProgramAlgebraAlt SthStep def
+R13658:13658 PA.ProgramAlgebraAlt <> a:226 var
+prf 13671:13682 ProgramAlgebraAlt AlgPresConst
+R13686:13686 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13712:13721 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 13694:13694 <> x:227
+R13697:13703 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNFPres def
+R13705:13705 PA.ProgramAlgebraAlt <> x:227 var
+R13708:13708 PA.ProgramAlgebraAlt <> ProgramAlgebraAlt.Infty.f var
+R13710:13710 PA.ProgramAlgebraAlt <> x:227 var
+binder 13729:13729 <> y:228
+R13732:13738 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgPres def
+R13741:13745 PA.ProgramAlgebraAlt ProgramAlgebraAlt Recur def
+R13747:13747 PA.ProgramAlgebraAlt <> y:228 var
+R13774:13780 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgPres def
+R13811:13824 Coq.Lists.Streams <> HereAndFurther constr
+R13811:13824 Coq.Lists.Streams <> HereAndFurther constr
+R13838:13848 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgPresStep def
+prf 13906:13915 ProgramAlgebraAlt AlgPresInd
+binder 13926:13926 <> y:229
+R13944:13951 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13929:13935 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNFPres def
+R13937:13937 PA.ProgramAlgebraAlt <> y:229 var
+R13940:13940 PA.ProgramAlgebraAlt <> ProgramAlgebraAlt.Infty.f var
+R13942:13942 PA.ProgramAlgebraAlt <> y:229 var
+R13952:13952 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13986:13990 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 13960:13960 <> x:230
+R13963:13969 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNFPres def
+R13972:13972 PA.ProgramAlgebraAlt <> ProgramAlgebraAlt.Infty.f var
+R13974:13974 PA.ProgramAlgebraAlt <> x:230 var
+R13978:13978 PA.ProgramAlgebraAlt <> ProgramAlgebraAlt.Infty.f var
+R13981:13981 PA.ProgramAlgebraAlt <> ProgramAlgebraAlt.Infty.f var
+R13983:13983 PA.ProgramAlgebraAlt <> x:230 var
+R13991:13997 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgPres def
+R14000:14004 PA.ProgramAlgebraAlt ProgramAlgebraAlt Recur def
+R14006:14006 PA.ProgramAlgebraAlt <> y:229 var
+R14033:14046 Coq.Lists.Streams <> HereAndFurther constr
+R14033:14046 Coq.Lists.Streams <> HereAndFurther constr
+R14056:14066 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgPresStep def
+R14126:14139 Coq.Lists.Streams <> HereAndFurther constr
+R14126:14139 Coq.Lists.Streams <> HereAndFurther constr
+R14153:14163 PA.ProgramAlgebraAlt ProgramAlgebraAlt AlgPresStep def
+R14218:14222 PA.ProgramAlgebraAlt ProgramAlgebraAlt.Infty <> sec
+R14269:14271 PA.ProgramAlgebraAlt ProgramAlgebraAlt FNF def
+R14273:14274 PA.ProgramAlgebraAlt ProgramAlgebraAlt CH def
+R14276:14287 PA.ProgramAlgebraAlt ProgramAlgebraAlt Total_Assign def
+R14382:14398 PA.ProgramAlgebraAlt ProgramAlgebraAlt <> mod
