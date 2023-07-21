@@ -1,5 +1,5 @@
-From PA Require Import ProgramAlgebraAlt.
-Import ProgramAlgebraAlt.
+From PA Require Import ProgramAlgebra.
+Import ProgramAlgebra.
 Require Import Lia.
 Import Nat.
 Import List.
@@ -20,8 +20,8 @@ Definition eqbVar (x y : MyVar) :=
 
 Variable GLOBVARS : list MyVar.
 
-Definition Constraint := exists a b c, (PeanoNat.Nat.leb a.(val) 10 = true)
- /\ (eqbVar a b = false) /\ (eqbVar a c = false) /\ (eqbVar b c = false) /\ GLOBVARS = [a;b;c].
+Definition Constarints := exists a b c, (eqbVar a b = false) /\ (eqbVar a c = false)
+ /\ (eqbVar b c = false) /\ GLOBVARS = [a;b;c].
 
 Lemma eqbVar_sym : forall x y, eqbVar x y = eqbVar y x.
 Proof. intros. unfold eqbVar. destruct x. destruct y. simpl.
@@ -29,10 +29,16 @@ Proof. intros. unfold eqbVar. destruct x. destruct y. simpl.
   assert ((val0 =? val1) = (val1 =? val0)) by apply PeanoNat.Nat.eqb_sym.
   rewrite H. rewrite H0. auto. Qed.
 
+Lemma eqbVar_refl : forall x, eqbVar x x = true.
+Proof. intros. unfold eqbVar. destruct x. simpl.
+  assert ((id0 =? id0) % string = true) by apply eqb_refl.
+  assert ((val0 =? val0) = true) by apply PeanoNat.Nat.eqb_refl.
+  rewrite H. rewrite H0. auto. Qed.
+
 Definition UNDEF := mkVar "Undefined" 0.
 
 Instance myParams : UserParams :=
-  Build_UserParams MyVar GLOBVARS eqbVar Constraint.
+  Build_UserParams MyVar GLOBVARS eqbVar Constarints.
 
 Fixpoint ascending (l : list Var) : list Var :=
   match l with
@@ -54,111 +60,63 @@ Definition hdge2 : Boolexp :=
  fun l =>
   match (hd_error l) with
   | None => false
-  | Some x => if (PeanoNat.Nat.leb 20 x.(val)) then true else false
+  | Some x => PeanoNat.Nat.leb 20 x.(val)
   end.
 
-Definition testAlg := (@{ascassn}) ;;
-  ((@{ascassn}) <| hdge2  |> (@{dscassn})).
+Definition hdle1 : Boolexp :=
+ fun l =>
+  match (hd_error l) with
+  | None => false
+  | Some x => PeanoNat.Nat.leb x.(val) 10
+  end.
 
-Definition testAlg2 := (_|_) <| hdge2 |>
+Definition testAlg := ((@{ascassn}) ;;
+  ((@{empty_assn}) <| hdge2  |> (@{dscassn}))) <| hdle1 |> (_|_).
+
+Definition testAlg2 := (_|_) <| (fun x => negb (hdle1 x)) |>
   (@{ascassn}) ;; ((|-|[@{ascassn};@{dscassn}])).
 
-Definition testassn := Lift (Assn
-  {|
-    ids := GLOBVARS;
-    values :=
-      fun x =>
-       exp_Cond ascending descending hdge2
-       (ascending x)
-  |}).
+Definition tess := (@{ascassn}) ;; ((|-|[@{ascassn};@{dscassn}])).
 
-Definition testnf :=
- (_|_) <| false_stat |> (|-| [testassn]).
+(* functions in this example are supposed to be already extended *)
+Hypothesis no_extends : forall x:Exp, extends_mapping GLOBVARS x = x.
 
-Ltac rwt_step := apply rwt_comb;auto;try apply rwt_refl.
-
-Lemma nf : testAlg <--> testnf.
+Example testrefine : Refine (Normal testAlg2) (Normal testAlg).
 Proof.
-  unfold testAlg. unfold testnf. unfold ascassn. unfold dscassn.
-  apply (rwt_trans _ (@{ ProgramAlgebraAlt.GLOBVARS :== ascending } ;;
-     (@{ ProgramAlgebraAlt.GLOBVARS :== exp_Cond ascending descending hdge2 }))).
-  rwt_step. apply Assign_Cond.
-  pose (Assign_Seq GLOBVARS ascending (exp_Cond ascending descending hdge2)).
-  simpl in r. apply (rwt_trans _ _ _ r). clear r.
-  pose (Assign_to_NF GLOBVARS (fun x => exp_Cond ascending descending hdge2
-       (ascending x))). simpl in r.
-  assert(|-|[testassn] = testassn) by auto. rewrite H.
-  unfold testassn. apply r.
-Qed.
-
-Definition testassn2_1 := Lift (Assn
-  {|
-    ids := GLOBVARS;
-    values :=
-      fun x  => ascending (ascending x)
-  |}).
-
-Definition testassn2_2 := Lift (Assn
-   {|
-     ids := GLOBVARS;
-     values := fun x => descending (ascending x)
-   |}).
-
-Definition testnf2 :=
-  (_|_) <| hdge2 |> (|-|[testassn2_1;testassn2_2]).
-
-Lemma nf2 : testAlg2 <--> testnf2.
-Proof.
-  unfold testAlg2. unfold testnf2. unfold ascassn. unfold dscassn.
-  rwt_step. assert (GLOBVARS = ProgramAlgebraAlt.GLOBVARS) by auto.
-  repeat rewrite H. remember (|-| [@{ ProgramAlgebraAlt.GLOBVARS :== ascending};
-     @{ ProgramAlgebraAlt.GLOBVARS :== descending}]). rewrite <- H.
-  assert (@{ GLOBVARS :== ascending} = |-| [@{ GLOBVARS :== ascending}]) by auto.
-  rewrite H0. rewrite Heqa. repeat rewrite <- H. clear Heqa. clear H0.
-  pose (Seq_over_Choice [@{ GLOBVARS :== ascending}]
-   [@{ GLOBVARS :== ascending};@{ GLOBVARS :== descending}]).
-  apply (rwt_trans _ (|-|(map (fun g : Alg * Alg => fst g;; snd g) (list_prod
-    [@{ ProgramAlgebraAlt.GLOBVARS :== ascending}]
-    [@{ ProgramAlgebraAlt.GLOBVARS :== ascending};
-    @{ ProgramAlgebraAlt.GLOBVARS :== descending}])))).
-  apply r. 1,2 : unfold CH;intros; destruct H0. 2: destruct H0.
-  all : try contradiction. all : try (eexists; rewrite H0; split; try apply rwt_refl;
-  pauto). destruct H0; try contradiction. rewrite  <- H0.
-  eexists;split;pauto. clear r. unfold list_prod. simpl. unfold testassn2_1.
-  unfold testassn2_2. rwt_step;apply Assign_Seq.
-Qed.
-
-Example testrefine : Refine testnf2 testnf.
-Proof. 
-  unfold Refine. unfold testnf. unfold testnf2.
-  do 4 eexists. split;split;try split. 
-  - unfold CH. intros. destruct H.
-    + unfold testassn2_1 in H. eexists. split. rewrite <- H. apply rwt_refl.
-      unfold Total_Assign. auto.
-    + destruct H;try contradiction. unfold testassn2_2 in H. eexists. split.
-      rewrite <- H. all : pauto.
-  - reflexivity.
-  - unfold CH. intros. destruct H;try contradiction. unfold testassn in H.
-    eexists. split;try rewrite <- H;pauto.
-  - simpl in *. unfold Constraint. intros. do 4 destruct H. destruct H0.
-    destruct H1. destruct H2. unfold false_stat. left. split;auto.
-    unfold RefineCH. intros. destruct H4; try contradiction. rewrite <- H4.
-    unfold testassn. exists testassn2_2. split.
-    + unfold In. right. left. reflexivity.
-    + assert (forall x, eqbVar x x = true). { intros. unfold eqbVar. destruct x3.
-      simpl. apply Bool.andb_true_iff. split. apply eqb_refl. apply PeanoNat.Nat.eqb_refl. }
-      unfold testassn2_1. unfold eqAssn. unfold eqEval. rewrite H3. simpl.
-      unfold extends_mapping. unfold extends_mapping_help. simpl. rewrite H3.
-      simpl. repeat rewrite H5. pose (eqbVar_sym x0 x). pose (eqbVar_sym x1 x).
-      pose (eqbVar_sym x1 x0). rewrite H0 in e. rewrite H1 in e0. rewrite H2 in e1.
-      rewrite e. rewrite e0. rewrite e1. unfold exp_Cond. unfold hdge2.
-      pose (PeanoNat.Nat.leb_spec0 (val x) 10). apply Bool.reflect_iff in r.
-      apply r in H. assert ((val x) + 1 < 20). lia. pose (PeanoNat.Nat.ltb_spec0 (val x + 1) 20).
-      apply Bool.reflect_iff in r0. rewrite r0 in H6.
-      rewrite PeanoNat.Nat.ltb_antisym in H6. rewrite Bool.negb_true_iff in H6.
-      unfold hd_error. assert (val x + 1 = val {| id := id x; val := val x + 1 |}) by auto.
-      rewrite <- H7. rewrite H6. simpl. auto. 
-Qed.
-
-
+  unfold Refine. do 4 eexists. split;split;try split;auto. 
+  - unfold CH. simpl. intros. destruct H.
+    + rewrite <- H. eexists. split;pauto.
+    + destruct H;try contradiction. rewrite <- H. eexists. split;pauto.
+  - simpl. assert(forall a b, (_|_) <| b|> a = (_|_) <| b |> |-|[a]) by auto.
+    rewrite H. reflexivity.
+  - unfold CH. intros. destruct H;try contradiction. eexists. split;try rewrite <- H;pauto.
+  - simpl in *. intros. assert Constarints by auto. unfold Constarints in H. do 4 destruct H. destruct H1.
+    destruct H2. unfold ascassn. unfold extends_assign. simpl. unfold empty_assn.
+    repeat rewrite (no_extends ascending). repeat rewrite (no_extends descending).
+    repeat rewrite (no_extends refl_exp). unfold Assign_comb_CDC_help.
+    unfold Assign_comb_Seq_help. simpl. assert (GLOBVARS = ProgramAlgebra.GLOBVARS).
+    auto. repeat rewrite H4. assert (exp_Cond (extends_mapping ProgramAlgebra.GLOBVARS
+     (fun x2 => extends_mapping ProgramAlgebra.GLOBVARS (exp_Cond refl_exp descending hdge2)
+     (ascending x2))) refl_exp hdle1 = exp_Cond (fun x => ((exp_Cond refl_exp descending hdge2) 
+      (ascending x))) refl_exp hdle1). simpl. rewrite (no_extends (exp_Cond refl_exp descending hdge2)).
+    rewrite (no_extends (fun x2 : list MyVar => exp_Cond refl_exp descending hdge2 (ascending x2))).
+    auto. simpl in *. remember (hdle1 GLOBVARS). destruct b.
+    + left. rewrite H3 in Heqb. unfold hdle1 in Heqb. simpl in *. apply eq_sym in Heqb.
+      assert (val x <= 10). apply Compare_dec.leb_complete in Heqb. auto.
+      assert (20 <=? val x + 1 = false).
+      apply Compare_dec.leb_correct_conv. lia. split.
+      unfold CH_over_Boolexp. simpl. unfold false_stat.
+      rewrite (no_extends ascending). unfold ascending.
+      unfold hdge2. rewrite H3. simpl. (fold (20 <=? (val x + 1))).
+      rewrite H7. auto. rewrite H5. clear H5. unfold CH_comb_CDC.
+      simpl. unfold RefineCH. intros. destruct H5;try contradiction.
+      eexists. split. simpl. right. left. auto.
+      unfold Assign_comb_CDC_help. simpl.
+      rewrite (no_extends refl_exp). rewrite <- H5.
+      rewrite (no_extends (fun x3 : list MyVar => descending (ascending x3))).
+      simpl. unfold subEval. rewrite H3. simpl. unfold exp_Cond.
+      unfold hdle1. simpl. rewrite Heqb. simpl. unfold hdge2.
+      simpl. fold (20 <=? (val x + 1)). rewrite H7. simpl. auto.
+    + simpl. right. auto.
+  Qed.
 

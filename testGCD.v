@@ -1,9 +1,10 @@
-From PA Require Import ProgramAlgebraAlt.
-Import ProgramAlgebraAlt.
+From PA Require Import ProgramAlgebra.
+Import ProgramAlgebra.
 Import Nat.
 Import List.
 Require Import String.
 Import ListNotations.
+Require Import FunctionalExtensionality.
 
 Open Scope alg_scope.
 
@@ -14,19 +15,30 @@ Record MyVar := mkVar {
   val : nat;
 }.
 
-Definition eqVarb (x y : MyVar) := 
+Definition eqbVar (x y : MyVar) := 
   andb (eqb x.(id) y.(id)) (PeanoNat.Nat.eqb x.(val) y.(val)).
+
+Lemma eqbVar_sym : forall x y, eqbVar x y = eqbVar y x.
+Proof. intros. unfold eqbVar. destruct x. destruct y. simpl.
+  assert ((id0 =? id1) % string = (id1 =? id0) %string) by apply eqb_sym.
+  assert ((val0 =? val1) = (val1 =? val0)) by apply PeanoNat.Nat.eqb_sym.
+  rewrite H. rewrite H0. auto. Qed.
+
+Lemma eqbVar_refl : forall x, eqbVar x x = true. 
+Proof. intros. unfold eqbVar. destruct x. simpl. 
+  apply Bool.andb_true_iff. split.
+  apply eqb_refl. apply PeanoNat.Nat.eqb_refl.
+Qed.
 
 Variable GLOBVARS : list MyVar.
 
-Definition Constraint : Prop := forall a b, GLOBVARS = [a;b].
+Definition Constraint : Prop := exists a b, GLOBVARS = [a;b] /\
+  eqbVar a b = false.
 
 Definition UNDEF := mkVar "Undefined" 0.
 
 Instance myParams : UserParams :=
-  Build_UserParams MyVar GLOBVARS eqVarb Constraint.
-
-Search "eqb".
+  Build_UserParams MyVar GLOBVARS eqbVar Constraint.
 
 Definition hdeqz : Boolexp :=
  fun l =>
@@ -45,32 +57,24 @@ Definition GCDAssn := @{ makeAssign GLOBVARS GCDFunc}.
 
 Definition GCDStep (a : Alg) : Alg :=
   (skip <| hdeqz |> (GCDAssn ;; a)).
-(**TODO*)
 
 Definition GCDStr := Recur GCDStep (_|_).
 
-Ltac CH_check := unfold CH;intros;try contradiction.
-
-Ltac pauto := auto with palg.
-
-Definition GCDRes := let a := hd UNDEF GLOBVARS in
-  let b := hd UNDEF (tl GLOBVARS) in
-  @{ GLOBVARS :== fun x => [(mkVar a.(id) 0);(mkVar b.(id) (PeanoNat.Nat.gcd a.(val) b.(val)))]}.
+Definition GCDRes := (_|_) <| fun x => negb (hdeqz x) |>
+  @{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz}.
 
 Lemma GcdBase : FNFPres (_|_) (GCDStep (_|_)).
 Proof.
-  unfold FNFPres. do 2 eexists. assert (skip = |-|[skip]) by auto.
-  split;try split. apply (Chaos_to_NF []).
-  unfold FNF. do 2 eexists. split;auto. CH_check.
-  unfold GCDStep. split. pose (Chaos_zero_Seq_r GCDAssn).
-  pose (rwt_comb _ _ _ _ (CDC hdeqz) (rwt_refl skip) r ).
-  apply (rwt_trans _ _ _ r0). apply Cond_rev. unfold FNF.
-  do 2 eexists. rewrite H. split;auto. CH_check.
-  destruct H0; try contradiction. rewrite <- H0. unfold skip.
-  eexists;split;pauto. unfold Refine. do 4 eexists. split; try split.
-  3:split. 3: rewrite H. 1,3:reflexivity. 1,2 : CH_check.
-  destruct H0;try contradiction. rewrite <- H0.
-  unfold skip. eexists;split;pauto. intros. right. auto.
+  unfold FNFPres. exists (Normal (_|_)). exists (Normal (GCDStep (_|_))).
+  split;split;try split;pauto. unfold Normal. simpl. unfold Refine.
+  do 4 eexists. assert (forall x, @{x} = |-|[@{x}]) by auto.
+  split;split;try split;auto. rewrite H. auto. unfold CH. intros.
+  destruct H0;try contradiction. rewrite <- H0. eexists. split;pauto.
+  pose (H (Assign_comb_CDC_help (extends_assign (extends_assign empty_assn))
+  (extends_assign (Assign_comb_Seq_help (extends_assign (extends_assign (GLOBVARS :== GCDFunc)))
+  (extends_assign empty_assn))) hdeqz)). rewrite e. auto. unfold CH. intros.
+  destruct H0;try contradiction. rewrite <- H0. eexists. split;pauto.
+  intros. right. auto.
 Qed.
 
 Hypothesis GcdStable : forall x, FNFPres (GCDStep x) (GCDStep (GCDStep x)).
@@ -118,61 +122,58 @@ Qed.*)
 Lemma GcdStrPres : AlgPres GCDStr.
 Proof. apply AlgPresInd. apply GcdBase. apply GcdStable. Qed.
 
-Lemma GcdReachRes : SthExists GCDRes GCDStr.
-Abort.
-(*
-Proof.
-  unfold Lub. split.
-  - apply AlgPresInv;auto. apply GcdPres.
-  - unfold FixExists. apply Streams.Further. apply Streams.Here.
-    unfold GCDStep. simpl. unfold FixStep. unfold GCDRes.
-    split;simpl. all : apply rwt_comm; unfold GCDAssn.
-    + pose (Assign_Seq GLOBVARS GCDFunc refl_exp).
-      pose (rwt_comb (@{ GLOBVARS :== refl_exp}) _ _ _ (CDC hdeqz)
-       (rwt_refl (@{ GLOBVARS :== refl_exp})) r).
-      apply (rwt_trans _ _ _ r0). clear r r0.
-      pose (Assign_Cond GLOBVARS refl_exp (fun x : list Var =>
-       refl_exp (GCDFunc x)) hdeqz). apply (rwt_trans _ _ _ r).
-      clear r. apply eval_equiv. unfold eqEval. simpl. auto.
-    + pose (Assign_Seq GLOBVARS GCDFunc refl_exp).
-      pose (rwt_comb (@{ GLOBVARS :== refl_exp}) _ _ _ (CDC hdeqz)
-       (rwt_refl (@{ GLOBVARS :== refl_exp})) r).
-      pose (Assign_Cond GLOBVARS refl_exp (fun x : list Var =>
-       refl_exp (GCDFunc x)) hdeqz).
-      pose (rwt_trans _ _ _ r0 r1).
-      pose (rwt_comb _ _ _ _ Seq (rwt_refl (@{ GLOBVARS :== GCDFunc}))
-       r2). pose (Assign_Seq GLOBVARS GCDFunc (exp_Cond refl_exp (fun x 
-       => refl_exp (GCDFunc x)) hdeqz)). pose (rwt_trans _ _ _ r3 r4).
-      pose (rwt_comb _ _ _ _ (CDC hdeqz) r2 r5).
-      apply (rwt_trans _ _ _ r6). clear r r0 r1 r2 r3 r4 r5 r6.
-      pose (Assign_Cond GLOBVARS (exp_Cond refl_exp (fun x=> refl_exp (GCDFunc x)) hdeqz)
-        (fun x => exp_Cond refl_exp (fun x0 : list Var => refl_exp (GCDFunc x0))
-         hdeqz (GCDFunc x)) hdeqz). apply (rwt_trans _ _ _ r).
-      clear r. apply eval_equiv. unfold eqEval. simpl. auto.
-Qed.*)
+(* functions in this example are supposed to be already extended *)
+Hypothesis no_extends : forall x:Exp, extends_mapping GLOBVARS x = x.
 
-Definition falg := (_|_).
+Lemma GcdReachRes : SthExists GCDRes GCDStr.
+Proof. unfold SthExists. unfold GCDStr. apply Streams.Further.
+apply Streams.Here. unfold Recur. unfold GCDStep. simpl.
+unfold GCDRes. unfold SthStep. simpl. apply rwt_comm.
+apply (rwt_trans _ (Normal (skip <| hdeqz |> GCDAssn;; _|_))).
+apply NormalRWT. simpl. unfold extends_assign. simpl.
+repeat rewrite (no_extends GCDFunc). repeat rewrite (no_extends refl_exp).
+repeat rewrite (no_extends (fun x0 : list MyVar => refl_exp (GCDFunc x0))).
+unfold Assign_comb_CDC_help. simpl.
+assert ((fun x0 => refl_exp (GCDFunc x0)) = GCDFunc).
+unfold GCDFunc. unfold refl_exp. simpl. auto.
+simpl in H. rewrite H. assert ((fun g =>
+if hdeqz g then false_stat g
+else CH_over_Boolexp [@{ GLOBVARS :== GCDFunc}] true_stat) =
+(fun x => negb (hdeqz x))).
+simpl. apply functional_extensionality. intros. destruct (hdeqz x).
+simpl. auto. unfold CH_over_Boolexp. simpl. auto.
+simpl in H0. rewrite H0. pauto. Qed.
+
+Definition falg := |-| [skip;GCDAssn] <| hdeqz |> (_|_).
 
 Lemma refinegcd : exists r s, (r <--> falg /\ FNF r) /\ 
    (s <--> GCDRes /\ FNF s) /\ Refine r s.
-Abort.
 Proof.
-  do 2 eexists. split;try split;try split.
-  - apply rwt_comm. unfold GCDRes. apply (Assign_to_NF _ _ false_stat).
-    auto.
-  - unfold FNF. do 2 eexists. split;eauto. unfold CH. intros.
-    destruct H; try contradiction. rewrite <- H. eexists;split;try apply rwt_refl.
-    unfold Total_Assign. auto. 
-  - apply rwt_comm. unfold altGcd. apply (Assign_to_NF _ _ false_stat).
-    auto.
-  - unfold FNF. do 2 eexists. split;eauto. unfold CH. intros.
-    destruct H;try contradiction. rewrite <- H. eexists;split;try apply rwt_refl.
-    unfold Total_Assign. auto. 
-  - unfold Refine. do 4 eexists; eauto. split;try split;try split;try reflexivity.
-    1,2 : unfold CH;intros;destruct H;try contradiction; rewrite <- H; eexists;split;
-    try apply rwt_refl;unfold Total_Assign; auto. left. split;auto.
-    unfold RefineCH. intros. destruct H; try contradiction. rewrite <- H.
-    eexists. split. unfold In. left. reflexivity. unfold eqAssn. unfold eqEval.
-    simpl.  auto.
+  exists ((_|_) <| fun g => negb (hdeqz g) |> |-| [skip;GCDAssn]).
+  exists GCDRes. split;split.
+  - unfold falg. apply rwt_comm. apply Cond_rev.
+  - unfold FNF. do 2 eexists. split. auto. unfold CH. intros.
+    destruct H. unfold skip in H. rewrite <- H. eexists;split;pauto.
+    destruct H. unfold GCDAssn in H. rewrite <- H. eexists;split;pauto.
+    destruct H.
+  - split. apply rwt_refl. unfold FNF. unfold GCDRes. do 2 eexists.
+    assert (@{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz} =
+    |-| [@{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz}]) by auto.
+    rewrite H. split;auto. unfold CH. intros. destruct H0. rewrite <- H0.
+    eexists;split;pauto. destruct H0.
+  - unfold GCDRes. unfold Refine. do 4 eexists. split. split;auto.
+    unfold CH. intros.
+    destruct H. unfold skip in H. rewrite <- H. eexists;split;pauto.
+    destruct H. unfold GCDAssn in H. rewrite <- H. eexists;split;pauto.
+    destruct H. split. assert (@{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz} =
+    |-| [@{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz}]) by auto.
+    rewrite H. split;auto. unfold CH. intros. destruct H0. rewrite <- H0.
+    eexists;split;pauto. destruct H0. simpl. unfold Constraint. intros.
+    do 3 destruct H. rewrite H. unfold hdeqz. simpl. remember (negb (val x =? 0)).
+    destruct b. right. auto. left. split;auto. unfold RefineCH. simpl.
+    intros. destruct H1;try contradiction. eexists. split. left.
+    auto. rewrite <- H1. simpl. unfold subEval. simpl. unfold exp_Cond.
+    simpl. apply eq_sym in Heqb. apply Bool.negb_false_iff in Heqb.
+    rewrite Heqb. rewrite H. auto.
 Qed.
 
