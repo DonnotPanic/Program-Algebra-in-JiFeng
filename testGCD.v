@@ -60,8 +60,8 @@ Definition GCDStep (a : Alg) : Alg :=
 
 Definition GCDStr := Recur GCDStep (_|_).
 
-Definition GCDRes := (_|_) <| fun x => negb (hdeqz x) |>
-  @{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz}.
+Definition GCDRes := (_|_) <| (fun x => negb (orb (hdeqz x) (Assign_over_Boolexp hdeqz GCDAssn))) |>
+ @{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz}.
 
 Lemma GcdBase : FNFPres (_|_) (GCDStep (_|_)).
 Proof.
@@ -126,23 +126,34 @@ Proof. apply AlgPresInd. apply GcdBase. apply GcdStable. Qed.
 Hypothesis no_extends : forall x:Exp, extends_mapping GLOBVARS x = x.
 
 Lemma GcdReachRes : SthExists GCDRes GCDStr.
-Proof. unfold SthExists. unfold GCDStr. apply Streams.Further.
+Proof. unfold SthExists. unfold GCDStr. do 2 apply Streams.Further.
 apply Streams.Here. unfold Recur. unfold GCDStep. simpl.
 unfold GCDRes. unfold SthStep. simpl. apply rwt_comm.
-apply (rwt_trans _ (Normal (skip <| hdeqz |> GCDAssn;; _|_))).
+assert (GCDAssn ;; _|_ <--> _|_) by apply Chaos_zero_Seq_r.
+apply (rwt_trans _ (skip <| hdeqz |> GCDAssn;; (skip <| hdeqz |> _|_))).
+do 3 (apply rwt_comb;pauto). clear H.
+apply (rwt_trans _ (Normal (skip <| hdeqz |> GCDAssn;; (skip <| hdeqz |> _|_)))).
 apply NormalRWT. simpl. unfold extends_assign. simpl.
 repeat rewrite (no_extends GCDFunc). repeat rewrite (no_extends refl_exp).
-repeat rewrite (no_extends (fun x0 : list MyVar => refl_exp (GCDFunc x0))).
+rewrite (no_extends (exp_Cond refl_exp refl_exp hdeqz)).
+rewrite (no_extends (fun x0 : list MyVar => exp_Cond refl_exp refl_exp hdeqz (GCDFunc x0))).
 unfold Assign_comb_CDC_help. simpl.
+assert (exp_Cond refl_exp refl_exp hdeqz = refl_exp).
+unfold exp_Cond. unfold refl_exp. apply functional_extensionality.
+intros. destruct (hdeqz x);auto. rewrite H.
 assert ((fun x0 => refl_exp (GCDFunc x0)) = GCDFunc).
 unfold GCDFunc. unfold refl_exp. simpl. auto.
-simpl in H. rewrite H. assert ((fun g =>
+simpl in H0. rewrite H0. 
+assert ((fun g =>
 if hdeqz g then false_stat g
-else CH_over_Boolexp [@{ GLOBVARS :== GCDFunc}] true_stat) =
-(fun x => negb (hdeqz x))).
+else CH_over_Boolexp [@{ GLOBVARS :== GCDFunc}] 
+(fun g0 : list MyVar =>
+    if hdeqz g0 then false_stat g0 else true_stat g0)) =
+(fun x => negb (hdeqz x || hdeqz (GCDFunc GLOBVARS)))).
 simpl. apply functional_extensionality. intros. destruct (hdeqz x).
-simpl. auto. unfold CH_over_Boolexp. simpl. auto.
-simpl in H0. rewrite H0. pauto. Qed.
+simpl. auto. unfold CH_over_Boolexp. simpl. 
+repeat rewrite (no_extends GCDFunc). destruct (hdeqz (GCDFunc GLOBVARS));auto.
+simpl in H1. rewrite H1. pauto. Qed.
 
 Definition falg := |-| [skip;GCDAssn] <| hdeqz |> (_|_).
 
@@ -169,11 +180,15 @@ Proof.
     |-| [@{ GLOBVARS :== exp_Cond refl_exp GCDFunc hdeqz}]) by auto.
     rewrite H. split;auto. unfold CH. intros. destruct H0. rewrite <- H0.
     eexists;split;pauto. destruct H0. simpl. unfold Constraint. intros.
-    do 3 destruct H. rewrite H. unfold hdeqz. simpl. remember (negb (val x =? 0)).
-    destruct b. right. auto. left. split;auto. unfold RefineCH. simpl.
-    intros. destruct H1;try contradiction. eexists. split. left.
-    auto. rewrite <- H1. simpl. unfold subEval. simpl. unfold exp_Cond.
-    simpl. apply eq_sym in Heqb. apply Bool.negb_false_iff in Heqb.
-    rewrite Heqb. rewrite H. auto.
+    do 3 destruct H. rewrite H. unfold hdeqz. simpl. rewrite (eqbVar_refl x).
+    destruct x. destruct x0. simpl in *. remember (negb ((val0 =? 0) || (val1 mod val0 =? 0))).
+    apply eq_sym in Heqb. destruct b. right. rewrite Bool.negb_true_iff in *.
+    apply Bool.orb_false_elim in Heqb. destruct Heqb. auto.
+    left. split;auto. unfold RefineCH. intros. destruct H1;try contradiction.
+    remember (val0=?0). apply eq_sym in Heqb0. destruct b.
+    eexists;split. left. auto. rewrite <- H1. unfold subAssn. simpl.
+    unfold subEval. unfold exp_Cond. simpl. rewrite Heqb0. rewrite H. auto.
+    eexists;split. right. left. auto. rewrite <- H1. unfold subAssn. simpl.
+    unfold subEval. unfold exp_Cond. simpl. rewrite Heqb0. rewrite H. auto.
 Qed.
 
